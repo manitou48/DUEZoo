@@ -20,10 +20,10 @@ SPI clock    write               write
 42MHz         5.33               41.45
 
 
-				    arduino UNO  avr328/16MHz
+   arduino UNO  avr328/16MHz
                 SPI 
 SPI clock   read/write
 2MHz          1.57mbs
 4MHz          2.6 mbs
-8MHz          3.8mbs       3.4mbs  2.1mbs
+8MHz          3.8mbs     
 

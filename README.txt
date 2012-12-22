@@ -21,7 +21,7 @@ perf.txt       simple computational benchmarks
 
 I2Cperf.txt    I2C performance  100KHz and 400KHz
 
-SPIperf.txt    SPI performance at variou clock rates and with DMA
+SPIperf.txt    SPI performance at various clock rates and with DMA
 
 mem2mem.txt    timing results for memcpy()/memset() and DMA versions
 
