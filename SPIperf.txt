@@ -1,0 +1,29 @@
+unconnected SPI performance (transfer 1000 bytes)
+   http://forums.leaflabs.com/topic.php?id=1075
+
+             maple spi       maple spi/dma
+SPI clock   read/write         read/write
+1.125MHz     .85mbs               1.125mbs
+2.25MHz     1.35mbs               2.25mbs
+4.5MHz      1.8mbs                4.5mbs
+9MHz        2.2mbs                8.9mbs
+18MHz       2.2mbs               17.8mbs
+
+             DUE spi          DUE spi/dma
+SPI clock    write               write
+1MHz          0.82                1.00    mbs (million bits/second)
+2MHz          1.45                2.00
+4MHz          2.35                3.99
+7MHz          3.26                6.99
+14MHz         4.25               13.94
+21MHz         4.73               20.89
+42MHz         5.33               41.45
+
+
+				    arduino UNO  avr328/16MHz
+                SPI 
+SPI clock   read/write
+2MHz          1.57mbs
+4MHz          2.6 mbs
+8MHz          3.8mbs       3.4mbs  2.1mbs
+

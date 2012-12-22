@@ -1,0 +1,48 @@
+  I2C performance at 100KHz and 400KHz
+
+I2C perf http://forums.leaflabs.com/topic.php?id=2855
+
+  software I2C on UNO
+Bytes   write   read   (microseconds)
+10       3655   3826
+20       6408   6069
+30       9164   8315
+
+   maple
+   hardware I2c 100KHz     400KHz
+Bytes   write   read      write  read   (microseconds)
+10       1193   1306        308   336
+20       2095   2202        535   561
+30       2997   3100        761   791
+64       6063   6262       1568  1551
+
+
+
+   arduino uno  100KHz    400KHz    DUE  100Khz      400Khz
+Bytes   write   read    write  read    write read   write read (microseconds)
+10       1340   1480    1112  1176      1197 3124    775   339
+20       2340   2500     780   840      2104 3124    775   573
+30       3360   3512     448   504      3014 3127    775   806
+
+
+Beaglebone  I2C @ 100Khz
+bytes   write   read   (microseconds)
+10       1320   1669
+20       2245   2559
+30       3128   3374
+
+ Raspberry Pi  I2C @ 100KHz
+10       1268    1449
+20       2185    2357
+30       3074    3268
+
+  Parallax STAMP PBASIC bit banging and SHIFTOUT (16KHz)
+10    47400  37800
+20    82200  63000
+30   117600  87600
+
+  Parallax propeller  bit-banging
+          spin            PASM
+10    8147    5815     393   425
+20   11797    9273     649   689
+30   15447   13491     913   953

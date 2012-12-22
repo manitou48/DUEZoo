@@ -1,0 +1,34 @@
+   simple computational benchmarks
+
+recursive fibonacci (fibo(26))
+	catalina 3.6 5342 ms
+	gcc cog 486 ms
+	gcc lmm 927 ms
+	arduino uno (16MHz) 32-bit int's 927 ms
+	due 26 121393 98
+	maple (72MHz) 104 ms
+	beaglebone (720MHz) 8.2 ms
+	raspberry pi (700MHz) 10.682 ms  10.260
+	ubuntu/i3-2370M (2.4GHz) 1.2ms
+
+MD5 (KBs == 1024 bytes/second)   x -O 2 3
+	spin 7 KBs catalina 84 KBs gcc 222 KBs (lmm)
+	arduino 48 KBs   -Os
+	due 23 ms 2226 KBs
+	maple 1937 KBs   271ms 1889   -Os
+	           1889 2124  2737  3605
+	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
+	raspberry 8103.727715 30959.752322 52910.052910 55555.555556
+	          57142.857143
+	ubuntu    67019.951169  260400.391642 316436.669947 320493.303292 KBs
+
+fft_bench demo
+	propeller gcc 47ms
+	  catalina-3.6 410ms
+	arduino UNO can't do it (only 2K sram)
+	due 8 ms
+	maple 8 ms
+	beaglebone 0.375 ms (had to do it 1000 times to exceed a ms, then divide out 1000)
+	raspberry x1000  0.527  0.504
+	ubuntu 0.053ms (needed 1000 iterations) 
+
