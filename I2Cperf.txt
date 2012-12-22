@@ -2,7 +2,7 @@
 
 I2C perf http://forums.leaflabs.com/topic.php?id=2855
 
-  software I2C on UNO
+  software I2C on maple
 Bytes   write   read   (microseconds)
 10       3655   3826
 20       6408   6069
