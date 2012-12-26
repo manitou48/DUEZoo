@@ -19,6 +19,7 @@ rng.ino        display or transmit DUE's hardware random number generator,
 
 W5100.cpp .h  modifications to support w5200 wiznet chip on DUE
               replace in hardware/arduino/sam/libraries/Ethernet/utility/
+			  also Ethernet.h has a simple modification
 
 perf.txt       simple computational benchmarks
 
