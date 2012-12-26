@@ -17,6 +17,9 @@ tone1.ino     proof-of-concept tone() with timer with IRQ
 rng.ino        display or transmit DUE's hardware random number generator,
                looks good with diehard, ent, assess
 
+W5100.cpp .h  modifications to support w5200 wiznet chip on DUE
+              replace in hardware/arduino/sam/libraries/Ethernet/utility/
+
 perf.txt       simple computational benchmarks
 
 I2Cperf.txt    I2C performance  100KHz and 400KHz
@@ -26,6 +29,9 @@ SDperf.txt     SD/SPI performance at various clock rates and with DMA
 SPIperf.txt    SPI performance at various clock rates and with DMA
 
 mem2mem.txt    timing results for memcpy()/memset() and DMA versions
+
+wizperf.txt    Ethernet performance of wiznet WIZ820io that uses W5200 chip
+               SPI and SPI+DMA results for DUE and maple and UNO
 
 
 ---------------------- details --------------------
