@@ -21,6 +21,7 @@ W5100.cpp .h  modifications to support w5200 wiznet chip on DUE
               replace in hardware/arduino/sam/libraries/Ethernet/utility/
 			  also Ethernet.h has a simple modification
 
+w5100.cpp.dma1 SPI+DMA DUE version for w5200
 perf.txt       simple computational benchmarks
 
 I2Cperf.txt    I2C performance  100KHz and 400KHz

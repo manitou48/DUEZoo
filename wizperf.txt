@@ -9,26 +9,27 @@ DUE
  4MHz   2.3 mbs      3.97
  21MHz  4.7 mbs     20.4
  28MHz  5.0 mbs     26.95
+    errors at 42MHz
 
-  SPI  network tests
-clock   latency  send  recv
- 4Mhz     800    2.3   2.3
+  SPI  UDP network tests               TCP
+clock   latency  send  recv       send   recv
+ 4Mhz     800    2.3   2.3         2.3   2.2
  7Mhz     602    3.2   2.7
 14MHz     487    4.0   3.4
-21Mhz     426    4.5   3.5
-28MHz     421    5.1   3.9
+21Mhz     426    4.5   3.5         4.3   4.5
+28MHz     421    5.1   3.9         4.6   4.8
 
-  SPI+DMA in progress ...
+  SPI+DMA 
 clock   latency  send  recv
- 4Mhz
- 7Mhz
-14MHz
-21Mhz
-28MHz
+ 4Mhz     871     3.4   2.9         3.1  3.3
+ 7Mhz     696     5.4   4.1
+14MHz     564     9.7   7.6
+21Mhz     529    13.3  10.5        11.0  10.7
+28MHz     497    15.6  12.8        12.9  12.1
 
 ---------------------------------------------------
 
-maple
+maple UDP tests
          echo send  recv   SPI
 1.125MHz 2414  .8   .7 mbs
 2.25MHz  1565 1.2  1.3mbs
@@ -44,7 +45,7 @@ clock   latency send recv
 9MHz     1002  6.1   5.5mbs
 18MHz     992  9.2   7.8mbs
 
-          send    ventosus maple lib SPI+DMA
+      UDP send    ventosus maple lib SPI+DMA
 1.125MHz  1.04mbs
 2.25MHz   2.03mbs
 4.5MHz    3.9mbs
@@ -53,13 +54,12 @@ clock   latency send recv
 
 ---------------------------------------------------------
 
- UNO SPI w5200
-      ide 022  UNO                   v1 ide
-
-1MHz 1388     .8      .8          2376     .79      .7
-2MHz 792     1.4     1.4          1356    1.4      1.3
-4MHz 528us   2.25mbs 2.4mbs        900    2.22mbs  2.2mbs
-8MHz 420us   3.2mbs  3.4mbs        656us  3.16mbs  3.2mbs
+          UNO SPI w5200 UDP tests
+      ide 022  UNO                   v1 ide                TCP send/recv
+1MHz 1388     .8      .8          2376     .79      .7        0.78 mbs
+2MHz 792     1.4     1.4          1356    1.4      1.3        1.3
+4MHz 528us   2.25mbs 2.4mbs        900    2.22mbs  2.2mbs     2.1
+8MHz 420us   3.2mbs  3.4mbs        656us  3.16mbs  3.2mbs     3.1
 
 
 ----------------------------------------------------------
@@ -67,6 +67,6 @@ clock   latency send recv
 W5100 based on SPI speeds: 4MHz .38mbs   (8MHz .47mbs), 
   wiznet claims only 0.3mbs for W5100,  33.3mbs for W5200
   W5100: 16KB of buffer, 4 sockets, 0.3MHz SPI speed 
-  W5200: 32KB of buffer, 8 sockets, 33.3MHz SPI speed 
+  W5200: 32KB of buffer, 8 sockets, 33.3MHz SPI speed, burst read/write 
 
   default wiznet config 2048-byte send buffer, 2048-byte recv buffer/socket
