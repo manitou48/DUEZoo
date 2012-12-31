@@ -70,3 +70,8 @@ W5100 based on SPI speeds: 4MHz .38mbs   (8MHz .47mbs),
   W5200: 32KB of buffer, 8 sockets, 33.3MHz SPI speed, burst read/write 
 
   default wiznet config 2048-byte send buffer, 2048-byte recv buffer/socket
+
+--------------------------------------------
+  beaglebone  UDP send/recv rate is 80mbs,   TCP 17mbs
+  raspberry pi  UDP send/recv rate is 93mbs,   TCP 11mbs
+
