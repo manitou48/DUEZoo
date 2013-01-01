@@ -9,15 +9,15 @@ SPI clock   read/write         read/write
 9MHz        2.2mbs                8.9mbs
 18MHz       2.2mbs               17.8mbs
 
-             DUE spi          DUE spi/dma
-SPI clock    write               write
-1MHz          0.82                1.00    mbs (million bits/second)
-2MHz          1.45                2.00
-4MHz          2.35                3.99
-7MHz          3.26                6.99
-14MHz         4.25               13.94
-21MHz         4.73               20.89
-42MHz         5.33               41.45
+             DUE spi  extended   DUE spi/dma
+SPI clock    write    write      write
+1MHz          0.82     0.87       1.00    mbs (million bits/second)
+2MHz          1.45     1.55       2.00
+4MHz          2.35     2.52       3.99
+7MHz          3.26     3.45       6.99
+14MHz         4.25     4.59      13.94
+21MHz         4.73     5.15      20.89
+42MHz         5.33     5.87      41.45
 
 
    arduino UNO  avr328/16MHz
