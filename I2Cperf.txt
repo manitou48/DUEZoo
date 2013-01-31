@@ -1,21 +1,27 @@
-  I2C performance at 100KHz and 400KHz
+  I2C performance at 100KHz and 400KHz, block write/read to I2C EEPROM
 
 I2C perf http://forums.leaflabs.com/topic.php?id=2855
 
-  software I2C on maple
+  maple: software I2C 
 Bytes   write   read   (microseconds)
 10       3655   3826
 20       6408   6069
 30       9164   8315
 
-   maple
-   hardware I2c 100KHz     400KHz
+   maple: hardware I2c 
+           100KHz            400KHz
 Bytes   write   read      write  read   (microseconds)
 10       1193   1306        308   336
 20       2095   2202        535   561
 30       2997   3100        761   791
 64       6063   6262       1568  1551
 
+  teensy 3.0 
+           100 KHz            400 KHz
+Bytes   write   read      write  read   (microseconds)
+10       1210   1318        340   369
+20       2127   2235        598   625
+30       3046   3153        855   881
 
 
    arduino uno  100KHz    400KHz    DUE  100Khz      400Khz
