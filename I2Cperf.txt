@@ -24,10 +24,11 @@ Bytes   write   read      write  read   (microseconds)
 30       3046   3153        855   881
 
 
-   arduino uno  100KHz    400KHz    DUE  100Khz      400Khz
+    arduino        UNO                          DUE
+           100KHz          400KHz         100Khz      400Khz
 Bytes   write   read    write  read    write read   write read (microseconds)
-10       1340   1480    1112  1176      1197 3124    775   339
-20       2340   2500     780   840      2104 3124    775   573
+10       1340   1480    1112  1176      1197 3124    308   338
+20       2340   2500     780   840      2104 3124    540   571
 30       3360   3512     448   504      3014 3127    775   806
 
 
