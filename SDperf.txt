@@ -19,13 +19,13 @@ SPI clock   read/write     read    write
 8MHz          3.8mbs       3.4mbs  2.1mbs
 
   teensy 3.0 at 96 mhz with Sparkfun SD and SANS 8GB card
-SPI clk      SPI rd/wrt    fatlib SPI       SPI+DMA
+SPI clk      SPI rd/wrt    SdFat SPI       SPI+DMA
 2            1.5    1.0
 4            2.7    1.4
 8            3.9    1.7
-12           4.5    1.8
-16           5.0    1.9
-24           5.5    2.0
+12           4.5    1.8      6.8  2.2
+16           5.0    1.9      
+24           5.5    2.0      9.5  2.3
 
    DUE 84 mhz  SD   (512byte blocks)  Sparkfun SD breakout
 SPI clk      SPI rd/wrt    DMA rd  write
