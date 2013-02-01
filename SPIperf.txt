@@ -20,6 +20,14 @@ SPI clock    write    write      write
 42MHz         5.33     5.87      41.45
 
 
+   teensy 3 96Mhz  (avr emulation, fatlib, DMA)
+                SPI          fatSPI       SPI+DMA
+SPI clock   read/write
+2MHz          1.55mbs
+4MHz          2.8 mbs
+8MHz          3.9 mbs     
+
+  
    arduino UNO  avr328/16MHz
                 SPI 
 SPI clock   read/write
