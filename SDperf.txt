@@ -1,22 +1,31 @@
   SD/SPI performance
     512-byte block read/write, mbs = megabits/second
-	2GB SanDisk
+	2GB SanDisk on arduino SD/RTC shield
 
     SD/RTC shield on maple 72MHz
-             maple spi        maple spi/dma
-SPI clock   read    write     read      write
-1.125MHz    0.75mbs 0.64mbs    1mbs     0.84mbs
-2.25MHz     1.1mbs  0.91mbs    1.86mbs  1.36mbs
+             maple spi           maple spi/dma
+SPI clock   read    write      read      write
+1.125MHz    0.75mbs 0.64mbs             1mbs   
+2.25MHz     1.1mbs  0.91mbs             1.86mbs
 4.5MHz      1.4mbs  1.2mbs     3.19mbs  2.0mbs
 9MHz        1.6mbs  1.25mbs    5.1mbs   2.6mbs
 18MHz       1.6mbs  1.3mbs     7.1mbs   3.06mbs
 
-		    arduino UNO  avr328/16MHz
+		    arduino UNO  avr328/16MHz   SD/RTC shield
                 SPI         SD (with OPTIMIZE_HARDWARE_SPI)
 SPI clock   read/write     read    write
 2MHz          1.57mbs      1.4mbs  1.2mbs
 4MHz          2.6 mbs      2.3mbs  1.7mbs
 8MHz          3.8mbs       3.4mbs  2.1mbs
+
+  teensy 3.0 at 96 mhz with Sparkfun SD and SANS 8GB card
+SPI clk      SPI rd/wrt    fatlib SPI       SPI+DMA
+2            1.5    1.0
+4            2.7    1.4
+8            3.9    1.7
+12           4.5    1.8
+16           5.0    1.9
+24           5.5    2.0
 
    DUE 84 mhz  SD   (512byte blocks)  Sparkfun SD breakout
 SPI clk      SPI rd/wrt    DMA rd  write
