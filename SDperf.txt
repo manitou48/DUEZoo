@@ -1,6 +1,6 @@
-  SD/SPI performance
+                 SD/SPI performance
     512-byte block read/write, mbs = megabits/second
-	2GB SanDisk on arduino SD/RTC shield
+	2GB SanDisk on arduino SD/RTC shield or Sparkfun breakout and 8GB SANS
 
     SD/RTC shield on maple 72MHz
              maple spi           maple spi/dma
@@ -20,11 +20,11 @@ SPI clock   read/write     read    write
 
   teensy 3.0 at 96 mhz with Sparkfun SD and SANS 8GB card
 SPI clk      SPI rd/wrt    SdFat SPI       SPI+DMA
-2            1.5    1.0
-4            2.7    1.4
-8            3.9    1.7
+2            1.5    1.0      1.8  1.1
+4            2.7    1.4      3.2  1.5
+8            3.9    1.7      5.3  1.9
 12           4.5    1.8      6.8  2.2
-16           5.0    1.9      
+16           5.0    1.9      8.0  2.1
 24           5.5    2.0      9.5  2.3
 
    DUE 84 mhz  SD   (512byte blocks)  Sparkfun SD breakout
