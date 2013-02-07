@@ -31,6 +31,15 @@ clock   latency  send  recv
 
 ---------------------------------------------------
 
+
+  maple	 w5200 buffer rd/wrt 1000 bytes  wiztst wizdma
+            SPI         SPI+DMA
+ 1.125MHz   1.12mbs      1.12
+ 2.25MHz    1.36mbs      2.22
+ 4.5MHz     2.05mbs      4.40
+ 9MHz       2.27mbs      8.63
+ 18MHz      2.27mbs     16.65
+
 maple UDP tests
   SPI    echo send  recv      TCP send recv
 1.125MHz 2414  .8   .7 mbs
@@ -74,6 +83,7 @@ W5100 based on SPI speeds: 4MHz .38mbs   (8MHz .47mbs),
   default wiznet config 2048-byte send buffer, 2048-byte recv buffer/socket
 
 --------------------------------------------
+    native ether controller
   beaglebone  UDP send/recv rate is 80mbs,   TCP 17mbs
   raspberry pi  UDP send/recv rate is 93mbs,   TCP 11mbs
 
