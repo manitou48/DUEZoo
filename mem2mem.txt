@@ -4,16 +4,17 @@ For the DUE DMA memory-to-memory transfer, we use the 32-byte FIFO channel 5
 and ASAP_CFG.  We compare the DMA times on the DUE and maple with the library
 memcpy() and memset() and with a for-loop (dst[i] = src[i]) using
 1000 32-bit words.  memcpy32() is the DMA version.  The library memcpy()
-uses an unrolled (64) loop of word load/store's.
+uses an unrolled (64) loop of word load/store's.  The teensy 3.0 at 96MHz
+is included (DMA TODO).
 
 Times are in microseconds
 
-       maple    DUE
-loop     269    132
-memcpy32  93     31
-memcpy    62     52
-memset32  94     34
-memset    38     41
+       maple    DUE   teensy
+loop     269    132     95
+memcpy32  93     31     23
+memcpy    62     52     96
+memset32  94     34     23
+memset    38     41     51
 
 DUEling memory copies:
 
@@ -26,3 +27,7 @@ For the DUE, the DMA copy finishes first (34us), then the memcpy (80us),
 with total elapsed time of 82us.  Both src/dst pairs were in SRAM0.
 With the memcpy() src/dst pairs in SRAM1, DMA took 33us, and the memcpy
 took 60us, with elapsed time of 70us.
+
+For the teensy, the DMA finishes first (27us), and then the memcpy (105us),
+with total elapsed time of 107us.  Teensy test used two different destination
+buffers, but same source buffer (only 16KB RAM).
