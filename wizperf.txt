@@ -72,6 +72,10 @@ clock   latency send recv     TCP  send recv
 4MHz 528us   2.25mbs 2.4mbs        900    2.22mbs  2.2mbs     2.1
 8MHz 420us   3.2mbs  3.4mbs        656us  3.16mbs  3.2mbs     3.1
 
+---------------------------------------------------------
+
+   propeller w5200 buffer  rd/wrt 1000 bytes 
+     SpiCounterPasm.spin  5.3/8.9 mbs
 
 ----------------------------------------------------------
 
