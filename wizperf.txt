@@ -1,5 +1,6 @@
   wiznet WIZ820io  with W5200 chip tests on maple and DUE with SPI and SPI+DMA
-    UDP 8-byte echo latency, UDP 1000-byte send,  UDP 1000-byte lossless recv
+    UDP 8-byte echo latency, UDP 10 1000-byte packets send,  
+	 UDP 20 1000-byte packets lossless recv
 	 latency in microseconds, data rates in megabits/second
 	 tested on 100mbs Ethernet
 ------------------------------------------------------
@@ -40,7 +41,7 @@ clock   latency  send  recv
  9MHz       2.27mbs      8.63
  18MHz      2.27mbs     16.65
 
-maple UDP tests
+maple UDP tests SPI
   SPI    echo send  recv      TCP send recv
 1.125MHz 2414  .8   .7 mbs
 2.25MHz  1565 1.2  1.3mbs
@@ -68,13 +69,22 @@ clock   latency send recv     TCP  send recv
 
     w5200 buffer rd/wrt 1000 bytes  wiztst  
             SPI         FatSPI
- 1MHz       0.92mbs
+ 1MHz       0.92mbs       TBD
  2MHz       1.55
  4MHz       2.85
  8MHz       4.06
 12MHz       4.88
 16MHz       5.45
 24MHz       6.15
+
+  teensy UDP   
+  SPI    echo send  recv
+  4Mhz    ??  4 Mhz and slower experiences errors ??
+  8MHz    608  3.6   2.1   mbs
+ 12MHz    548  4.3   ?
+ 16MHz    513  4.8   2.9
+ 24MHz    475  5.4   3.2
+
 ---------------------------------------------------------
 
           UNO SPI w5200 UDP tests
