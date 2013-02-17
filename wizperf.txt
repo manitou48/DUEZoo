@@ -2,7 +2,7 @@
     UDP 8-byte echo latency, UDP 1000-byte send,  UDP 1000-byte lossless recv
 	 latency in microseconds, data rates in megabits/second
 	 tested on 100mbs Ethernet
-
+------------------------------------------------------
 DUE
 		 w5200 buffer rd/wrt 1000 bytes  wizraw
         SPI         SPI+DMA
@@ -63,6 +63,18 @@ clock   latency send recv     TCP  send recv
 9MHz      7.1mbs
 18MHz    12.1mbs
 
+---------------------------------------------------------
+ teensy 3.0 96MHz (2nd power supply for W5200)
+
+    w5200 buffer rd/wrt 1000 bytes  wiztst  
+            SPI         FatSPI
+ 1MHz       0.92mbs
+ 2MHz       1.55
+ 4MHz       2.85
+ 8MHz       4.06
+12MHz       4.88
+16MHz       5.45
+24MHz       6.15
 ---------------------------------------------------------
 
           UNO SPI w5200 UDP tests
