@@ -22,8 +22,8 @@ clock   latency  send  recv       send   recv
   The figures above are for DUE's "extended SPI" which is a bit faster
   than regular SPI functions (e.g at 14 MHz latency 724us, send 3.8 mbs)
 
-  SPI+DMA 
-clock   latency  send  recv
+  SPI+DMA     UDP                    TCP
+clock   latency  send  recv       send  recv
  4Mhz     871     3.4   2.9         3.1  3.3
  7Mhz     696     5.4   4.1
 14MHz     564     9.7   7.6
@@ -69,21 +69,23 @@ clock   latency send recv     TCP  send recv
 
     w5200 buffer rd/wrt 1000 bytes  wiztst  
             SPI         FatSPI
- 1MHz       0.92mbs       TBD
- 2MHz       1.55
- 4MHz       2.85
- 8MHz       4.06
-12MHz       4.88
-16MHz       5.45
-24MHz       6.15
+ 1MHz       0.92mbs       1.02 mbs
+ 2MHz       1.55          2.05
+ 4MHz       2.85          4.02
+ 8MHz       4.06          7.94
+12MHz       4.88         11.52
+16MHz       5.45         15.17
+24MHz       6.15         21.61
 
   teensy UDP   
-  SPI    echo send  recv
-  4Mhz    ??  4 Mhz and slower experiences errors ??
-  8MHz    608  3.6   2.1   mbs
- 12MHz    548  4.3   ?
- 16MHz    513  4.8   2.9
- 24MHz    475  5.4   3.2
+            SPI                  SdFat SPI
+  SPIclk echo send  recv      echo send  recv
+  4Mhz    ??    ??   ??*       666  3.5   2.8 mbs
+  8MHz    608  3.6   2.1mbs    482  6.5   6.2
+ 12MHz    548  4.3   ?         449  8.8   8.2
+ 16MHz    513  4.8   2.9       410 11.1   9.8
+ 24MHz    475  5.4   3.2       392 14.2  13.2
+   * 4 Mhz and slower experiences errors ??
 
 ---------------------------------------------------------
 
@@ -110,6 +112,6 @@ W5100 based on SPI speeds: 4MHz .38mbs   (8MHz .47mbs),
 
 --------------------------------------------
     native ether controller
-  beaglebone  UDP send/recv rate is 80mbs,   TCP 17mbs
-  raspberry pi  UDP send/recv rate is 93mbs,   TCP 11mbs
+  beaglebone  UDP send/recv rate is 80mbs, latency 220us     TCP 17mbs
+  raspberry pi  UDP send/recv rate is 93mbs, latency 460us   TCP 11mbs
 
