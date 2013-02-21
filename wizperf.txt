@@ -98,9 +98,16 @@ clock   latency send recv     TCP  send recv
 
 ---------------------------------------------------------
 
-   parallax propeller quickstart 
+   parallax propeller quickstart    80MHz
      w5200 buffer  rd/wrt 1000 bytes 
-     SpiCounterPasm.spin  5.3/8.9 mbs
+     SpiCounterPasm.spin rd/wrt  5.3/8.9 mbs
+	    SpiPasm.spin  3.8mbs
+	    Spi.spin 0.016 mbs (just spin)
+
+  UDP tests 
+    echo  2621us    8-byte round-trip 
+	send  3.6mbs    rate of sending 100 1000-byte packets
+	recv  2.1mbs    lossless rate of recving 10 1000-byte packets
 
 ----------------------------------------------------------
 
