@@ -98,7 +98,7 @@ clock   latency send recv     TCP  send recv
 
 ---------------------------------------------------------
 
-   parallax propeller quickstart    80MHz
+   parallax propeller quickstart    80MHz   propeller-w5200-driver
      w5200 buffer  rd/wrt 1000 bytes 
      SpiCounterPasm.spin rd/wrt  5.3/8.9 mbs
 	    SpiPasm.spin  3.8mbs
