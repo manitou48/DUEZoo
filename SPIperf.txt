@@ -38,3 +38,7 @@ SPI clock   read/write
 4MHz          2.6 mbs
 8MHz          3.8mbs     
 
+parallax quickstart 80Mhz   (from W5200-driver)
+   SpiCounterPasm.spin read 5.7mbs write 9.8 mbs (uses freqa at 10/20 MHz)
+   SpiPasm.spin  4.1 mbs  bit-bang SPI in PASM
+   Spi.spin      0.019 mbs  bit-bang in spin
