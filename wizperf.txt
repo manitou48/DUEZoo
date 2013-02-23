@@ -4,7 +4,7 @@
 	 latency in microseconds, data rates in megabits/second
 	 tested on 100mbs Ethernet
 ------------------------------------------------------
-DUE
+DUE  84MHz
 		 w5200 buffer rd/wrt 1000 bytes  wizraw
         SPI         SPI+DMA
  4MHz   2.3 mbs      3.97
@@ -32,8 +32,8 @@ clock   latency  send  recv       send  recv
 
 ---------------------------------------------------
 
-
-  maple	 w5200 buffer rd/wrt 1000 bytes  wiztst wizdma
+ maple 72MHz
+       	 w5200 buffer rd/wrt 1000 bytes  wiztst wizdma
             SPI         SPI+DMA
  1.125MHz   1.12mbs      1.12
  2.25MHz    1.36mbs      2.22
@@ -89,7 +89,8 @@ clock   latency send recv     TCP  send recv
 
 ---------------------------------------------------------
 
-          UNO SPI w5200 UDP tests
+ UNO 16MHz
+              SPI w5200 UDP tests
       ide 022  UNO                   v1 ide                TCP send/recv
 1MHz 1388     .8      .8          2376     .79      .7        0.78 mbs
 2MHz 792     1.4     1.4          1356    1.4      1.3        1.3
@@ -106,8 +107,11 @@ clock   latency send recv     TCP  send recv
 
   UDP tests 
     echo  2621us    8-byte round-trip 
-	send  3.6mbs    rate of sending 100 1000-byte packets
-	recv  2.1mbs    lossless rate of recving 10 1000-byte packets
+    send  3.7mbs    rate of sending 100 1000-byte packets
+    recv  2.1mbs    lossless rate of recving 20 1000-byte packets
+  TCP tests   send or recv 100 1000-byte records  
+    send 3.6 mbs
+	recv 1.8 mbs
 
 ----------------------------------------------------------
 
