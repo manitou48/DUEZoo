@@ -106,9 +106,9 @@ clock   latency send recv     TCP  send recv
 	    Spi.spin 0.016 mbs (just spin)
 
   UDP tests 
-    echo  2621us    8-byte round-trip 
+    echo  2599us    8-byte round-trip 
     send  3.7mbs    rate of sending 100 1000-byte packets
-    recv  2.1mbs    lossless rate of recving 20 1000-byte packets
+    recv  2.3mbs    lossless receive rate  20 1000-byte packets
   TCP tests   send or recv 100 1000-byte records  
     send 3.6 mbs
 	recv 1.8 mbs
@@ -124,6 +124,6 @@ W5100 based on SPI speeds: 4MHz .38mbs   (8MHz .47mbs),
 
 --------------------------------------------
     native ether controller
-  beaglebone  UDP send/recv rate is 80mbs, latency 220us     TCP 17mbs
-  raspberry pi  UDP send/recv rate is 93mbs, latency 460us   TCP 11mbs
+  beaglebone 720MHz    UDP send/recv rate is 80mbs, latency 220us   TCP 17mbs
+  raspberry pi  700MHz UDP send/recv rate is 93mbs, latency 460us   TCP 11mbs
 
