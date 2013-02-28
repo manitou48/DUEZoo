@@ -51,8 +51,8 @@ maple UDP tests SPI
 
  SPI+DMA maple
 clock   latency send recv     TCP  send recv
-1.125MHz  0's  ?      .9mbs
-2.25MHz   0's  ?     1.8ms
+1.125MHz 2342  1.0    .9mbs
+2.25MHz  1463  1.9   1.8ms
 4.5MHz   1234  2.8   3.3mbs         3.3  3.5
 9MHz     1002  6.1   5.5mbs         5.9  5.8
 18MHz     992  9.2   7.8mbs         8.4  8.5
