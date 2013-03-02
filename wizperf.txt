@@ -80,12 +80,11 @@ clock   latency send recv     TCP  send recv
   teensy UDP   
             SPI                  SdFat SPI          SdFatSPI TCP
   SPIclk echo send  recv      echo send  recv         send   recv
-  4Mhz    ??    ??   ??*       666  3.5   2.8 mbs
+  4Mhz    736  2.6   2.5       666  3.5   2.8 mbs      3.4    3.4
   8MHz    608  3.6   2.1mbs    482  6.5   6.2
- 12MHz    548  4.3   ?         449  8.8   8.2
+ 12MHz    548  4.3   4.3       449  8.8   8.2          8.1    7.8
  16MHz    513  4.8   2.9       410 11.1   9.8
  24MHz    475  5.4   3.2       392 14.2  13.2         11.8   11.6
-   * 4 Mhz and slower experiences errors ??
 
 ---------------------------------------------------------
 
