@@ -27,9 +27,9 @@ Bytes   write   read      write  read   (microseconds)
     arduino        UNO                          DUE
            100KHz          400KHz         100Khz      400Khz
 Bytes   write   read    write  read    write read   write read (microseconds)
-10       1340   1480     448   504      1197 3124    308   338
-20       2340   2500     780   840      2104 3124    540   571
-30       3360   3512    1112  1176      3014 3127    775   806
+10       1340   1480     448   504      1197 1309    308   338
+20       2340   2500     780   840      2104 2216    540   571
+30       3360   3512    1112  1176      3014 3126    775   806
 
 
 Beaglebone  I2C @ 100Khz
@@ -48,7 +48,7 @@ bytes   write   read   (microseconds)
 20    82200  63000
 30   117600  87600
 
-  Parallax propeller  bit-banging
+  Parallax propeller  bit-banging (SPIN bout 25KHz, pasm 360KHz tunable)
           spin            PASM
 10    8147    5815     393   425
 20   11797    9273     649   689
