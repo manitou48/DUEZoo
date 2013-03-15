@@ -15,11 +15,11 @@ Files:
 
 IRtest.pde .h    simple sketch to exerise IR receiver and transmitter (IR LED)
                  with LED right next to receiver on breadboard, sketch can 
-				 receieve its own transmits
+                 receieve its own transmits
 
 irsony.png      logic analyzer of IR receiver (top line) and IR LED transmit
                 on 2nd line.  (if one were to zoom in on transmit line, one
-				would see the 40kHz carrier pulses.  Sony stop 0xA9A (12 bits)
+                would see the 40kHz carrier pulses.  Sony stop 0xA9A (12 bits)
 
 ---------
 Refs
