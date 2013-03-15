@@ -1,6 +1,23 @@
 IRremote  IR TV remote transmit and receiver proof of concept
   
-  needs to be rolled into IRremote  library
+  -needs to be rolled into IRremote  library
 
-for DUE, uses PWM on pin 6 to transmit via IR LED at 38khz to 40khz
-   pin 8 has IR receiver, sampled every 50us
+for DUE, 
+   pin 8 has IR receiver (Sharp GP1UX311QS), sampled every 50us (TC1 chan 0)
+   uses PWM on pin 6 to transmit via IR LED at 38khz to 40khz
+    IR LED 940nm forward v: 1.2v, pin 6 can source 15 ma, need 140ohm resistor
+	  (though I used 100 ohm, figuring PWM would lessen load), for more
+	  power you'd need transistor.
+	  you can "see" IR LED with digital camera
+
+-------------------------
+Files:
+
+IRtest.pde .h    simple sketch to exerise IR receiver and transmitter (IR LED)
+                 with LED right next to receiver on breadboard, sketch can 
+				 receieve its own transmits
+
+irsony.png      logic analyzer of IR receiver (top line) and IR LED transmit
+                on 2nd line.  (if one were to zoom in on transmit line, one
+				would see the 40kHz carrier pulses.  Sony stop 0xA9A (12 bits)
+
