@@ -21,3 +21,14 @@ irsony.png      logic analyzer of IR receiver (top line) and IR LED transmit
                 on 2nd line.  (if one were to zoom in on transmit line, one
 				would see the 40kHz carrier pulses.  Sony stop 0xA9A (12 bits)
 
+---------
+Refs
+
+Ken Shirriffs IRremote lib
+  http://www.righto.com/2009/08/multi-protocol-infrared-remote-library.html
+
+Paul's ports to teensy 
+  http://www.pjrc.com/teensy/td_libs_IRremote.html
+
+my maple proof of concept IRremote
+  https://github.com/manitou48/maple-IRremote
