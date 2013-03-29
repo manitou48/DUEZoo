@@ -21,3 +21,9 @@ in to ISR  (opt)       53        TBD         64
 out of ISR  (opt)      28                    30
 total  (opt)           81                    94
 
+
+------------------------------
+Arduino UNO interrupt overhead, see
+  http://billgrundmann.wordpress.com/2009/03/02/the-overhead-of-arduino-interrupts/
+
+  You may see jitter in your timings from timer or USB interrupts.
