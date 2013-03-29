@@ -9,13 +9,14 @@
 
   (units are cycles from ARM CPU systick counter)
                       DUE      maple     teensy3
-tickres                 4         15          1
-set pin                 5         12         20
-digitalWrite          195         45         68
+tickres                 3          3          1
+set pin                 6          6         12
+digitalWrite          184         44         64
+in to fcn              15         11         19
+out of fcn             17         23         20
 
-in to ISR  (std)      618        112        124
-out of ISR  (std)     176        119        122
-total  (std)          794        231        246
+in to ISR  (std)      355        104        107
+out of ISR  (std)     128        121        126
 
 in to ISR  (opt)       53        TBD         64
 out of ISR  (opt)      28                    30
