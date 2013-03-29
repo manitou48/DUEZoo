@@ -37,6 +37,10 @@ wizperf.txt    Ethernet performance of wiznet WIZ820io that uses W5200 chip
 
 IRtest/        DUE IRremote proof of concept
 
+isrperf.txt    interrupt latency results for DUE, maple, teensy
+
+isrperf.ino    DUE sketch to measure interrupt latency
+
 ---------------------- details --------------------
 
 Changing the DUE's I2C clock rate TWI_CLOCK in 
