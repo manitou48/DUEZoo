@@ -20,7 +20,6 @@ out of ISR  (std)     128        121        126
 
 in to ISR  (opt)       53        TBD         64
 out of ISR  (opt)      28                    30
-total  (opt)           81                    94
 
 
 ------------------------------
