@@ -1,6 +1,6 @@
 // isrperf
 //  interrupt latency using cycle counter 
-//  fast port write  (bit band)
+//  fast port write  (bit band)  *(int *) 0x43c2066c =1;
 // output 13   input 2   B.25
 
 volatile unsigned int ti;
