@@ -1,7 +1,7 @@
    ISR performance, interrupt latency  DUE (84Mhz), maple(72Mhz), teensy3(96MHz)
     measure ticks for back-to-back calls to systick, ticks for fast pin set,
-      ticks for digtalWrite.  Measure time to get into and out of ISR from
-      standard (std) attachInterrupt() to modfied kernel ISR (opt)
+      ticks for digitalWrite.  Measure time to get into and out of ISR from
+      standard (std) attachInterrupt() to modified kernel ISR (opt)
          DUE sketch  isrperf.ino
          DUE pin set g_APinDescription[13].pPort->PIO_SODR = g_APinDescription[13].ulPin;
          maple pin set    GPIOA_BASE->BSRR = 1<<5;
@@ -18,8 +18,8 @@ out of fcn             17         23         20
 in to ISR  (std)      355        104        107
 out of ISR  (std)     128        121        126
 
-in to ISR  (opt)       53        TBD         64
-out of ISR  (opt)      28                    30
+in to ISR  (opt)       53         45         64
+out of ISR  (opt)      28         58         30
 
 
 ------------------------------
