@@ -34,6 +34,7 @@ mem2mem.txt    timing results for memcpy()/memset() and DMA versions
 
 wizperf.txt    Ethernet performance of wiznet WIZ820io that uses W5200 chip
                SPI and SPI+DMA results for DUE and maple and UNO
+			   W5100 performance for UNO
 
 IRtest/        DUE IRremote proof of concept
 

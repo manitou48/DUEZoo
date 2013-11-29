@@ -114,11 +114,17 @@ clock   latency send recv     TCP  send recv
 
 ----------------------------------------------------------
 
-W5100 based on SPI speeds: 4MHz .38mbs   (8MHz .47mbs), 
+W5100 based on SPI speeds: 4MHz .72mbs   (8MHz 1.1mbs), 
   wiznet claims only 0.3mbs for W5100,  33.3mbs for W5200
+
+  UNO 16 MHz with W5100
+             UDP                   TCP
+  SPIclk echo send  recv       send   recv
+  4Mhz    944  .68   .71        .66   0.08
+  8MHz    668 1.05   .95mbs    1.02   0.09
+
   W5100: 16KB of buffer, 4 sockets, 0.3MHz SPI speed 
   W5200: 32KB of buffer, 8 sockets, 33.3MHz SPI speed, burst read/write 
-
   default wiznet config 2048-byte send buffer, 2048-byte recv buffer/socket
 
 --------------------------------------------
