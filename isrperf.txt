@@ -11,12 +11,12 @@
 		  bit band  *(int *)0x43fe1094 = 1;
 
   (units are cycles from ARM CPU systick counter)
-                      DUE      maple     teensy3
-tickres                 3          3          1
-set pin                 6          6         12
-digitalWrite          184         44         64
-in to fcn              15         11         19
-out of fcn             17         23         20
+                      DUE      maple     teensy3  3.1
+tickres                 3          3          1     1
+set pin                 6          6         12     6
+digitalWrite          184         44         64    53
+in to fcn              15         11         19    13
+out of fcn             17         23         20    12
 
 in to ISR  (std)      355        104        107
 out of ISR  (std)     128        121        126
