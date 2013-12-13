@@ -1,13 +1,14 @@
    ISR performance, interrupt latency  DUE (84Mhz), maple(72Mhz), teensy3(96MHz)
-    measure ticks for back-to-back calls to systick, ticks for fast pin set,
-      ticks for digitalWrite.  Measure time to get into and out of ISR from
-      standard (std) attachInterrupt() to modified kernel ISR (opt)
-         DUE sketch  isrperf.ino
-         DUE pin set g_APinDescription[13].pPort->PIO_SODR = g_APinDescription[13].ulPin;
-		  bit band *(int *) 0x43c2066c =1;
-         maple pin set    GPIOA_BASE->BSRR = 1<<5;
+
+Measure ticks for back-to-back calls to systick, ticks for fast pin set,
+ticks for digitalWrite.  Measure time to get into and out of ISR from
+standard (std) attachInterrupt() to modified kernel ISR (opt)
+     DUE sketch  isrperf.ino
+     DUE pin set g_APinDescription[13].pPort->PIO_SODR = g_APinDescription[13].ulPin;
+	      bit band *(int *) 0x43c2066c =1;
+     maple pin set    GPIOA_BASE->BSRR = 1<<5;
 		  bit band  *(int *)0x42210194 = 1;
-         teensy3 pin set  GPIOC_PTOR = 1<<5;
+     teensy3 pin set  GPIOC_PTOR = 1<<5;
 		  bit band  *(int *)0x43fe1094 = 1;
 
   (units are cycles from ARM CPU systick counter)
@@ -18,8 +19,8 @@ digitalWrite          184         44         64    53
 in to fcn              15         11         19    13
 out of fcn             17         23         20    12
 
-in to ISR  (std)      355        104        107
-out of ISR  (std)     128        121        126
+in to ISR  (std)      355        104        107    88
+out of ISR  (std)     128        121        126    87
 
 in to ISR  (opt)       53         45         64
 out of ISR  (opt)      28         58         30
