@@ -22,8 +22,8 @@ out of fcn             17         23         20    12
 in to ISR  (std)      355        104        107    88
 out of ISR  (std)     128        121        126    87
 
-in to ISR  (opt)       53         45         64
-out of ISR  (opt)      28         58         30
+in to ISR  (opt)       53         45         64    46
+out of ISR  (opt)      28         58         30    25
 
 
 ------------------------------
