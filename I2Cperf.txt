@@ -22,6 +22,11 @@ Bytes   write   read      write  read   (microseconds)
 10       1210   1318        340   369
 20       2127   2235        598   625
 30       3046   3153        855   881
+  teensy 3.1 
+Bytes   write   read      write  read   (microseconds)
+10       1196   1306        330   359
+20       2107   2214        589   606
+30       3017   3122        829   854
 
 
     arduino        UNO                          DUE
