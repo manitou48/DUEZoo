@@ -12,6 +12,8 @@ mem2mem.ino    memcpy vs DMA memory-to-memory
 
 mem2mem2.ino   memcpy dueling DMA memory-to-memory with IRQ
 
+power.txt      board current draw with board LED off and on
+
 tone1.ino     proof-of-concept tone() with timer with IRQ
 
 rng.ino        display or transmit DUE's hardware random number generator,
