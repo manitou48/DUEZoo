@@ -36,12 +36,12 @@ Results and sketches of testing various crystals, resonators, RC oscillators,
 and TCXOs  with various MCUs:
  UNO, DUE, maple, teensy 3.0,  propeller, beagle, raspberry pi
 see
+</pre>
 
   https://github.com/manitou48/crystals
 
 
 
 
-“One accurate measurement is worth a thousand expert opinions” 
+*“One accurate measurement is worth a thousand expert opinions” *
   -- Adm Grace Hopper ( Dec 9 1906 to Jan 1 1992)
-</pre>
