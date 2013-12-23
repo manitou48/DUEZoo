@@ -4,6 +4,7 @@ Collection of various DUE sketches and results.
 
 Files:
 
+<pre>
 chiptemp.ino    read DUE internal analog temperature sensor
 
 dmaspi.ino     unconnected SPI test at varous MHz and with DMA
@@ -63,4 +64,5 @@ see
 
 
 “One accurate measurement is worth a thousand expert opinions” 
-  - Adm Grace Hopper ( Dec 9 1906 to Jan 1 1992)
+  -- Adm Grace Hopper ( Dec 9 1906 to Jan 1 1992)
+</pre>
