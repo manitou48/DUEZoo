@@ -1,15 +1,16 @@
    board current draw with board LED off/on (milliamps)  (USB not connected)
 
-UNO 5v@16MHz          45.1/48.4 ma
+  board               measured           chip specs
+UNO 5v@16MHz          51.9/55.4 ma       328p 5v@16MHz  2.4/9 ma  idle/active
 nano 5v@16MHz         23.6/27.5
-mega2560 5v@16MHz     80/82.4
-jazz  3.8v@11MHz      18.5/20.9
-DUE 3.3v@84MHz        79.11/80.2
-maple 3.3v@72MHz      47.6/48.3
-teensy 3.3v@96MHz     33.6/36.7
-quickstart 3.3v@80MHz 13.4/15.1
-stampbs2 BoE 5v@20MHz 18.6/23.6
-robot 5v@14MHz        385/393 ma
+mega2560 5v@16MHz     80/82.4            2560 5v@16MHz  5.5/20
+jazz  3.8v@11MHz      18.5/20.9          328p 3.3v@11mhz  1/4
+DUE 3.3v@84MHz        79.11/80.2         arm 3.3v@84MHz  29/70
+maple 3.3v@72MHz      47.6/48.3          arm 3.3v@72mhz  37/69
+teensy 3.3v@96MHz     33.6/36.7          arm 3.3v@96MHz  14/16
+quickstart 3.3v@80MHz 13.4/15.1          propeller 3.3v@80MHz  8/80 8 cogs
+stampbs2 BoE 5v@20MHz 18.6/23.6          PIC 5@20MHz      7
+robot 5v@14MHz        385/393 ma         128 5v*14MHz   12/25
 
 paul's teensy 2 power tests
  http://www.pjrc.com/teensy/low_power.html
