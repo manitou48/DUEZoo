@@ -43,5 +43,6 @@ see
 
 
 
-*“One accurate measurement is worth a thousand expert opinions” *
+<i>“One accurate measurement is worth a thousand expert opinions”</i>
+<br>
   -- Adm Grace Hopper ( Dec 9 1906 to Jan 1 1992)
