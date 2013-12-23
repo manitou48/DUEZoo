@@ -10,7 +10,7 @@ chiptemp.ino  | read DUE internal analog temperature sensor
 dmaspi.ino  |  unconnected SPI test at varous MHz and with DMA
 mem2mem.ino  | memcpy vs DMA memory-to-memory
 mem2mem2.ino | memcpy dueling DMA memory-to-memory with IRQ
-power.txt    | board current draw with board LED off and on
+**power.txt**    | board current draw with board LED off and on
 tone1.ino    |proof-of-concept tone() with timer with IRQ
 rng.ino      | display or transmit DUE's hardware random number generator, looks good with diehard, ent, assess
 W5100.cpp .h |modifications to support w5200 wiznet chip on DUE replace in hardware/arduino/sam/libraries/Ethernet/utility/ also Ethernet.h has a simple modification
