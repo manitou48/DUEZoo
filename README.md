@@ -30,16 +30,15 @@ Changing the DUE's I2C clock rate TWI_CLOCK in
    arduino-1.5/hardware/arduino/sam/libraries/Wire/Wire.h 
 requires restarting the IDE.  TWI speed for teensy 3.0 in Wire.ccp,
 must restart IDE.
+</pre>
 
 
 Results and sketches of testing various crystals, resonators, RC oscillators,
-and TCXOs  with various MCUs:
- UNO, DUE, maple, teensy 3.0,  propeller, beagle, raspberry pi
-see
-</pre>
-
+and TCXOs  with various MCUs 
+( UNO, DUE, maple, teensy 3.0,  propeller, beagle, raspberry pi) see
   https://github.com/manitou48/crystals
 
+<p>
 
 
 
