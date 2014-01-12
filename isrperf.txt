@@ -1,4 +1,5 @@
-   ISR performance, interrupt latency  DUE (84Mhz), maple(72Mhz), teensy3(96MHz)
+   ISR performance, interrupt latency 
+     DUE (84Mhz), maple(72Mhz), teensy3(96MHz)   UNO(16MHz)
 
 Measure ticks for back-to-back calls to systick, ticks for fast pin set,
 ticks for digitalWrite.  Measure time to get into and out of ISR from
@@ -11,19 +12,19 @@ standard (std) attachInterrupt() to modified kernel ISR (opt)
      teensy3 pin set  GPIOC_PTOR = 1<<5;
 		  bit band  *(int *)0x43fe1094 = 1;
 
-  (units are cycles from ARM CPU systick counter)
-                      DUE      maple     teensy3  3.1
-tickres                 3          3          1     1
-set pin                 6          6         12     6
-digitalWrite          184         44         64    53
-in to fcn              15         11         19    13
-out of fcn             17         23         20    12
+  (units are cycles from ARM CPU systick counter or UNO timer2)
+                      DUE      maple     teensy3  3.1    UNO
+tickres                 3          3          1     1     2
+set pin                 6          6         12     6     4
+digitalWrite          184         44         64    53    63
+in to fcn              15         11         19    13     2
+out of fcn             17         23         20    12     6
 
-in to ISR  (std)      355        104        107    88
-out of ISR  (std)     128        121        126    87
+in to ISR  (std)      355        104        107    88     57
+out of ISR  (std)     128        121        126    87     50
 
-in to ISR  (opt)       53         45         64    46
-out of ISR  (opt)      28         58         30    25
+in to ISR  (opt)       53         45         64    46     18
+out of ISR  (opt)      28         58         30    25     29
 
 
 ------------------------------
