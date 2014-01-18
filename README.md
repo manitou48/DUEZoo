@@ -24,6 +24,7 @@ w5100.cpp.dma1|SPI+DMA DUE version for w5200
 IRtest/       |DUE IRremote proof of concept
 **isrperf.txt**   |interrupt latency results for DUE, maple, teensy
 isrperf.ino   |DUE sketch to measure interrupt latency
+**cc3000.txt**   |wifi performance of TI CC3000 chip
 
 <pre>
 ---------------------- details --------------------

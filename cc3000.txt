@@ -1,0 +1,35 @@
+  TI's CC3000 wifi chip on Adafruit breakout board
+    https://www.adafruit.com/products/1469
+    github library 1/18/14, cc3000 firmware 1.24
+
+	UDP tests:  8 byte echo, 20 1000-byte packets send,
+	            20 1000-byte packets lossless recv
+    latency in microseconds, data rates in megabits/second
+
+-----------------------------
+
+DUE 84mhz
+                UDP                TCP
+CLK     latency  send  recv    send  recv
+12mhz    3697     3.6   6.3     1.1   ?
+
+Teensy 3.1 96mhz
+CLK     latency  send  recv    send  recv
+ 8mhz    3664     3.9   4.2     0.7   ?
+
+Teensy 3.0 96mhz
+CLK     latency  send  recv    send  recv
+ 8mhz     3673    3.3   3.7      -    -
+
+mega2560  16mhz
+CLK     latency  send  recv    send  recv
+ 8mhz     3673    2.0   2.9     -     -
+ 
+---------------------------------------------------------------
+  DMA guestimates
+     SPI @ 8mhz
+    teensy3*  2.344 + 45 + 1000 us for 8000 bits  7.6mbs  dma
+      need to add ether delay, function setup (STREAM copy data to buffer)
+    no dma 2.344 + 1.65*1045 us for 8000 bits   4.6 mbs teensy 3.1 (3.8 for 3.0)
+    mega   12.5 + 2.32*1045 us for 8000 bits 3.3 mbs
+
