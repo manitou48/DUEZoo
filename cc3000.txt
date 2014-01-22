@@ -11,7 +11,7 @@
 DUE 84mhz
                 UDP                TCP
 CLK     latency  send  recv    send  recv
-12mhz    3697     3.6   6.3     1.1   ?
+12mhz    3697     3.6   3.6     1.1   ?
 
 Teensy 3.1 96mhz
 CLK     latency  send  recv    send  recv
@@ -27,9 +27,14 @@ CLK     latency  send  recv    send  recv
  
 ---------------------------------------------------------------
   DMA guestimates
-     SPI @ 8mhz
-    teensy3*  2.344 + 45 + 1000 us for 8000 bits  7.6mbs  dma
-      need to add ether delay, function setup (STREAM copy data to buffer)
-    no dma 2.344 + 1.65*1045 us for 8000 bits   4.6 mbs teensy 3.1 (3.8 for 3.0)
-    mega   12.5 + 2.32*1045 us for 8000 bits 3.3 mbs
+     SPI @ 8mhz   1000 data bytes (+ 66 overhead bytes)
+	DUE       401 + 1066  5.45mbs  
+    teensy3.0 214 + 1066  6.25 mbs (10.7mbs at 16 mhz)
+    teensy3.1 252 + 1066  6.07 mbs (10.2mbs at 16 mhz)
+
+    no DMA 
+	 teensy3.0  214+ 2*1066      3.4 mbs
+	 teensy3.1  252+ 1.65*1066   3.9 mbs
+	 DUE        401 + 1.825*1066 3.4 mbs
+     mega      1724 + 2.25*1066  2.0 mbs
 
