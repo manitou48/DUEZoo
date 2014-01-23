@@ -15,16 +15,22 @@ CLK     latency  send  recv    send  recv
 
 Teensy 3.1 96mhz
 CLK     latency  send  recv    send  recv
- 8mhz    3664     3.9   4.2     0.7   ?
+ 8mhz    3664     3.9   4.2     1.1   ?
+12mhz    3665     4.8   2.7     1.2   1.7?
+16mhz    3604     5.2   4.0     1.2   ?
 
 Teensy 3.0 96mhz
 CLK     latency  send  recv    send  recv
- 8mhz     3673    3.3   3.7      -    -
+ 8mhz     3673    3.3   3.4     1.9   1.0
+12mhz     3723    3.9   2.4     1.1   1.9
+16mhz     3691    3.4   4.0     1.1   1.9
 
 mega2560  16mhz
 CLK     latency  send  recv    send  recv
- 8mhz     3673    2.0   2.9     -     -
+ 8mhz     3673    2.0   2.9     0.8   2.0?
  
+maple 72mhz
+  TBD  SPI at 9mhz does CC3000 init, libraries need work
 ---------------------------------------------------------------
   DMA guestimates
      SPI @ 8mhz   1000 data bytes (+ 66 overhead bytes)
@@ -38,3 +44,5 @@ CLK     latency  send  recv    send  recv
 	 DUE        401 + 1.825*1066 3.4 mbs
      mega      1724 + 2.25*1066  2.0 mbs
 
+------------------------------
+For comparison with wired-ethernet, see wizperf.txt in this github directory.
