@@ -21,7 +21,7 @@ teensy++2 5v@16MHz      17.25ma     38.4 ua  (microamps)
 UNO 5v@16MHz            39.4 ma     34.6 ma   (21.44ma 3.3v)
 nano 5v@16MHz           18.34ma     13.43ma   (4.66ma 3.3v)
 jazz  3.3v@11MHz        10.96ma      7.76ma
-328p 5v@16MHz            4.41ma       0 us (on my meter) breadboard 328p
+328p 5v@16MHz            4.41ma       0 ua (on my meter) breadboard 328p
     breadboard 328p notes:
 	  2.7v BOD adds 20ua
 	  FTDI breakout (no USB attached) adds 53 ua
@@ -35,4 +35,3 @@ paul's teensy 2 power tests
  teensy ++2  5v@16Mhz  60.2 ma
 
 AVR 328p low power data  http://gammon.com.au/power
-AVR 328p low power http://www.gammon.com.au/forum/?id=11497
