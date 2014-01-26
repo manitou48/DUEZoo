@@ -6,7 +6,7 @@ nano 5v@16MHz         23.6/27.5
 328p 5v@16MHz         10.6/13.1          328p on breadboard
 mega2560 5v@16MHz     80/82.4            2560 5v@16MHz  5.5/20
 jazz  3.8v@11MHz      18.5/20.9          328p 3.3v@11mhz  1/4  (no regulator)
-teensy+2              30.5/32.8           AT90USB1286 5v@16MHz  17/19
+teensy++2             30.5/32.8           AT90USB1286 5v@16MHz  17/19
 DUE 3.3v@84MHz        79.11/80.2         arm 3.3v@84MHz  29/70
 maple 3.3v@72MHz      47.6/48.3          arm 3.3v@72mhz  37/69
 teensy 3.3v@96MHz     33.6/36.7          arm 3.3v@96MHz  14/16
@@ -14,9 +14,25 @@ quickstart 3.3v@80MHz 13.4/15.1          propeller 3.3v@80MHz  8/80 8 cogs
 stampbs2 BoE 5v@20MHz 18.6/23.6          PIC 5@20MHz      7
 robot 5v@14MHz        385/393 ma         128 5v*14MHz   12/25
 
+AVR sleep modes 
+  board                 IDLE       PWR_DOWN
+mega2560 5v@16MHz       60.0 ma     31.23ma   (17.24ma 3.3v)
+teensy++2 5v@16MHz      17.25ma     38.4 ua  (microamps)
+UNO 5v@16MHz            39.4 ma     34.6 ma   (21.44ma 3.3v)
+nano 5v@16MHz           18.34ma     13.43ma   (4.66ma 3.3v)
+jazz  3.3v@11MHz        10.96ma      7.76ma
+328p 5v@16MHz            4.41ma       0 us (on my meter) breadboard 328p
+    breadboard 328p notes:
+	  2.7v BOD adds 20ua
+	  FTDI breakout (no USB attached) adds 53 ua
+	  WDT adds 6ua
+
+
+-------------
 paul's teensy 2 power tests
  http://www.pjrc.com/teensy/low_power.html
  teensy 2 5v@16Mhz     27.3 ma
  teensy ++2  5v@16Mhz  60.2 ma
 
+AVR 328p low power data  http://gammon.com.au/power
 AVR 328p low power http://www.gammon.com.au/forum/?id=11497
