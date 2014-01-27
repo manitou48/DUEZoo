@@ -14,7 +14,7 @@ quickstart 3.3v@80MHz 13.4/15.1          propeller 3.3v@80MHz  8/80 8 cogs
 stampbs2 BoE 5v@20MHz 18.6/23.6          PIC 5@20MHz      7
 robot 5v@14MHz        385/393 ma         128 5v*14MHz   12/25
 
-AVR sleep modes 
+AVR sleep modes     (5v into 5v)
   board                 IDLE       PWR_DOWN
 mega2560 5v@16MHz       60.0 ma     31.23ma   (17.24ma 3.3v)
 teensy++2 5v@16MHz      17.25ma     38.4 ua  (microamps)
