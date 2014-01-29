@@ -30,19 +30,23 @@ CLK     latency  send  recv    send  recv
  8mhz     3673    2.0   2.9     0.8   2.0?
  
 maple 72mhz
-  TBD  SPI at 9mhz does CC3000 init, libraries need work
-        init also worked at 18mhz (CC3000 only spec'd to 16mhz)
+CLK     latency  send  recv    send  recv
+ 9mhz     3889    1.9   2.1     0.3   ?
+18mhz     4100    1.9   2.5     0.3   ?    (spec'd to 16mhz)
+
 ---------------------------------------------------------------
   DMA guestimates
      SPI @ 8mhz   1000 data bytes (+ 66 overhead bytes)
 	DUE       401 + 1066  5.45mbs  
     teensy3.0 214 + 1066  6.25 mbs (10.7mbs at 16 mhz)
     teensy3.1 252 + 1066  6.07 mbs (10.2mbs at 16 mhz)
+	maple     178 + .88*1066 7.2mbs (12.4  at 18mhz)
 
     no DMA 
 	 teensy3.0  214+ 2*1066      3.4 mbs
 	 teensy3.1  252+ 1.65*1066   3.9 mbs
 	 DUE        401 + 1.825*1066 3.4 mbs
+	 maple      178 + 3.5*1066   2.0 mbs  9 mhz 
      mega      1724 + 2.25*1066  2.0 mbs
 
 ------------------------------
