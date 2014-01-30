@@ -35,19 +35,33 @@ CLK     latency  send  recv    send  recv
 18mhz     4100    1.9   2.5     0.3   ?    (spec'd to 16mhz)
 
 ---------------------------------------------------------------
-  DMA guestimates
+  DMA guestimates for send
      SPI @ 8mhz   1000 data bytes (+ 66 overhead bytes)
 	DUE       401 + 1066  5.45mbs  
     teensy3.0 214 + 1066  6.25 mbs (10.7mbs at 16 mhz)
     teensy3.1 252 + 1066  6.07 mbs (10.2mbs at 16 mhz)
-	maple     178 + .88*1066 7.2mbs (12.4  at 18mhz)
+    maple     178 + .88*1066 7.2mbs at 9mhz (12.4  at 18mhz)
 
-    no DMA 
+    no DMA, modeling send
 	 teensy3.0  214+ 2*1066      3.4 mbs
 	 teensy3.1  252+ 1.65*1066   3.9 mbs
 	 DUE        401 + 1.825*1066 3.4 mbs
 	 maple      178 + 3.5*1066   2.0 mbs  9 mhz 
-     mega      1724 + 2.25*1066  2.0 mbs
+     mega      1724 + 2.25*1066  2.0 mbs  (1000-byte copy 1208us)
+
+???????????????????? CC3000 bugs/unexplained ??????????????????????
+
+-TCP recv() won't fail if sender closes its end (? need select()?)
+
+-TCP close() acts like shutdown() -- packets sent may be lost, 
+
+- with static IP, DNS (gethostbyname() returns 0) ?
+
+- teensy 3.1 TCP receiver fails at 8mhz and 16 mhz (OK at 4mhz)
+
+- library does memory copy of user data on send, why not do SPI from user buffer
+
+- no conversion from ip address string to IP address (network byte order)
 
 ------------------------------
 For comparison with wired-ethernet, see wizperf.txt in this github directory.
