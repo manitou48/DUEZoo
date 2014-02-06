@@ -20,7 +20,7 @@ w5100.cpp.dma1|SPI+DMA DUE version for w5200
 **SDperf.txt**    |SD/SPI performance at various clock rates and with DMA
 **SPIperf.txt**   |SPI performance at various clock rates and with DMA
 **mem2mem.txt**   |timing results for memcpy()/memset() and DMA versions
-**wizperf.txt**   |Ethernet performance of wiznet WIZ820io that uses W5200 chip SPI and SPI+DMA results for DUE and maple and UNO W5100 performance for UNO
+**wizperf.txt**   |Ethernet performance of wiznet WIZ820io that uses W5200 chip SPI and SPI+DMA results for DUE, teensy 3, and maple plus UNO W5100 performance for UNO
 IRtest/       |DUE IRremote proof of concept
 **isrperf.txt**   |interrupt latency results for DUE, maple, teensy
 isrperf.ino   |DUE sketch to measure interrupt latency
