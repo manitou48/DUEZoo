@@ -68,14 +68,14 @@ clock   latency send recv     TCP  send recv
  teensy 3.0 96MHz (2nd power supply for W5200)
 
     w5200 buffer rd/wrt 1000 bytes  wiztst  
-            SPI         FatSPI
+            SPI         FatSPI          paulSPI 3.0     3.1
  1MHz       0.92mbs       1.02 mbs
  2MHz       1.55          2.05
- 4MHz       2.85          4.02
- 8MHz       4.06          7.94
-12MHz       4.88         11.52
-16MHz       5.45         15.17
-24MHz       6.15         21.61
+ 4MHz       2.85          4.02          3.98             3.98
+ 8MHz       4.06          7.94          7.87/7.79      7.88/7.79
+12MHz       4.88         11.52         11.55/8.67     11.55/11.22
+16MHz       5.45         15.17         14.65/8.67     15.23/14.65
+24MHz       6.15         21.61         14.63/8.68     21.67/16.55
 
   teensy UDP   
             SPI                  SdFat SPI          SdFatSPI TCP
