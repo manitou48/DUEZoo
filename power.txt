@@ -27,11 +27,24 @@ jazz  3.3v@11MHz        10.96ma      7.76ma
 	  FTDI breakout (no USB attached) adds 53 ua
 	  WDT adds 6ua
 
+DUE (Vin power): pmc_enable_backupmode() 18.6ma
+                 pmc_enable_sleepmode(0) 60.5
+				 pmc_enable_waitmode()   78.3
 
+maple RET6 (Vin): run   49.6 ma (18.5@9mhz), 35.16ma io disabled
+                  sleep 29.4 ma (13.9@9mhz), 12.5ma io disabled (11.1@9mhz)
+				  stop  6.6ma
+				  standby 6.6ma
 -------------
 paul's teensy 2 power tests
  http://www.pjrc.com/teensy/low_power.html
  teensy 2 5v@16Mhz     27.3 ma
  teensy ++2  5v@16Mhz  60.2 ma
 
+ teensy 3*
+   run  @96mhz LED on 30.7ma  off 26.64ma   12.87ma@24mhz
+   low power run  3.81ma  (basically running at 2mhz)
+   hibernate VLSS3  253ua
+   deepsleep        253ua
+    using  http://forum.pjrc.com/threads/23660-Low-Power-quot-Green-quot-Battery-Operation-Solutions-For-The-Teensy-3
 AVR 328p low power data  http://gammon.com.au/power
