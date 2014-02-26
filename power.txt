@@ -43,8 +43,10 @@ paul's teensy 2 power tests  AVR
  teensy 2 5v@16Mhz     27.3 ma
  teensy ++2  5v@16Mhz  60.2 ma
 
-AVR 328p low power on a breadboard
-  328p 5v@16MHz            4.41ma       0 ua (on my meter) breadboard 328p
+AVR 328p low power on a breadboard 
+  328p 5v@16MHz  idle  4.41ma  2.46ma @ 3.3v
+       RC 8mhz   idle  3.11ma  1.26ma @ 3.3v
+	   powerdown  0 ua (on my meter) breadboard 328p
     breadboard 328p notes:
 	  2.7v BOD adds 20ua
 	  FTDI breakout (no USB attached) adds 53 ua
