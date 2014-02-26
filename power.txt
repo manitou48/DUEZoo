@@ -21,11 +21,6 @@ teensy++2 5v@16MHz      17.25ma     38.4 ua  (microamps)
 UNO 5v@16MHz            39.4 ma     34.6 ma   (21.44ma 3.3v)
 nano 5v@16MHz           18.34ma     13.43ma   (4.66ma 3.3v)
 jazz  3.3v@11MHz        10.96ma      7.76ma
-328p 5v@16MHz            4.41ma       0 ua (on my meter) breadboard 328p
-    breadboard 328p notes:
-	  2.7v BOD adds 20ua
-	  FTDI breakout (no USB attached) adds 53 ua
-	  WDT adds 6ua
 
 DUE (Vin power): pmc_enable_backupmode() 18.6ma
                  pmc_enable_sleepmode(0) 60.5
@@ -35,16 +30,48 @@ maple RET6 (Vin): run   49.6 ma (18.5@9mhz), 35.16ma io disabled
                   sleep 29.4 ma (13.9@9mhz), 12.5ma io disabled (11.1@9mhz)
 				  stop  6.6ma
 				  standby 6.6ma
--------------
-paul's teensy 2 power tests
- http://www.pjrc.com/teensy/low_power.html
- teensy 2 5v@16Mhz     27.3 ma
- teensy ++2  5v@16Mhz  60.2 ma
 
- teensy 3*
+teensy 3*  my low power test
    run  @96mhz LED on 30.7ma  off 26.64ma   12.87ma@24mhz
    low power run  3.81ma  (basically running at 2mhz)
    hibernate VLSS3  253ua
    deepsleep        253ua
     using  http://forum.pjrc.com/threads/23660-Low-Power-quot-Green-quot-Battery-Operation-Solutions-For-The-Teensy-3
-AVR 328p low power data  http://gammon.com.au/power
+
+paul's teensy 2 power tests  AVR
+ http://www.pjrc.com/teensy/low_power.html
+ teensy 2 5v@16Mhz     27.3 ma
+ teensy ++2  5v@16Mhz  60.2 ma
+
+AVR 328p low power on a breadboard
+  328p 5v@16MHz            4.41ma       0 ua (on my meter) breadboard 328p
+    breadboard 328p notes:
+	  2.7v BOD adds 20ua
+	  FTDI breakout (no USB attached) adds 53 ua
+	  WDT adds 6ua
+  also see http://gammon.com.au/power
+
+parallax quickstart low power
+  breadboard 3.3v to Vdd(pin 38)
+  asm loop
+    80mhz  23.97ma
+	40     16.82
+	20     13.24
+	10     11.42
+	 5     10.53
+	 RCFAST 11.00 ma  ~12mhz
+	 RCSLOW  8.65 ma  ~20khz    low power
+   asm toogle LED (off/on) with WAITCNT == low power
+     80mhz   13.34/15.22 ma
+	 40      11.43/13.1
+	 20      10.5/12.2
+	 10       9.56/10.96
+	  5       9.74/11.36
+	  RCFAST  9.33/11.06 ma  ~12mhz
+	  RCSLOW  8.64/10.37 ma ~20khz
+
+parallax stamp bs2 BoE  (green power LED)
+  7.5v to Vin
+  run 17.13 ma
+  PAUSE 17.43 ma
+  SLEEP 13.55 ma
