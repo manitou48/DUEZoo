@@ -1,0 +1,21 @@
+         Random Number Generators
+
+Generation rate (random bits/second)
+
+DUE             31.9 mbs  (TRNG)
+Raspberry PI      .89 mbs  /dev/hwrng
+Propeller         .16 mbs  RealRandom.spin hardware
+
+Teensy 3            136 bits/sec  6ms LPTMR0 and systick
+UNO                  65 bits/sec  16ms WDT and TIMER1
+
+
+Randomness checks with DieHard and Ent.
+
+-------------------------------------------------------------------
+
+https://sites.google.com/site/astudyofentropy/project-definition/raspberry-pi-internal-hardware-random-number-generator
+
+https://sites.google.com/site/astudyofentropy/background-information/the-tests
+
+https://sites.google.com/site/astudyofentropy/project-definition/timer-jitter-entropy-sources
