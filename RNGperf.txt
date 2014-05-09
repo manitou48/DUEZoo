@@ -8,6 +8,7 @@ Propeller         .16 mbs  RealRandom.spin hardware
 
 Teensy 3            136 bits/sec  6ms LPTMR0 and systick
 UNO                  65 bits/sec  16ms WDT and TIMER1
+maple                98 bits/sec  10ms LSI and systick
 
 
 Randomness checks with DieHard and Ent.
