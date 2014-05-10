@@ -26,3 +26,5 @@ https://sites.google.com/site/astudyofentropy/project-definition/raspberry-pi-in
 https://sites.google.com/site/astudyofentropy/background-information/the-tests
 
 https://sites.google.com/site/astudyofentropy/project-definition/timer-jitter-entropy-sources
+
+http://ianix.com/pub/comparing-dev-random-speed-linux-bsd.html
