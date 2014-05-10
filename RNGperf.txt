@@ -8,7 +8,7 @@ Propeller         .16 mbs  RealRandom.spin hardware
 
 Teensy 3            136 bits/sec  6ms LPTMR0 and systick
 UNO                  65 bits/sec  16ms WDT and TIMER1
-UNO                4100 bits/sec  TrueRandom analogRead + wash
+UNO                4100 bits/sec  TrueRandom analogRead + wash  fails rngtest?
 maple                98 bits/sec  10ms LSI and systick
 
 /dev/random
@@ -18,7 +18,7 @@ maple                98 bits/sec  10ms LSI and systick
  Raspberry PI        8.8 mbs
  beaglebone          8.8 mbs
 
-Randomness checks with DieHard and Ent.
+Randomness checks with DieHard, rngtest, and Ent.
 
 -------------------------------------------------------------------
 
