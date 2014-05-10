@@ -8,6 +8,7 @@ Propeller         .16 mbs  RealRandom.spin hardware
 
 Teensy 3            136 bits/sec  6ms LPTMR0 and systick
 UNO                  65 bits/sec  16ms WDT and TIMER1
+UNO                4100 bits/sec  TrueRandom analogRead + wash
 maple                98 bits/sec  10ms LSI and systick
 
 /dev/random
@@ -27,4 +28,8 @@ https://sites.google.com/site/astudyofentropy/background-information/the-tests
 
 https://sites.google.com/site/astudyofentropy/project-definition/timer-jitter-entropy-sources
 
+https://code.google.com/p/tinkerit/wiki/TrueRandom
+
 http://ianix.com/pub/comparing-dev-random-speed-linux-bsd.html
+
+
