@@ -13,8 +13,8 @@ mem2mem2.ino | memcpy dueling DMA memory-to-memory with IRQ
 **power.txt**    | board current draw with board LED off and on, AVR low power
 tone1.ino    |proof-of-concept tone() with timer with IRQ
 rng.ino      | display or transmit DUE's hardware random number generator, looks good with diehard, ent, assess
-maplerng.pdf  | maple LSI timer/systick random number generator
-**RNGperf.txt**  | RNG performance, DUE, teensy, UNO, Raspberry PI
+maplerng.pde  | maple LSI timer/systick random number generator
+**RNGperf.txt**  | RNG performance, DUE, teensy, UNO, Raspberry PI, maple
 W5100.cpp .h |modifications to support w5200 wiznet chip on DUE replace in hardware/arduino/sam/libraries/Ethernet/utility/ also Ethernet.h has a simple modification
 w5100.cpp.dma1|SPI+DMA DUE version for w5200
 **perf.txt**      |simple computational benchmarks
