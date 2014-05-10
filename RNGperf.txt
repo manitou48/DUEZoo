@@ -10,6 +10,12 @@ Teensy 3            136 bits/sec  6ms LPTMR0 and systick
 UNO                  65 bits/sec  16ms WDT and TIMER1
 maple                98 bits/sec  10ms LSI and systick
 
+/dev/random
+ Raspberry PI        13 bits/sec     (.56 mbs if /dev/hwrng available)
+ beaglebone           5 bits/sec
+/dev/urandom
+ Raspberry PI        8.8 mbs
+ beaglebone          8.8 mbs
 
 Randomness checks with DieHard and Ent.
 
