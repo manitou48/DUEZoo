@@ -43,3 +43,5 @@ SPI clk      SPI rd/wrt    DMA rd  write
 
 See discussions of performance of 33mbs on DUE with large block reads.
    http://arduino.cc/forum/index.php/topic,135439.msg1018776.html#msg1018776
+ and teensy 3 improvements:
+  http://forum.arduino.cc/index.php/topic,128335.0.html
