@@ -4,7 +4,7 @@ Generation rate (random bits/second)
 
 DUE             31.9 mbs  (TRNG)
 Raspberry PI      .89 mbs  /dev/hwrng
-Propeller         .16 mbs  RealRandom.spin hardware
+Propeller         .16 mbs  RealRandom.spin CTR PLL jitter
 
 Teensy 3            136 bits/sec  6ms LPTMR0 and systick
 UNO                  65 bits/sec  16ms WDT and TIMER1
@@ -32,4 +32,4 @@ https://code.google.com/p/tinkerit/wiki/TrueRandom
 
 http://ianix.com/pub/comparing-dev-random-speed-linux-bsd.html
 
-
+http://obex.parallax.com/object/498 RealRandom.spin
