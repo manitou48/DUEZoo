@@ -1,11 +1,12 @@
    simple computational benchmarks
 
 recursive fibonacci (fibo(26))
-	catalina 3.6 5342 ms
-	gcc cog 486 ms
-	gcc lmm 927 ms
+	spin 10056 ms
+	 catalina 3.6 5342 ms
+	 gcc cog 486 ms
+	 gcc lmm 927 ms
 	arduino uno (16MHz) 32-bit int's 927 ms
-	due 26 121393 98 ms
+	due (84MHz) 26 121393 98 ms
 	maple (72MHz) 104 ms
 	teensy 3 (96MHz) 82 ms   3.1 26 121393 63
 	beaglebone (720MHz) 8.2 ms
@@ -35,3 +36,12 @@ fft_bench demo
 	raspberry x1000  0.527  0.504
 	ubuntu 0.053ms (needed 1000 iterations) 
 
+v[i]= sin(i)    i 0 to 399
+	spin+asm  56757 us  4-byte float
+	UNO       48500 us  4-byte
+	maple     20959 us  8-btye  72mhz
+	teensy 3  29504 us          96mhz
+	teensy3.1 18287 us          96mhz
+	beaglegone   12 us
+	raspberry     7 us
+	ubuntu        5 us 
