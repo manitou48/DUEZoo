@@ -44,6 +44,6 @@ v[i]= sin(i)    i 0 to 399
 	maple     20959 us          72mhz
 	teensy 3  29504 us          96mhz
 	teensy3.1 18287 us          96mhz (12683us @ 168mhz)
-	beaglegone 7626 us
+	beaglebone 7626 us
 	raspberry  6989 us
 	ubuntu       69 us  
