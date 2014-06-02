@@ -40,9 +40,10 @@ fft_bench demo
 v[i]= sin(i)    i 0 to 399
 	spin+asm  56757 us  4-byte float
 	UNO       48500 us  4-byte
-	maple     20959 us  8-btye  72mhz
+	DUE       18723 us  8-byte  84mhz
+	maple     20959 us          72mhz
 	teensy 3  29504 us          96mhz
-	teensy3.1 18287 us          96mhz
+	teensy3.1 18287 us          96mhz (12683us @ 168mhz)
 	beaglegone   12 us
 	raspberry     7 us
 	ubuntu        5 us 
