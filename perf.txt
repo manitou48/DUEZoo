@@ -19,7 +19,8 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	due 23 ms 2226 KBs
 	maple 1937 KBs   271ms 1889   -Os
 	           1889 2124  2737  3605
-	teensy 3 (96 MHz) 25 ms 2048 KBs   3.1 14 ms 3657 KBs
+	teensy 3 (96 MHz)   25 ms 2048 KBs   
+	teensy 3.1 (96 MHz) 14 ms 3657 KBs  (168Mhz 5688 KBS IDE 19rc2)
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
 	raspberry 8103.727715 30959.752322 52910.052910 55555.555556
 	          57142.857143
