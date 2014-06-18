@@ -20,7 +20,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	maple 1937 KBs   271ms 1889   -Os
 	           1889 2124  2737  3605
 	teensy 3 (96 MHz)   25 ms 2048 KBs   
-	teensy 3.1 (96 MHz) 14 ms 3657 KBs  (168Mhz 5688 KBS IDE 19rc2)
+	teensy 3.1 (96 MHz) 14 ms 3657 KBs  (5688 KBs @168Mhz IDE 19rc2)
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
 	raspberry 8103.727715 30959.752322 52910.052910 55555.555556
 	          57142.857143
@@ -29,7 +29,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 fft_bench demo
 	propeller gcc 47ms
 	  catalina-3.6 410ms
-	arduino UNO can't do it (only 2K sram)
+	arduino UNO can't do it (only 2K sram) (1284p 255ms)
 	due 8 ms
 	maple 8 ms
 	teensy 3 (96Mhz) 9 ms   3.1 4 ms
