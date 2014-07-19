@@ -13,22 +13,23 @@ standard (std) attachInterrupt() to modified kernel ISR (opt)
 		  bit band  *(int *)0x43fe1094 = 1;
 
   (units are cycles from ARM CPU systick counter or UNO timer2)
-                      DUE      maple     teensy3  3.1    UNO
-tickres                 3          3          1     1     2
-set pin                 6          6         12     6     4
-digitalWrite          184         44         64    53    63
-in to fcn              15         11         19    13     2
-out of fcn             17         23         20    12     6
+                      DUE      maple     teensy3  3.1    UNO teensy++2
+tickres                 3          3          1     1     2      2
+set pin                 6          6         12     6     4      4
+digitalWrite          184         44         64    53    63      4
+in to fcn              15         11         19    13     2      1
+out of fcn             17         23         20    12     6      6
 
-in to ISR  (std)      355        104        107    88     57
-out of ISR  (std)     128        121        126    87     50
+in to ISR  (std)      355        104        107    88     57    63
+out of ISR  (std)     128        121        126    87     50    54
 
-in to ISR  (opt)       53         45         64    46     18
-out of ISR  (opt)      28         58         30    25     29
+in to ISR  (opt)       53         45         64    46     18    17
+out of ISR  (opt)      28         58         30    25     29    30
 
 
 ------------------------------
 Arduino UNO interrupt overhead, see
   http://billgrundmann.wordpress.com/2009/03/02/the-overhead-of-arduino-interrupts/
 
+Teensy ++2 digitalWrite is inline if constant
   You may see jitter in your timings from timer or USB interrupts.
