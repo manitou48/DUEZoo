@@ -10,6 +10,7 @@ recursive fibonacci (fibo(26))
 	maple (72MHz) 104 ms
 	teensy 3 (96MHz) 82 ms   3.1 26 121393 63
 	beaglebone (720MHz) 8.2 ms
+	beaglebone black (1GHz) 20.5 ms
 	raspberry pi (700MHz) 10.682 ms  10.260
 	ubuntu/i3-2370M (2.4GHz) 1.2ms
 
@@ -22,6 +23,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	teensy 3 (96 MHz)   25 ms 2048 KBs   
 	teensy 3.1 (96 MHz) 14 ms 3657 KBs  (5688 KBs @168Mhz IDE 19rc2)
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
+	beaglebone black  -O 51354  -O3 98462
 	raspberry 8103.727715 30959.752322 52910.052910 55555.555556
 	          57142.857143
 	ubuntu    67019.951169  260400.391642 316436.669947 320493.303292 KBs
@@ -34,6 +36,7 @@ fft_bench demo
 	maple 8 ms
 	teensy 3 (96Mhz) 9 ms   3.1 4 ms
 	beaglebone 0.375 ms (had to do it 1000 times to exceed a ms, then divide out 1000)
+	beaglebone black x1000 .503 ms
 	raspberry x1000  0.527  0.504
 	ubuntu 0.053ms (needed 1000 iterations) 
 
@@ -44,6 +47,6 @@ v[i]= sin(i)    i 0 to 399
 	maple     20959 us          72mhz
 	teensy 3  29504 us          96mhz
 	teensy3.1 18287 us          96mhz (12683us @ 168mhz)
-	beaglebone 7626 us
+	beaglebone 7626 us  black 1552us
 	raspberry  6989 us
 	ubuntu       69 us  

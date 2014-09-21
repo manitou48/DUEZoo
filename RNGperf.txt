@@ -14,11 +14,13 @@ maple                98 bits/sec  10ms LSI and systick
 /dev/random
  Raspberry PI        13 bits/sec     (.56 mbs if /dev/hwrng available)
  beaglebone           5 bits/sec
+ beaglebone black     1 bits/sec
 /dev/urandom
  Raspberry PI        8.8 mbs
  beaglebone          8.8 mbs
+ beaglebone black    12 mbs
 
-Randomness checks with DieHard, rngtest, and Ent.
+Randomness checks with DieHard, rngtest, NIST, and Ent.
 
 -------------------------------------------------------------------
 
