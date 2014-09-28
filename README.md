@@ -8,6 +8,7 @@ Files | Description
 ---|---
 chiptemp.ino  | read DUE internal analog temperature sensor
 dmaspi.ino  |  unconnected SPI test at varous MHz and with DMA
+spislave.ino  |  simple SPI slave example
 mem2mem.ino  | memcpy vs DMA memory-to-memory
 mem2mem2.ino | memcpy dueling DMA memory-to-memory with IRQ
 **power.txt**    | board current draw with board LED off and on, AVR low power
