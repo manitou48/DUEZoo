@@ -7,7 +7,7 @@ nano 5v@16MHz         23.6/27.5          "
 jazz  3.8v@11MHz      18.5/20.9          328p 3.3v@11mhz  1/4  (no regulator)
 mega2560 5v@16MHz     80/82.4            2560 5v@16MHz  5.5/20
 1284p  5v@16mhz       42.6/45.4          1284p  2/13.8 ma sleeping beauty BB
-mega32u4 5v@16mhz     19.7/21.3          atmega32u4  5/13 ma littlebits
+mega32u4 5v@16mhz     19.7/21.3          atmega32u4  5/13 ma littlebits teensy2
 teensy++2 5v@16MHz    30.5/32.8           AT90USB1286   17/19
 robot 5v@14MHz        385/393 ma         avr 128 5v*14MHz   12/25
 DUE 3.3v@84MHz        79.11/80.2         arm 3.3v@84MHz  29/70
@@ -58,6 +58,11 @@ AVR 328p breadboard   loop@16Mhz: 10.6ma@5v  6.2ma@3.3v (overclock)
 	  FTDI breakout (no USB attached) adds 53 ua
 	  WDT adds 6ua
   also see http://gammon.com.au/power
+
+attiny85  8mhz RC
+    run       5v 7.5ma   3.3v 4.41ma
+	idle         3.71ma       2.21ma
+	powerdown    0.4ua        0.1ua
 
 parallax quickstart low power
   breadboard 3.3v to Vdd(pin 38)
