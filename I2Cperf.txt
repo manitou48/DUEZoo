@@ -36,6 +36,13 @@ Bytes   write   read    write  read    write read   write read (microseconds)
 20       2340   2500     780   840      2104 2216    540   571
 30       3360   3512    1112  1176      3014 3126    775   806
 
+   attiny85 @8mhz  USI
+           100KHz 
+Bytes   write   read  
+10       1488   1640 
+20       2600   2760
+30       3384   3880
+
 
 Beaglebone  I2C @ 100Khz
 bytes   write   read   (microseconds)
