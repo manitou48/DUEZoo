@@ -38,7 +38,7 @@ SPI clock   read/write
 4MHz          2.6 mbs
 8MHz          3.8mbs     
 
-attiny85 5v@8mhz read/write 0.242 mbs
+attiny85 5v@8mhz USI read/write 0.242 mbs
 
 parallax quickstart 80Mhz   (from W5200-driver)
    SpiCounterPasm.spin read 5.7mbs write 9.8 mbs (uses freqa at 10/20 MHz)
