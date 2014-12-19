@@ -33,3 +33,14 @@ Arduino UNO interrupt overhead, see
 
 Teensy ++2 digitalWrite is inline if constant
   You may see jitter in your timings from timer or USB interrupts.
+
+---------------------------
+UNO/AVR timer0 and millis overhead
+
+  Using timer1 as a cycle counter, we measure the duration of
+   result = millis()
+ at 21 cycles (IDE 1.0.5).  In a loop measuring min and max time for millis()
+ we can observe the additional cycles consumed by a timer0 interrupt 
+ (every 64*256 cycles).  For the UNO, about 98 cycles every 1024us @16MHz.
+ The teensy 2 library is a little faster, millis() is inline so 11 cycles.
+ timer0 ISR 104 cycles.
