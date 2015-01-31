@@ -28,6 +28,17 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	          57142.857143
 	ubuntu    67019.951169  260400.391642 316436.669947 320493.303292 KBs
 
+aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key 
+	uno            28 KBs   (byte-oriented C implementation)
+	due           174
+	maple         170
+	teensy 3.0    121
+	teensy 3.1    226
+	beaglebone         9038 KBs  (openssl)
+	beaglebone black  40369   
+	raspberry pi      15050
+	ubuntu            50079
+
 fft_bench demo
 	propeller gcc 47ms
 	  catalina-3.6 410ms
