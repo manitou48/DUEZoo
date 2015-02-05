@@ -9,6 +9,7 @@ recursive fibonacci (fibo(26))
 	due (84MHz) 26 121393 98 ms
 	maple (72MHz) 104 ms
 	teensy 3 (96MHz) 82 ms   3.1 26 121393 63
+	teensy LC beta (48mhz)  128ms
 	beaglebone (720MHz) 8.2 ms
 	beaglebone black (1GHz) 20.5 ms
 	raspberry pi (700MHz) 10.682 ms  10.260
@@ -34,6 +35,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	maple         170
 	teensy 3.0    121
 	teensy 3.1    226
+	teensy LC      91  beta
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
 	raspberry pi      15050
@@ -58,6 +60,7 @@ v[i]= sin(i)    i 0 to 399   double
 	maple     20959 us          72mhz
 	teensy 3  29504 us          96mhz
 	teensy3.1 18287 us          96mhz (12683us @ 168mhz)
+	teensy LC 73743 us          48mhz  beta
 	beaglebone 7626 us  black 1552us
 	raspberry  6989 us
 	ubuntu       69 us  
@@ -68,6 +71,7 @@ linpack double (megaflops)
 	maple           0.519  0.818 (float)  30x30
 	teensy 3.0      0.373  0.552 (float) 30x30
 	teensy 3.1      0.598  0.934 (float) 30x30
+	teensy LC       0.142  0.305 (float) 20x20
 	beaglebone     22    black 40  200x200
 	raspberry      40       200x200
 	manitou       790     200x200
