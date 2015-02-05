@@ -28,6 +28,9 @@ Bytes   write   read      write  read   (microseconds)
 20       2107   2214        589   606
 30       3017   3122        829   854
 
+   teensy LC beta
+30              3384              1068
+
 
     arduino        UNO                          DUE
            100KHz          400KHz         100Khz      400Khz
