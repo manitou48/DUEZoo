@@ -23,6 +23,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	           1889 2124  2737  3605
 	teensy 3 (96 MHz)   25 ms 2048 KBs   
 	teensy 3.1 (96 MHz) 14 ms 3657 KBs  (5688 KBs @168Mhz IDE 19rc2)
+	teensy LC (48 MHz) 31 ms 1651 KBs  beta
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
 	beaglebone black  -O 51354  -O3 98462
 	raspberry 8103.727715 30959.752322 52910.052910 55555.555556
