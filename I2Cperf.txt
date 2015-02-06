@@ -28,8 +28,11 @@ Bytes   write   read      write  read   (microseconds)
 20       2107   2214        589   606
 30       3017   3122        829   854
 
-   teensy LC beta
-30              3384              1068
+   teensy LC beta   2/5/15
+Bytes   write   read      write  read   (microseconds)
+10       1301   1416        397   428
+20       2288   2400        697   722
+30       3275   3384        996  1017
 
 
     arduino        UNO                          DUE
