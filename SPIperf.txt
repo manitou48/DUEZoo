@@ -32,12 +32,12 @@ SPI clock     write           write
 
    teensy LC 48Mhz  (beta 2/9/15, TBD FIFO/DMA)
                 SPI     16-bit  DMA-8
-SPI1 clock    write     write   write
-4MHz          3.6 mbs    3.8      3.6
-8MHz          7.1 mbs    7.5      7.1
-12MHz        10.6 mbs   11.2     10.6
-24MHz        19.9 mbs   22.3     21.0
-  (max SPI0 clock is 12MHz)
+SPI1 clock    write     write   write  MODE1
+4MHz          3.6 mbs    3.8      3.6   3.9
+8MHz          7.1 mbs    7.5      7.1   7.9
+12MHz        10.6 mbs   11.2     10.6  11.9
+24MHz        19.9 mbs   22.3     21.0  23.5
+  (max SPI0 clock is 12MHz, MODE1 faster than MODE0)
   
    arduino UNO  avr328/16MHz
                 SPI 
