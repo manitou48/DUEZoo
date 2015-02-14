@@ -12,8 +12,8 @@ Times are in microseconds
 
        maple    DUE   teensy  3.1
 loop     269    132     95     94
-memcpy32  93     31     23     43
-memcpy    62     52     96     55
+memcpy32  93     31     23     27
+memcpy    62     52     96     50
 memset32  94     34     23     43
 memset    38     41     51     24
 
