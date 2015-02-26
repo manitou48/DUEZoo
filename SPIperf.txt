@@ -48,6 +48,8 @@ SPI clock   read/write
 
 attiny85 5v@8mhz USI read/write 0.242 mbs
 
+pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz)
+
 parallax quickstart 80Mhz   (from W5200-driver)
    SpiCounterPasm.spin read 5.7mbs write 9.8 mbs (uses freqa at 10/20 MHz)
    SpiPasm.spin  4.1 mbs  bit-bang SPI in PASM
