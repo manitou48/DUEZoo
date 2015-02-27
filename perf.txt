@@ -14,6 +14,7 @@ recursive fibonacci (fibo(26))
 	beaglebone black (1GHz) 20.5 ms
 	raspberry pi (700MHz) 10.682 ms  10.260
 	ubuntu/i3-2370M (2.4GHz) 1.2ms
+	edison (500mhz) 17.2 ms
 
 MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	spin 7 KBs catalina 84 KBs gcc 222 KBs (lmm)
@@ -41,6 +42,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	beaglebone black  40369   
 	raspberry pi      15050
 	ubuntu            50079
+	edison            36900
 
 fft_bench demo   int32_t
 	propeller gcc 47ms
@@ -53,6 +55,7 @@ fft_bench demo   int32_t
 	beaglebone black x1000 .503 ms
 	raspberry x1000  0.527  0.504
 	ubuntu 0.053ms (needed 1000 iterations) 
+	edison 0.363ms (needed 1000 iterations) 
 
 v[i]= sin(i)    i 0 to 399   double
 	spin+asm  56757 us  4-byte float
@@ -65,6 +68,7 @@ v[i]= sin(i)    i 0 to 399   double
 	beaglebone 7626 us  black 1552us
 	raspberry  6989 us
 	ubuntu       69 us  
+	edison      330 us
 
 linpack double (megaflops)
     uno             0.0925    16x16  float
@@ -75,4 +79,5 @@ linpack double (megaflops)
 	teensy LC       0.142  0.305 (float) 20x20
 	beaglebone     22    black 40  200x200
 	raspberry      40       200x200
+	edison         93  mflops   (97 -O3)
 	manitou       790     200x200
