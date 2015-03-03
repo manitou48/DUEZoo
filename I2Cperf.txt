@@ -61,6 +61,11 @@ bytes   write   read   (microseconds)
 20       2185    2357
 30       3074    3268
 
+ intel edison  I2C @ 400KHz  (analyzer says 376khz)
+10       1159     938   jitter
+20       1158    1160   jitter
+30       1241    1393   jitter
+
   Parallax STAMP PBASIC bit banging and SHIFTOUT (16KHz)
 10    47400  37800
 20    82200  63000
