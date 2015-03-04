@@ -4,9 +4,11 @@ Generation rate (random bits/second)
 
 DUE             31.9 mbs  (TRNG)
 Raspberry PI      .89 mbs  /dev/hwrng
+edison RDRAND      33  mbs
+pyboard            32 mbs  (2 mbs python)
 Propeller         .16 mbs  RealRandom.spin CTR PLL jitter
 
-Teensy 3            136 bits/sec  6ms LPTMR0 and systick
+Teensy 3            136 bits/sec  6ms LPTMR0 and systick   entropy lib
 UNO                  65 bits/sec  16ms WDT and TIMER1
 UNO                4100 bits/sec  TrueRandom analogRead + wash  fails rngtest?
 maple                98 bits/sec  10ms LSI and systick
@@ -15,10 +17,14 @@ maple                98 bits/sec  10ms LSI and systick
  Raspberry PI        13 bits/sec     (.56 mbs if /dev/hwrng available)
  beaglebone           5 bits/sec
  beaglebone black     1 bits/sec
+ littlebits cloud     4 bits/sec
+ intel edison       280 bits/sec
 /dev/urandom
  Raspberry PI        8.8 mbs
  beaglebone          8.8 mbs
  beaglebone black    12 mbs
+ littlebits cloud     4.1 mbs
+ intel edison         8 mbs
 
 Randomness checks with DieHard, rngtest, NIST, and Ent.
 
