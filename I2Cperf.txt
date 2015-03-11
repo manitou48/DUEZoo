@@ -66,6 +66,12 @@ bytes   write   read   (microseconds)
 20       1158    1160   jitter
 30       1241    1393   jitter
 
+  pyboard v1.0 @400khz (analyzer says 421khz)
+bytes   read(us)
+10       344
+20       558
+30       774
+
   Parallax STAMP PBASIC bit banging and SHIFTOUT (16KHz)
 10    47400  37800
 20    82200  63000
