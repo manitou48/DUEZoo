@@ -13,6 +13,8 @@ robot 5v@14MHz        385/393 ma         avr 128 5v*14MHz   12/25
 DUE 3.3v@84MHz        79.11/80.2         arm 3.3v@84MHz  29/70
 maple 3.3v@72MHz      47.6/48.3          arm 3.3v@72mhz  37/69
 teensy 3.3v@96MHz     33.6/36.7          arm 3.3v@96MHz  14/16
+teensyLC 3.3v@48mhz   12.6/15.5          arm 3.3v@48mhz   3/6
+pyboard 3.3v@168mhz   60.9/62.3          arm 3.3v@168mhz 59/96 io enabled
 quickstart 3.3v@80MHz 13.4/15.1          propeller 3.3v@80MHz  8/80 8 cogs
 stampbs2 BoE 5v@20MHz 18.6/23.6          PIC 5@20MHz      7
 
@@ -35,12 +37,18 @@ maple RET6 (Vin): run   49.6 ma (18.5@9mhz), 35.16ma io disabled
 				  stop  6.6ma
 				  standby 6.6ma
 
+pyboard:          run 60.9 ma @168mhz  
+	              sleep (wfi) 23.9ma @168mhz   15.5ma @84ma
+				  stop 0.9 ma
+				  standby 30ua
+
 teensy 3*  my low power test
    run  @96mhz LED on 30.7ma  off 26.64ma   12.87ma@24mhz
    low power run  3.81ma  (basically running at 2mhz)
    hibernate VLSS3  253ua
    deepsleep        253ua
-    using  http://forum.pjrc.com/threads/23660-Low-Power-quot-Green-quot-Battery-Operation-Solutions-For-The-Teensy-3
+    using  https://github.com/duff2013/Snooze
+	 http://forum.pjrc.com/threads/23660-Low-Power-quot-Green-quot-Battery-Operation-Solutions-For-The-Teensy-3
 
 paul's teensy 2 power tests  AVR
  http://www.pjrc.com/teensy/low_power.html
