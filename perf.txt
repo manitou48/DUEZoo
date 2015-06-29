@@ -15,6 +15,7 @@ recursive fibonacci (fibo(26))
 	raspberry pi (700MHz) 10.682 ms  10.260
 	ubuntu/i3-2370M (2.4GHz) 1.2ms
 	edison (500mhz) 17.2 ms
+	pyboard 38 ms (168mhz in firmware)
 
 MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	spin 7 KBs catalina 84 KBs gcc 222 KBs (lmm)
@@ -28,6 +29,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
 	beaglebone black  -O 51354  -O3 98462
 	edison   37037   -O3 48309
+	pyboard  7529 KBs (firmware)
 	raspberry 8103.727715 30959.752322 52910.052910 55555.555556
 	          57142.857143
 	ubuntu    67019.951169  260400.391642 316436.669947 320493.303292 KBs
@@ -70,6 +72,7 @@ v[i]= sin(i)    i 0 to 399   double
 	raspberry  6989 us
 	ubuntu       69 us  
 	edison      330 us
+	pyboard    4187 us   float 4-byte @168mhz in firmware
 
 linpack double (megaflops)
     uno             0.0925    16x16  float
@@ -81,4 +84,5 @@ linpack double (megaflops)
 	beaglebone     22    black 40  200x200
 	raspberry      40       200x200
 	edison         93  mflops   (97 -O3)
+	pyboard        28  mflops (float 100x100 in firmware)
 	manitou       790     200x200
