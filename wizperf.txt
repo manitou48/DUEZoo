@@ -77,13 +77,13 @@ clock   latency send recv     TCP  send recv
 16MHz       5.45         15.17         14.65/8.67     15.23/14.65
 24MHz       6.15         21.61         14.63/8.68     21.67/16.55
 
-  teensy UDP   (mbs)
+  teensy UDP
             SPI                  SdFat SPI           paulSPI
   SPIclk echo send  recv      echo send  recv        echo send  recv 
   4Mhz    736  2.6   2.5       666  3.5   2.8    
-  8MHz    608  3.6   2.1mbs    482  6.5   6.2
- 12MHz    548  4.3   4.3       449  8.8   8.2         327  9.2   11.4
- 16MHz    513  4.8   2.9       410 11.1   9.8
+  8MHz    608  3.6   2.1       482  6.5   6.2         358  6.7    5.9
+ 12MHz    548  4.3   4.3       449  8.8   8.2         307  9.2   11.4
+ 16MHz    513  4.8   2.9       410 11.1   9.8         281 11.8   13.0
  24MHz    475  5.4   3.2       392 14.2  13.2         248 12.9   20.9
 
   teensy TCP   (mbs)
