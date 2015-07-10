@@ -105,6 +105,21 @@ clock   latency send recv     TCP  send recv
 4MHz 528us   2.25mbs 2.4mbs        900    2.22mbs  2.2mbs     2.1
 8MHz 420us   3.2mbs  3.4mbs        656us  3.16mbs  3.2mbs     3.1
 
+----------------------------------------------------------
+
+   pyboard STM32F405RG @ 168mhz
+
+   read/write speeds to wiznet RAM (1024 bytes) 
+    15.8 mbs @ 21mhz (default SPI CLK) 
+	25.4 mbs @ 42mhz
+   
+   UDP 8-byte RTT latency 562us (@21mhz) and 548us (@42mhz)
+   UDP 1000-byte send rate 7.98 mbs (21 or 42 mhz)
+   UDP lossless receive rate of 20 1000-byte packets, 5.4 mbs (21 or 42 mhz)
+
+   TCP send rate 10.8 mbs
+   TCP recv rate  5.7 mbs
+
 ---------------------------------------------------------
 
    parallax propeller quickstart    80MHz   propeller-w5200-driver
