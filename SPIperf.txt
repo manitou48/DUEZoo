@@ -48,6 +48,15 @@ SPI clock   read/write
 
 attiny85 5v@8mhz USI read/write 0.242 mbs
 
+   mbed LPC1768 @ 96MHz  (SPI/SPS peripheral max is 33mhz)
+                SPI  
+SPS  clock    write 
+4MHz          2.6 mbs 
+8MHz          3.9 mbs
+12MHz         4.9 mbs
+20MHz         6.6 mbs
+32MHz         6.6 mbs
+
 pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz)
 
 parallax quickstart 80Mhz   (from W5200-driver)
