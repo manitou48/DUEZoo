@@ -95,6 +95,15 @@ clock   latency send recv     TCP  send recv
  16MHz
  24MHz   11.8   11.6     12.9   19.5
 
+-------------------------------------------------------------
+  mbed LPC1768  @96mhz    (SPI @1mhz 0.9mbs, @24mhz 6.1mbs -- needs DMA)
+  SPI         UDP                    TCP
+clock   latency  send  recv       send  recv
+ 1Mhz    1395     0.8   0.08        0.9  0.3
+24Mhz       ?     5.9    ?          5.8  0.5
+
+native    292    39.7   1.7        25.4  19.3
+
 ---------------------------------------------------------
 
  UNO 16MHz
@@ -138,7 +147,7 @@ clock   latency send recv     TCP  send recv
 
 ----------------------------------------------------------
 
-W5100 based on SPI speeds: 4MHz .72mbs   (8MHz 1.1mbs), 
+older W5100 based on SPI speeds: 4MHz .72mbs   (8MHz 1.1mbs), 
   wiznet claims only 0.3mbs for W5100,  33.3mbs for W5200
 
   UNO 16 MHz with W5100
