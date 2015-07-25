@@ -49,13 +49,13 @@ SPI clock   read/write
 attiny85 5v@8mhz USI read/write 0.242 mbs
 
    mbed LPC1768 @ 96MHz  (SPI/SPS peripheral max is 33mhz)
-                SPI  
+                SPI      DMA
 SPS  clock    write 
-4MHz          2.6 mbs 
-8MHz          3.9 mbs
-12MHz         4.9 mbs
-20MHz         6.6 mbs
-32MHz         6.6 mbs
+4MHz          2.6 mbs     3.3
+8MHz          3.9 mbs     6.6
+12MHz         4.9 mbs     9.8
+16MHz         5.0 mbs    12.9
+24MHz         6.6 mbs    19.1
 
 pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz)
 
