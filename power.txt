@@ -15,6 +15,7 @@ maple 3.3v@72MHz      47.6/48.3          arm 3.3v@72mhz  37/69
 teensy 3.3v@96MHz     33.6/36.7          arm 3.3v@96MHz  14/16
 teensyLC 3.3v@48mhz   12.6/15.5          arm 3.3v@48mhz   3/6
 pyboard 3.3v@168mhz   60.9/62.3          arm 3.3v@168mhz 59/96 io enabled
+mbed 3.3v@96mhz       138.7/141.1        arm LPC1768  50/76 ma
 quickstart 3.3v@80MHz 13.4/15.1          propeller 3.3v@80MHz  8/80 8 cogs
 stampbs2 BoE 5v@20MHz 18.6/23.6          PIC 5@20MHz      7
 
