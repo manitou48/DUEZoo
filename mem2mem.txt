@@ -14,7 +14,7 @@ Times are in microseconds
 loop     269    132     95     94      9
 memcpy32  93     31     23     27      9
 memcpy    62     52     96     50      9
-memset32  94     34     23     43      6
+memset32  94     34     23     43     19
 memset    38     41     51     24      6
 
 DUEling memory copies:
