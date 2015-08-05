@@ -10,7 +10,7 @@ recursive fibonacci (fibo(26))
 	maple (72MHz) 104 ms
 	teensy 3 (96MHz) 82 ms   3.1 26 121393 63
 	teensy LC beta (48mhz)  128ms
-	mbed LPC1768 (168mhz)    51ms
+	mbed LPC1768 (96mhz)    51ms
 	beaglebone (720MHz) 8.2 ms
 	beaglebone black (1GHz) 20.5 ms
 	raspberry pi (700MHz) 10.682 ms  10.260
@@ -27,7 +27,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	teensy 3 (96 MHz)   25 ms 2048 KBs   
 	teensy 3.1 (96 MHz) 14 ms 3657 KBs  (5688 KBs @168Mhz IDE 19rc2)
 	teensy LC (48 MHz) 31 ms 1651 KBs  beta
-	mbed LPC1768 (168mhz) 20 ms  4994 KBs
+	mbed LPC1768 (96mhz) 20 ms  4994 KBs
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
 	beaglebone black  -O 51354  -O3 98462
 	edison   37037   -O3 48309
@@ -72,7 +72,7 @@ v[i]= sin(i)    i 0 to 399   double
 	teensy 3  29504 us          96mhz
 	teensy3.1 18287 us          96mhz (12683us @ 168mhz)
 	teensy LC 73743 us          48mhz  beta
-	mbed      11045 us     168mhz
+	mbed      11045 us     96mhz
 	beaglebone 7626 us  black 1552us
 	raspberry  6989 us
 	ubuntu       69 us  
@@ -86,7 +86,7 @@ linpack double (megaflops)
 	teensy 3.0      0.373  0.552 (float) 30x30
 	teensy 3.1      0.598  0.934 (float) 30x30
 	teensy LC       0.142  0.305 (float) 20x20
-	mbed LPC1768    0.864                50x50
+	mbed LPC1768    0.879                50x50
 	beaglebone     22    black 40  200x200
 	raspberry      40       200x200
 	edison         93  mflops   (97 -O3)
