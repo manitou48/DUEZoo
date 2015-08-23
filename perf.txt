@@ -5,8 +5,9 @@ recursive fibonacci (fibo(26))
 	 catalina 3.6 5342 ms
 	 gcc cog 486 ms
 	 gcc lmm 927 ms
-	arduino uno (16MHz) 32-bit int's 927 ms
-	due (84MHz) 26 121393 98 ms
+	arduino UNO (16MHz) 32-bit int's 927 ms
+	DUE (84MHz) 26 121393 98 ms
+	ZERO (48MHz) 26 121393 127 ms
 	maple (72MHz) 104 ms
 	teensy 3 (96MHz) 82 ms   3.1 26 121393 63
 	teensy LC beta (48mhz)  128ms
@@ -21,7 +22,8 @@ recursive fibonacci (fibo(26))
 MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	spin 7 KBs catalina 84 KBs gcc 222 KBs (lmm)
 	arduino 48 KBs   -Os
-	due 23 ms 2226 KBs
+	DUE 23 ms 2226 KBs
+	ZERO 33 ms 1551 KBs
 	maple 1937 KBs   271ms 1889   -Os
 	           1889 2124  2737  3605
 	teensy 3 (96 MHz)   25 ms 2048 KBs   
@@ -37,8 +39,9 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	ubuntu    67019.951169  260400.391642 316436.669947 320493.303292 KBs
 
 aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key 
-	uno            28 KBs   (byte-oriented C implementation)
-	due           174
+	UNO            28 KBs   (byte-oriented C implementation)
+	DUE           174
+	ZERO           83
 	maple         170
 	teensy 3.0    121
 	teensy 3.1    226
@@ -54,7 +57,8 @@ fft_bench demo   int32_t
 	propeller gcc 47ms
 	  catalina-3.6 410ms
 	arduino UNO can't do it (only 2K sram) (1284p 255ms)
-	due 8 ms
+	DUE 8 ms
+	ZERO 15 ms
 	maple 8 ms
 	teensy 3 (96Mhz) 9 ms   3.1 4 ms
 	mbded  2ms
@@ -80,8 +84,9 @@ v[i]= sin(i)    i 0 to 399   double
 	pyboard    4187 us   float 4-byte @168mhz in firmware
 
 linpack double (megaflops)
-    uno             0.0925    16x16  float
-	due             0.519  0.886 (float)  30x30
+    UNO             0.0925    16x16  float
+	DUE             0.519  0.886 (float)  30x30
+	ZERO            0.128  0.272 (float)  30x30
 	maple           0.519  0.818 (float)  30x30
 	teensy 3.0      0.373  0.552 (float) 30x30
 	teensy 3.1      0.598  0.934 (float) 30x30
