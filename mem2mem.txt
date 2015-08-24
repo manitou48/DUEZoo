@@ -13,7 +13,7 @@ Times are in microseconds
 
        maple    DUE   teensy  3.1   mbed  ZERO
 loop     269    132     95     94      9
-memcpy32  93     31     23     27      9     7
+memcpy32  93     31     23     27      9   138
 memcpy    62     52     96     50      9   194
 memset32  94     34     23     43     19
 memset    38     41     51     24      6
