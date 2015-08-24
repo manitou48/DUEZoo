@@ -57,6 +57,13 @@ SPS  clock    write
 16MHz         5.0 mbs    12.9
 24MHz         6.6 mbs    19.1
 
+   ZERO SAMD21G @ 48MHz  (SPI max clock 24mhz, but ZERO good to 12mhz)
+                SPI      DMA
+SPS  clock    write 
+4MHz          1.7 mbs 
+8MHz          2.2 mbs
+12MHz         2.5 mbs
+
 pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz)
 
 parallax quickstart 80Mhz   (from W5200-driver)
