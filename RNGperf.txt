@@ -13,6 +13,7 @@ UNO                  65 bits/sec  16ms WDT and TIMER1
 UNO                4100 bits/sec  TrueRandom analogRead + wash  fails rngtest?
 maple                98 bits/sec  10ms LSI and systick
 mbed LPC1768       8192 bits/sec  WDT/RTC 32khz vs systick
+ZERO               9727 bits/sec  ULPOSC32K vs systick
 
 /dev/random
  Raspberry PI        13 bits/sec     (.56 mbs if /dev/hwrng available)
