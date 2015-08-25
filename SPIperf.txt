@@ -59,7 +59,7 @@ SPS  clock    write
 
    ZERO SAMD21G @ 48MHz  (SPI max clock 24mhz, but ZERO good to 12mhz)
                 SPI      DMA
-SPS  clock    write 
+SPI  clock    write 
 4MHz          1.7 mbs 
 8MHz          2.2 mbs
 12MHz         2.5 mbs
