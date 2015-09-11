@@ -1,6 +1,6 @@
  memory-to-memory DMA vs library memcpy()  
  DUE 84MHz  maple 72Mhz  teensy 96MHz  mbed LPC1768 96mhz
- ZERO 48MHz (byte DMA and memcpy)
+ ZERO 48MHz 
 
 For the DUE DMA memory-to-memory transfer, we use the 32-byte FIFO channel 5
 and ASAP_CFG.  We compare the DMA times on the DUE,teensy, and maple with the
