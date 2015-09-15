@@ -72,6 +72,7 @@ v[i]= sin(i)    i 0 to 399   double
 	spin+asm  56757 us  4-byte float
 	UNO       48500 us  4-byte
 	DUE       18723 us  8-byte  84mhz
+	ZERO      82815 us          48mhz
 	maple     20959 us          72mhz
 	teensy 3  29504 us          96mhz
 	teensy3.1 18287 us          96mhz (12683us @ 168mhz)
@@ -84,7 +85,7 @@ v[i]= sin(i)    i 0 to 399   double
 	pyboard    4187 us   float 4-byte @168mhz in firmware
 
 linpack double (megaflops)
-    UNO             0.0925    16x16  float
+	UNO             0.0925    16x16  float
 	DUE             0.519  0.886 (float)  30x30
 	ZERO            0.128  0.272 (float)  30x30
 	maple           0.519  0.818 (float)  30x30
@@ -96,4 +97,4 @@ linpack double (megaflops)
 	raspberry      40       200x200
 	edison         93  mflops   (97 -O3)
 	pyboard        28  mflops (float 100x100 in firmware)
-	manitou       790     200x200
+	ubuntu        790     200x200
