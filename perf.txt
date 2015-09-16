@@ -18,6 +18,7 @@ recursive fibonacci (fibo(26))
 	ubuntu/i3-2370M (2.4GHz) 1.2ms
 	edison (500mhz) 17.2 ms
 	pyboard 38 ms (168mhz in firmware C)
+	pyboard 4272ms (python)
 
 MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	spin 7 KBs catalina 84 KBs gcc 222 KBs (lmm)
