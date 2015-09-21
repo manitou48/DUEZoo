@@ -59,11 +59,11 @@ SPS  clock    write
 24MHz         6.6 mbs    19.1
 
    ZERO SAMD21G @ 48MHz  (SPI max clock 24mhz, but ZERO good to 12mhz)
-                SPI      DMA
-SPI  clock    write 
-4MHz          1.7 mbs    3.99
-8MHz          2.2 mbs    7.92
-12MHz         2.5 mbs   11.8
+                SPI      
+SPI  clock    transfer  write  DMA
+4MHz          1.7 mbs    2.2   3.99
+8MHz          2.2 mbs    3.0   7.92
+12MHz         2.5 mbs    3.6  11.8
 
 pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz)
 
