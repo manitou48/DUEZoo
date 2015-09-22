@@ -1,6 +1,6 @@
    ISR performance, interrupt latency 
      DUE (84Mhz), maple(72Mhz), teensy3(96MHz)   UNO(16MHz)  mbd LPC1768(96MHz)
-	 ZERO (48MHz)
+	 ZERO (48MHz), pyboard(168MHz)
 
 Measure ticks for back-to-back calls to systick, ticks for fast pin set,
 ticks for digitalWrite.  Measure time to get into and out of ISR from
@@ -14,20 +14,21 @@ standard (std) attachInterrupt() to modified kernel ISR (opt)
 		  bit band  *(int *)0x43fe1094 = 1;
      mbed pin set   LPC_GPIO1->FIOSET = 1<<18;
 	 ZERO pin set REG_PORT_OUTSET0 = PORT_PA17;
+	 pyboard firmware pin set GPIOA->BSRRL = GPIO_PIN_13;
 
   (units are cycles from ARM CPU systick counter or UNO timer2)
-                      DUE      maple     teensy3  3.1    UNO teensy++2 mbed ZERO
-tickres                 3          3          1     1     2      2       1    8
-set pin                 6          6         12     6     4      4      10    4
+                      DUE      maple     teensy3  3.1    UNO teensy++2 mbed ZERO pyboard
+tickres                 3          3          1     1     2      2       1    8      9
+set pin                 6          6         12     6     4      4      10    4      7
 digitalWrite          184         44         64    53    63      4      19   71
-in to fcn              15         11         19    13     2      1       1   12
-out of fcn             17         23         20    12     6      6       4   15
+in to fcn              15         11         19    13     2      1       1   12     21
+out of fcn             17         23         20    12     6      6       4   15     12
 
-in to ISR  (std)      355        104        107    88     57    63          221
-out of ISR  (std)     128        121        126    87     50    54          177
+in to ISR  (std)      355        104        107    88     57    63          221     45
+out of ISR  (std)     128        121        126    87     50    54          177     30
 
-in to ISR  (opt)       53         45         64    46     18    17      46
-out of ISR  (opt)      28         58         30    25     29    30      19
+in to ISR  (opt)       53         45         64    46     18    17      46          34
+out of ISR  (opt)      28         58         30    25     29    30      19          27
 
 
 ------------------------------
@@ -47,3 +48,7 @@ UNO/AVR timer0 and millis overhead
  (every 64*256 cycles).  For the UNO, about 98 cycles every 1024us @16MHz.
  The teensy 2 library is a little faster, millis() is inline so 11 cycles.
  timer0 ISR 104 cycles.
+
+---------------------
+ pyboard times are for C in firmware
+   ISR callback to python (pass) adds 1024 cycles to ISR
