@@ -52,3 +52,4 @@ UNO/AVR timer0 and millis overhead
 ---------------------
  pyboard times are for C in firmware
    ISR callback to python (pass) adds 1024 cycles to ISR
+   to set a pin in python pin.value(1) takes 1229 cycles   7.3us
