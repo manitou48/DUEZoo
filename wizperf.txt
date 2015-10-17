@@ -104,6 +104,9 @@ clock   latency  send  recv       send  recv
 
 native    292    39.7   1.7        25.4  19.3
 
+ mbed K64F @120mhz
+native    288    52     4          26    21  
+
 ---------------------------------------------------------
 
  UNO 16MHz
