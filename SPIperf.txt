@@ -52,11 +52,20 @@ attiny85 5v@8mhz USI read/write 0.242 mbs
    mbed LPC1768 @ 96MHz  (SPI/SPS peripheral max is 33mhz)
                 SPI      DMA
 SPS  clock    write 
-4MHz          2.6 mbs     3.3
+4MHz          2.6 mbs     3.3 mbs
 8MHz          3.9 mbs     6.6
 12MHz         4.9 mbs     9.8
 16MHz         5.0 mbs    12.9
 24MHz         6.6 mbs    19.1
+
+   mbed K64F @ 120MHz  (60mhz bus, SPI0 max is 30mhz)
+                SPI      FIFO (SDfat)
+SPI clock           write 
+2MHz          1.4 mbs     2.0 mbs
+4MHz          2.2 mbs     4.0
+8MHz          2.7 mbs     7.4
+15MHz         3.2 mbs    14.1
+30MHz         3.4 mbs    27.3
 
    ZERO SAMD21G @ 48MHz  (SPI max clock 24mhz, but ZERO good to 12mhz)
                 SPI      
@@ -65,7 +74,7 @@ SPI  clock    transfer  write  DMA
 8MHz          2.2 mbs    3.0   7.92
 12MHz         2.5 mbs    3.6  11.8
 
-pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz)
+pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz) 
 
 parallax quickstart 80Mhz   (from W5200-driver)
    SpiCounterPasm.spin read 5.7mbs write 9.8 mbs (uses freqa at 10/20 MHz)
