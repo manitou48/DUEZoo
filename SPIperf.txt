@@ -67,6 +67,15 @@ SPI clock           write
 15MHz         3.2 mbs    14.1
 30MHz         3.4 mbs    27.3
 
+   mbed F446RE @ 180MHz  (SPI1 peripheral max is 45mhz)
+                SPI      DMA
+SPI  clock    write 
+3MHz          2.5 mbs     2.8 mbs
+5MHz          4.4 mbs     5.6 mbs
+10MHz         6.9 mbs    11.2
+23MHz         9.7 mbs    22.3
+45MHz        11.6 mbs    44.3
+
    ZERO SAMD21G @ 48MHz  (SPI max clock 24mhz, but ZERO good to 12mhz)
                 SPI      
 SPI  clock    transfer  write  DMA
@@ -74,7 +83,7 @@ SPI  clock    transfer  write  DMA
 8MHz          2.2 mbs    3.0   7.92
 12MHz         2.5 mbs    3.6  11.8
 
-pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz) 
+pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz)  C/firmware
 
 parallax quickstart 80Mhz   (from W5200-driver)
    SpiCounterPasm.spin read 5.7mbs write 9.8 mbs (uses freqa at 10/20 MHz)
