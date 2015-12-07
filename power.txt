@@ -19,6 +19,7 @@ mbed 3.3v@96mhz       138.7/141.1        arm LPC1768  50/76 ma
 mbed 3.3v@120mhz      138.9/147.9        arm K64F  37/42 ma
 mbed 3.3v@180mhz      85.0/87.3          arm F446RE  86/46 ma
 ZERO 3.3v@48mhz       108.0/112.2        arm SAMD21G  4/2 ma
+ESP8266 3.3v@80mhz      32/29            sparkfun dev breakout 
 quickstart 3.3v@80MHz 13.4/15.1          propeller 3.3v@80MHz  8/80 8 cogs
 stampbs2 BoE 5v@20MHz 18.6/23.6          PIC 5@20MHz      7
 
