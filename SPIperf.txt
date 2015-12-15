@@ -83,6 +83,15 @@ SPI  clock    transfer  write  DMA
 8MHz          2.2 mbs    3.0   7.92
 12MHz         2.5 mbs    3.6  11.8
 
+   CC3200 LAUNCHPAD @ 80MHz  (SPI max clock 20mhz)
+                SPI      
+SPI  clock    transfer   DMA (4-byte)
+2MHz          1.2 mbs    1.9
+4MHz          1.7 mbs    3.8
+5MHz                     4.8
+10MHz         2.2 mbs    9.2
+20MHz         2.7 mbs   17.2
+
    ESP8266  @ 80MHz 
                 SPI      
 SPI clock    writeBytes
