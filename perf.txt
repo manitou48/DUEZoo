@@ -15,7 +15,7 @@ recursive fibonacci (fibo(26))
 	mbed F446RE (180mhz)    29ms
 	mbed K64F  (120mhz)     51 ms
 	ESP8266 (80mhz)         76 ms  sparkfun dev 
-	CC3200 (80mhz)         110 ms  sparkfun dev 
+	CC3200 (80mhz)         110 ms  TI launchpad
 	beaglebone (720MHz) 8.2 ms
 	beaglebone black (1GHz) 20.5 ms
 	raspberry pi (700MHz) 10.682 ms  10.260
