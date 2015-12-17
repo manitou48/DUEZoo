@@ -36,7 +36,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	teensy LC (48 MHz) 31 ms 1651 KBs  beta
 	mbed LPC1768 (96mhz) 20 ms  4994 KBs
 	mbed F466RE          12 ms  8324 KBs
-	mbed K64F            20ms   4994 KBs
+	mbed K64F            20ms   4994 KBs    hardware 10952 KBs
 	ESP8266              17ms   3011 KBs
 	CC3200               17ms   3011 KBs   (hardware 19320 KBs)
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
@@ -57,7 +57,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	teensy LC      91  beta
 	mbed LPC1768  287
 	mbed F466RE   520
-	mbed K64F     339
+	mbed K64F     339    hardware 5818 KBs
 	ESP8266       205
 	CC3200        350 KBs  (hardware 1939 KBs)
 	beaglebone         9038 KBs  (openssl)
