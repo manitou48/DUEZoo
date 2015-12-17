@@ -38,7 +38,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	mbed F466RE          12 ms  8324 KBs
 	mbed K64F            20ms   4994 KBs
 	ESP8266              17ms   3011 KBs
-	CC3200               17ms   3011 KBs
+	CC3200               17ms   3011 KBs   (hardware 19320 KBs)
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
 	beaglebone black  -O 51354  -O3 98462
 	edison   37037   -O3 48309
