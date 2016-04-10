@@ -4,6 +4,7 @@
 UNO 5v@16MHz          51.9/55.4 ma       328p 5v@16MHz  2.4/9 ma  idle/active
 nano 5v@16MHz         23.6/27.5          "
 328p 5v@16MHz         10.6/13.1          328p on breadboard
+328p 3.3v@8MHz         3.8/7.4           328p pro mini    0.7/2.4
 jazz  3.8v@11MHz      18.5/20.9          328p 3.3v@11mhz  1/4  (no regulator)
 mega2560 5v@16MHz     80/82.4            2560 5v@16MHz  5.5/20
 1284p  5v@16mhz       42.6/45.4          1284p  2/13.8 ma sleeping beauty BB
