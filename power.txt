@@ -74,6 +74,7 @@ AVR 328p breadboard   loop@16Mhz: 10.6ma@5v  6.2ma@3.3v (overclock)
 	  2.7v BOD adds 20ua
 	  FTDI breakout (no USB attached) adds 53 ua
 	  WDT adds 6ua
+  3.3v@8MHZ pro mini: 3.74ma, idle 1.45ma, powerdown 0.27ma
   also see http://gammon.com.au/power
 
 attiny85  8mhz RC
