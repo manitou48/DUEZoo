@@ -82,7 +82,7 @@ attiny85  8mhz RC
     idle         3.71ma       2.21ma
     powerdown    0.4ua        0.1ua
 
-mbed power http://www.pjrc.com/teensy/low_power.html
+teensy power http://www.pjrc.com/teensy/low_power.html
 
 parallax quickstart low power
   breadboard 3.3v to Vdd(pin 38)
