@@ -79,8 +79,8 @@ AVR 328p breadboard   loop@16Mhz: 10.6ma@5v  6.2ma@3.3v (overclock)
 
 attiny85  8mhz RC
     run       5v 7.5ma   3.3v 4.41ma
-	idle         3.71ma       2.21ma
-	powerdown    0.4ua        0.1ua
+    idle         3.71ma       2.21ma
+    powerdown    0.4ua        0.1ua
 
 mbed power http://www.pjrc.com/teensy/low_power.html
 
