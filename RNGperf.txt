@@ -5,7 +5,9 @@ Generation rate (random bits/second)
 DUE             31.9 mbs  (TRNG)
 Raspberry PI      .89 mbs  /dev/hwrng
 edison RDRAND      33  mbs
-pyboard            32 mbs  (2 mbs python)
+pyboard           36.5 mbs  (2 mbs python) STM32F405RG
+DISCOVERY         37.2 mbs STM32F407VET6
+mbed K64F         7.7 mbs  (TRNG)
 Propeller         .16 mbs  RealRandom.spin CTR PLL jitter
 
 Teensy 3            136 bits/sec  6ms LPTMR0 and systick   entropy lib
