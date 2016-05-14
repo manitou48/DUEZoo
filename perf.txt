@@ -16,6 +16,7 @@ recursive fibonacci (fibo(26))
 	mbed K64F  (120mhz)     51 ms
 	ESP8266 (80mhz)         76 ms  sparkfun dev 
 	CC3200 (80mhz)         110 ms  TI launchpad
+	STM32L476 (80mhz)       73 ms
 	beaglebone (720MHz) 8.2 ms
 	beaglebone black (1GHz) 20.5 ms
 	raspberry pi (700MHz) 10.682 ms  10.260
@@ -39,6 +40,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	mbed K64F            20ms   4994 KBs    hardware 10952 KBs
 	ESP8266              17ms   3011 KBs
 	CC3200               17ms   3011 KBs   (hardware 19320 KBs)
+	STM32L476 (80mhz)    18ms   2844 KBs  
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
 	beaglebone black  -O 51354  -O3 98462
 	edison   37037   -O3 48309
@@ -60,6 +62,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	mbed K64F     339    hardware 5818 KBs
 	ESP8266       205
 	CC3200        350 KBs  (hardware 1939 KBs)
+	STM32L476     244 KBs  hardare TBD
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
 	raspberry pi      15050
@@ -79,6 +82,7 @@ fft_bench demo   int32_t
 	mbed K64F     2ms
 	ESP8266       5ms
 	CC3200        6ms
+	STM32L476     5ms
 	beaglebone 0.375 ms (had to do it 1000 times to exceed a ms, then divide out 1000)
 	beaglebone black x1000 .503 ms
 	raspberry x1000  0.527  0.504
@@ -99,6 +103,7 @@ v[i]= sin(i)    i 0 to 399   double
 	mbed K64F  11358us  float (hardware) 560us    120mhz
 	ESP8266    19427us     float 68106us    80mhz
 	CC3200     20435us     float 67613us    80mhz
+	STM32L476  15342us     float  7352us    80mhz
 	beaglebone 7626 us  black 1552us
 	raspberry  6989 us
 	ubuntu       69 us  
@@ -119,6 +124,7 @@ linpack double (megaflops)
 	mbed K64F       0.951 12.909 (float) 50x50
 	ESP8266         0.593  30x30
 	CC3200          0.531  30x30
+	STM32L476       0.857  12.1 (float)  50x50  13.6 100x100
 	beaglebone     22    black 40  200x200
 	raspberry      40       200x200
 	edison         93  mflops   (97 -O3)
