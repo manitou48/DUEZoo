@@ -7,7 +7,7 @@ and ASAP_CFG.  We compare the DMA times on the DUE,teensy, and maple with the
 library memcpy() and memset() and with a for-loop (dst[i] = src[i]) using
 1000 32-bit words.  memcpy32() is the DMA version.  The library memcpy()
 uses an unrolled (64) loop of word load/store's.  The teensy 3.* at 96MHz
-with 48MHz bus speed, peak rate is 32 bits at 48Mhz = 1536 mbs).
+has a max eDMA SRAM-to-SRAM speed of 192MBs (1536mbs).
 
 Times are in microseconds
 
