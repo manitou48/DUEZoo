@@ -14,9 +14,9 @@ Times are in microseconds
        maple    DUE   teensy  3.1   mbed  ZERO  CC3200   STM32L4 MK64F
 loop     269    132     95     94      9           217     461     26
 memcpy32  93     31     23     27      9    43      31      69     35
-memcpy    62     52     96     50      9   194      15      32     26
+memcpy    62     52     96     50      9   194      15      29     26
 memset32  94     34     23     43     19
-memset    38     41     51     24      6            12      18     17
+memset    38     41     51     24      6            12      16     17
 
 DUEling memory copies:
 
