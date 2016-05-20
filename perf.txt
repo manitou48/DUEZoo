@@ -62,7 +62,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	mbed K64F     339    hardware 5818 KBs
 	ESP8266       205
 	CC3200        350 KBs  (hardware 1939 KBs)
-	STM32L476     244 KBs  hardare TBD
+	STM32L476     244 KBs 
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
 	raspberry pi      15050
