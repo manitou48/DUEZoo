@@ -1,4 +1,5 @@
    board current draw with board LED off/on (milliamps) Vin (USB not connected)
+      delay(5000)
 
   board               measured           chip specs  (idle/active ma)
 UNO 5v@16MHz          51.9/55.4 ma       328p 5v@16MHz  2.4/9 ma  idle/active
@@ -25,7 +26,7 @@ mbed 3.3v@180mhz      85.0/87.3          arm F446RE  86/46 ma
 ZERO 3.3v@48mhz       108.0/112.2        arm SAMD21G  4/2 ma
 ESP8266 3.3v@80mhz      29/32            sparkfun dev breakout 
 CC3200 3.3v@80mhz      64.9/68.4         TI LaunchPad
-STM32L476 3.3v@80mhz   11.8/12.5         arm STM32L476 10/3  dragonfly
+STM32L476 3.3v@80mhz    5.6/6.3          arm STM32L476 10/3  dragonfly  WFE
 STM32L476 3.3v@80mhz   58.0/61.0         arm STM32L476VG 10/3  mbed 
 quickstart 3.3v@80MHz 13.4/15.1          propeller 3.3v@80MHz  8/80 8 cogs
 stampbs2 BoE 5v@20MHz 18.6/23.6          PIC 5@20MHz      7
