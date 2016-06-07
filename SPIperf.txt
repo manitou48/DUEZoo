@@ -103,6 +103,8 @@ SPI clock    writeBytes
 40MHz        28.9  mbs
 80MHz        46.0  mbs
 
+dragonfly (STM32L4 @80mhz), SPI clock at 20 mhz yields 19.9 mbs
+
 pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz)  C/firmware
 
 parallax quickstart 80Mhz   (from W5200-driver)
