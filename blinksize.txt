@@ -1,0 +1,22 @@
+blink size  KB
+         Flash   RAM
+mbed STM  16.1   0.4
+   LPC    17.3   0.6
+   LEO    15.6   0.8
+   K64F   20.7  65.4
+   DISCO  19.9   1.1
+   T3.1   16.7   0.4
+arduino
+   UNO     1.1   0
+   ZERO   11.1
+   DUE    22.1
+   tiny85  0.8   0
+   K64F   14.3
+   dragon 32.8
+   3.1    14.2   3.5
+   LC     11.4 2.2
+   T2     2.0  0
+   T2++   2.0  0
+maple    13.9
+cc3200    3.0
+esp8266 219.4  31.1
