@@ -21,4 +21,4 @@ maple    13.9
 cc3200    3.0
 esp8266 219.4  31.1
 pyboard 265.7  28.5
-blink.c   0.2    avr-gcc
+blink.c   0.2    avr-gcc  328P
