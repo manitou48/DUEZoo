@@ -20,3 +20,4 @@ arduino
 maple    13.9
 cc3200    3.0
 esp8266 219.4  31.1
+pyboard 265.7  28.5
