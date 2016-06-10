@@ -6,7 +6,7 @@ Collection of various DUE sketches and results.
 
 Files | Description
 ---|---
-blinksize.txt  | Flash and SRAM used for blink sketch
+**blinksize.txt**  | Flash and SRAM used for blink sketch
 chiptemp.ino  | read DUE internal analog temperature sensor
 dmaspi.ino  |  unconnected SPI test at varous MHz and with DMA
 spislave.ino  |  simple SPI slave example
