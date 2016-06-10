@@ -1,25 +1,26 @@
 blink size  KB
          Flash   RAM
-mbed STM  16.1   0.4    STM32L4
+mbed   (ARM gcc -O3)
+   STM    16.1   0.4    STM32L4
    LPC    17.3   0.6    LPC1768
    LEO    15.6   0.8    STM32F446
-   K64F   20.7  65.4
+   K64F   19.6   0.4
    DISCO  19.9   1.1     STM32F4
    T3.1   16.7   0.4    teensy
-arduino
+arduino  (GNU gcc -Os)
    UNO     1.1   0
    ZERO   11.1
    DUE    22.1
    tiny85  0.8   0
-   K64F   14.3
+   K64F   14.3     IDE hack
    dragon 32.8    STM32L4
    3.1    14.2   3.5    teensy
    LC     11.4 2.2
    T2     2.0  0
    T2++   2.0  0
-maple    13.9
-maple    13.4  2.9  arduino IDE
-cc3200    3.0
-esp8266 219.4  31.1
+esp8266 219.4  31.1 arduino IDE -Os
+maple    13.4  2.9  arduino IDE -Os
+maple    13.9       maple IDE -Os
+cc3200    3.0       energia IDE -Os
 pyboard 265.7  28.5     STM32F4
 blink.c   0.2    avr-gcc  328P
