@@ -168,5 +168,5 @@ older W5100 based on SPI speeds: 4MHz .72mbs   (8MHz 1.1mbs),
   beaglebone    720MHz UDP send/recv rate is 80mbs, latency 220us   TCP 17mbs
   raspberry pi  700MHz UDP send/recv rate is 93mbs, latency 460us   TCP 11mbs
 
-wifi perforamcne ESP8266 and CC3200
+wifi performance ESP8266 and CC3200
   http://forum.arduino.cc/index.php?topic=364521.0
