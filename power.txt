@@ -18,6 +18,7 @@ teensy 3.3v@96MHz     33.6/36.7          arm 3.3v@96MHz  14/16 teensy 3.1
 teensy 3.3v@96MHz     38.1/41.1          arm 3.3v@96MHz  teensy 3.1 USB power
 teensy 3.3v@96MHz     38.1/41.1          arm 3.3v@96MHz  teensy 3.2 USB power
 teensyLC 3.3v@48mhz   12.6/15.5          arm 3.3v@48mhz   3/6
+teensy66 3.3v@180mhz  731./76.1          arm 3.3v@180mhz  51/35  K66 beta
 pyboard 3.3v@168mhz   26.1/28.6          arm 3.3v@168mhz 59/96 io enabled WFI
 DISCOVERY 3v@168mhz   63.1/72.7          arm 3v@168mhz 59/96 io enabled
 mbed 3.3v@96mhz       138.7/141.1        arm LPC1768  50/76 ma
