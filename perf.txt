@@ -11,12 +11,13 @@ recursive fibonacci (fibo(26))
 	maple (72MHz) 104 ms
 	teensy 3 (96MHz) 82 ms   3.1 26 121393 63
 	teensy LC beta (48mhz)  128ms
-	mbed LPC1768 (96mhz)    51ms
-	mbed F446RE (180mhz)    29ms
-	mbed K64F  (120mhz)     51 ms
-	ESP8266 (80mhz)         76 ms  sparkfun dev 
-	CC3200 (80mhz)         110 ms  TI launchpad
-	STM32L476 (80mhz)       73 ms
+	teensy K66 beta (180mhz) 28ms
+	mbed LPC1768 (96mhz)     51ms
+	mbed F446RE (180mhz)     29ms
+	mbed K64F  (120mhz)      51 ms
+	ESP8266 (80mhz)          76 ms  sparkfun dev 
+	CC3200 (80mhz)          110 ms  TI launchpad
+	STM32L476 (80mhz)        73 ms
 	beaglebone (720MHz) 8.2 ms
 	beaglebone black (1GHz) 20.5 ms
 	raspberry pi (700MHz) 10.682 ms  10.260
@@ -35,6 +36,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	teensy 3 (96 MHz)   25 ms 2048 KBs   
 	teensy 3.1 (96 MHz) 14 ms 3657 KBs  (5688 KBs @168Mhz IDE 19rc2)
 	teensy LC (48 MHz) 31 ms 1651 KBs  beta
+	teenys K66               8533 KBs  beta
 	mbed LPC1768 (96mhz) 20 ms  4994 KBs
 	mbed F466RE          12 ms  8324 KBs
 	mbed K64F            20ms   4994 KBs    hardware 10952 KBs
@@ -57,6 +59,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	teensy 3.0    121
 	teensy 3.1    226
 	teensy LC      91  beta
+	teensy K66    132  beta
 	mbed LPC1768  287
 	mbed F466RE   520
 	mbed K64F     339    hardware 5818 KBs
@@ -77,6 +80,7 @@ fft_bench demo   int32_t
 	ZERO 15 ms
 	maple 8 ms
 	teensy 3 (96Mhz) 9 ms   3.1 4 ms
+	teensy K66    1ms   beta
 	mbed LPC1768  2ms
 	mbed F466RE   1ms
 	mbed K64F     2ms
@@ -98,6 +102,7 @@ v[i]= sin(i)    i 0 to 399   double
 	teensy 3  29504 us          96mhz
 	teensy3.1 18287 us          96mhz (12683us @ 168mhz)
 	teensy LC 73743 us          48mhz  beta
+	teensy K66 5425 us    float (hardware) 2665 beta
 	mbed 1768 11045 us     96mhz
 	mbed F446RE 12420us float (hardware) 238us   180mhz
 	mbed K64F  11358us  float (hardware) 560us    120mhz
@@ -119,6 +124,7 @@ linpack double (megaflops)
 	teensy 3.0      0.373  0.552 (float) 30x30
 	teensy 3.1      0.598  0.934 (float) 30x30
 	teensy LC       0.142  0.305 (float) 20x20
+	teensy K66      2.15   27 (float) 50x50    30 100x100
 	mbed LPC1768    0.879                50x50
 	mbed F466RE     0.855 23.955 (float) 50x50
 	mbed K64F       0.951 12.909 (float) 50x50
