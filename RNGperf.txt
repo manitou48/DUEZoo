@@ -2,13 +2,14 @@
 
 Generation rate (random bits/second)
 
-DUE             31.9 mbs  (TRNG)
+DUE             31.9 mbs  (TRNG) @84mhz
 Raspberry PI      .89 mbs  /dev/hwrng
-edison RDRAND      33  mbs (TRNG)
-pyboard           36.5 mbs  (2 mbs python) STM32F405RG (TRNG)
-DISCOVERY         37.2 mbs STM32F407VET6 (TRNG)
-dragonfly         32.2 mbs STM32L476RE (TRNG)
-mbed K64F         7.7 mbs  (TRNG)
+edison RDRAND      33  mbs (TRNG)   @500mhz
+pyboard           36.5 mbs  (2 mbs python) STM32F405RG (TRNG) @168mhz
+DISCOVERY         37.2 mbs STM32F407VET6 (TRNG) @80mhz
+dragonfly         37.2 mbs STM32L476RE (TRNG) @80mhz
+mbed K64F         7.7 mbs  (TRNG)  @120mhz
+Teensy K66/K64    7.7 mbs  (TRNG) @120mhz
 Propeller         .16 mbs  RealRandom.spin CTR PLL jitter
 
 Teensy 3            136 bits/sec  6ms LPTMR0 and systick   entropy lib
