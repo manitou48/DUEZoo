@@ -1,4 +1,5 @@
    simple computational benchmarks
+    arduino/teensy gcc -Os,   mbed armcc -O3
 
 recursive fibonacci (fibo(26))
 	spin 10056 ms
@@ -24,7 +25,7 @@ recursive fibonacci (fibo(26))
 	raspberry pi (700MHz) 10.682 ms  10.260
 	ubuntu/i3-2370M (2.4GHz) 1.2ms
 	edison (500mhz) 17.2 ms
-	pyboard 38 ms (168mhz in firmware C)
+	pyboard 38 ms (168mhz in firmware C)  (mbed -O3 STM32F407VG)
 	pyboard 4272ms (python)
 
 MD5 (KBs == 1024 bytes/second)   x -O 2 3
@@ -141,3 +142,15 @@ linpack double (megaflops)
 	edison         93  mflops   (97 -O3)
 	pyboard        28  mflops (float 100x100 in firmware C)
 	ubuntu        790     200x200
+
+coremarkish  (iterations/sec)
+	teensy LC        85.6
+	teensy 3.2      168.7
+	teensy K64      210.5
+	teensy K66      339.0
+	STM32L476       143.6  (-O2 170.4, mbed -O3 208.4)
+	mbed LPC1768    185.7
+	mbed F466RE     414.9
+	mbed K64F       280.4
+	pyboard         386.1  (mbed -O3)
+	ubuntu         6124.7
