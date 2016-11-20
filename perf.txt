@@ -144,6 +144,8 @@ linpack double (megaflops)
 	ubuntu        790     200x200
 
 coremarkish  (iterations/sec)
+	MEGA2560          6.9    16mhz
+	ZERO             56.8
 	DUE              90.8
 	teensy LC        85.6
 	teensy 3.2      168.7
