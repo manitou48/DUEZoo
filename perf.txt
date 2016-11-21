@@ -82,6 +82,7 @@ fft_bench demo   int32_t
 	DUE 8 ms
 	ZERO 15 ms
 	maple 8 ms
+	teensy LC 15 ms
 	teensy 3 (96Mhz) 9 ms   3.1 4 ms
 	teensy K66    1ms   beta
 	teensy K64    2ms   beta
