@@ -157,4 +157,6 @@ coremarkish  (iterations/sec)
 	mbed F466RE     414.9
 	mbed K64F       280.4
 	pyboard         386.1  (mbed -O3)
+	raspberry      1314.9
+	beaglebone     1346.1    black 2131.1
 	ubuntu         6124.7
