@@ -148,6 +148,7 @@ coremarkish  (iterations/sec)
 	MEGA2560          6.9    16mhz
 	ZERO             56.8
 	DUE              90.8
+	maple            78.6
 	teensy LC        58.4
 	teensy 3.2      168.7
 	teensy K64      210.5
