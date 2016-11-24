@@ -159,6 +159,7 @@ coremarkish  (iterations/sec)
 	mbed K64F       280.4
 	pyboard         386.1  (mbed -O3)
 	ESP8266         124.6
+	CC3200           94.3
 	raspberry      1314.9
 	beaglebone     1346.1    black 2131.1
 	ubuntu         6124.7
