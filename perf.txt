@@ -145,12 +145,12 @@ linpack double (megaflops)
 	ubuntu        790     200x200
 
 coremarkish  (iterations/sec)
-	MEGA2560          6.9    16mhz
+	MEGA2560          6.9 (-Os)  9.1 (-O3)    16mhz
 	ZERO             56.8
 	DUE              90.8
 	maple            78.6
 	teensy LC        58.4
-	teensy 3.2      168.7
+	teensy 3.2      168.7 (-O)  189.4 (-O2)  96mhz
 	teensy K64      210.5
 	teensy K66      339.0
 	STM32L476       143.6  (-O2 170.4, mbed -O3 208.4)
