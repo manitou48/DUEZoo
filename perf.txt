@@ -94,6 +94,7 @@ fft_bench demo   int32_t
 	ESP8266       5ms
 	CC3200        6ms
 	STM32L476     5ms
+	pyboard       1ms  (mbed -O3)
 	beaglebone 0.375 ms (had to do it 1000 times to exceed a ms, then divide out 1000)
 	beaglebone black x1000 .503 ms
 	raspberry x1000  0.527  0.504
