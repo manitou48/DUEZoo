@@ -25,7 +25,7 @@ recursive fibonacci (fibo(26))
 	raspberry pi (700MHz) 10.682 ms  10.260
 	ubuntu/i3-2370M (2.4GHz) 1.2ms
 	edison (500mhz) 17.2 ms
-	pyboard 38 ms (168mhz in firmware C)  (mbed -O3 STM32F407VG)
+	pyboard 38 ms (168mhz in firmware C -Os)  (mbed 31 ms -O3 STM32F407VG)
 	pyboard 4272ms (python)
 
 MD5 (KBs == 1024 bytes/second)   x -O 2 3
@@ -69,6 +69,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	ESP8266       205
 	CC3200        350 KBs  (hardware 1939 KBs)
 	STM32L476     244 KBs 
+	pyboard       481 KBs (mbed -O3)
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
 	raspberry pi      15050
