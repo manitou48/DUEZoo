@@ -62,7 +62,8 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	teensy 3.0    121
 	teensy 3.1    226
 	teensy LC      91  beta
-	teensy K66    132  beta
+	teensy K64    269
+	teensy K66    484  beta
 	mbed LPC1768  287
 	mbed F466RE   520
 	mbed K64F     339    hardware 5818 KBs
