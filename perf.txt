@@ -22,7 +22,7 @@ recursive fibonacci (fibo(26))
 	STM32L476 (80mhz)        73 ms
 	beaglebone (720MHz) 8.2 ms
 	beaglebone black (1GHz) 20.5 ms
-	raspberry pi (700MHz) 10.682 ms  10.260
+	raspberry pi (700MHz) 10.682 ms  10.260  (PI3 1.2GHz 3.297 ms)
 	ubuntu/i3-2370M (2.4GHz) 1.2ms
 	edison (500mhz) 17.2 ms
 	pyboard 38 ms (168mhz in firmware C -Os)  (mbed 31 ms -O3 STM32F407VG)
@@ -51,7 +51,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	edison   37037   -O3 48309
 	pyboard  7529 KBs (firmware C)
 	raspberry 8103.727715 30959.752322 52910.052910 55555.555556
-	          57142.857143
+	          57142.857143   (PI3 88495 KBs)
 	ubuntu    67019.951169  260400.391642 316436.669947 320493.303292 KBs
 
 aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key 
@@ -73,7 +73,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	pyboard       481 KBs (mbed -O3)
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
-	raspberry pi      15050
+	raspberry pi      15050   (PI3 46655)
 	edison             9852
 	ubuntu            50079
 
@@ -97,7 +97,7 @@ fft_bench demo   int32_t
 	pyboard       1ms  (mbed -O3)
 	beaglebone 0.375 ms (had to do it 1000 times to exceed a ms, then divide out 1000)
 	beaglebone black x1000 .503 ms
-	raspberry x1000  0.527  0.504
+	raspberry x1000  0.527  0.504   (PI3 0.257)
 	ubuntu 0.053ms (needed 1000 iterations) 
 	edison 0.363ms (needed 1000 iterations) 
 
@@ -119,7 +119,7 @@ v[i]= sin(i)    i 0 to 399   double
 	CC3200     20435us     float 67613us    80mhz
 	STM32L476  15342us     float  7352us    80mhz
 	beaglebone 7626 us  black 1552us
-	raspberry  6989 us
+	raspberry  6989 us   (PI3 149 us)
 	ubuntu       69 us  
 	edison      330 us
 	pyboard    4187 us   float 4-byte @168mhz in firmware C
@@ -142,7 +142,7 @@ linpack double (megaflops)
 	CC3200          0.531  30x30
 	STM32L476       0.857  12.1 (float)  50x50  13.6 100x100
 	beaglebone     22    black 40  200x200
-	raspberry      40       200x200
+	raspberry      40       200x200   (PI3 174 mflops)
 	edison         93  mflops   (97 -O3)
 	pyboard        28  mflops (float 100x100 in firmware C)
 	ubuntu        790     200x200
@@ -163,6 +163,6 @@ coremarkish  (iterations/sec)
 	pyboard         386.1  (mbed -O3)
 	ESP8266         124.6
 	CC3200           94.3
-	raspberry      1314.9
+	raspberry      1314.9   (PI3 3216.7)
 	beaglebone     1346.1    black 2131.1
 	ubuntu         6124.7
