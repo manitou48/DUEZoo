@@ -147,6 +147,24 @@ linpack double (megaflops)
 	pyboard        28  mflops (float 100x100 in firmware C)
 	ubuntu        790     200x200
 
+bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
+    UNO          156868  us
+    ZERO          49210
+    DUE           10930
+    maple         11543
+    STM32L476      6668 us mbedtls 1979 us
+    teensy LC     44991
+    teenxy 3.2     6054 us mbedtls 1746
+    teensy K64     4885 us mbedtls 1520
+    teensy K66z    2738    mbedtls 1175 us
+    mbed K64F      1129 us    mbed tls
+    mbed F466RE     988 us    mbed tls
+    mbed LPC1768   1383 us    mbed tls
+    pyboard        2129 us  python loop  (mbed C 864 us )
+    raspberry       549 us   openssl   PI3 255  (mbedtls 259 us)
+    beaglebone      664 us   openssl  black 758 
+    ubuntu           65 us   openssl  (mbedtls 170us, libgmp 39us)
+
 coremarkish  (iterations/sec)
 	MEGA2560          6.9 (-Os)  9.1 (-O3)    16mhz
 	ZERO             56.8
