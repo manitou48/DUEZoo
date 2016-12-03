@@ -163,6 +163,14 @@ older W5100 based on SPI speeds: 4MHz .72mbs   (8MHz 1.1mbs),
   W5200: 32KB of buffer, 8 sockets, 33.3MHz SPI speed, burst read/write 
   default wiznet config 2048-byte send buffer, 2048-byte recv buffer/socket
 
+-----------
+WINC1500   (SPI clock 12MHz) 
+  ping rtt min/avg/max/mdev = 5.282/7.151/16.072/2.897 ms
+  TCP send: 3.3 mbs  receive: 3.9 mbs   window 4338
+  UDP echo RTT: 2421 us
+  UDP send: 3.9 mbs  receive: 3.4 mbs (large recv buffers?)
+    SPI clock at 24mhz showed modest speedup
+
 --------------------------------------------
     native ether controller
                    teensy beta
@@ -191,9 +199,3 @@ CC3200
   TCP send: 12.6 mbs  receive: 2.8 mbs
   UDP echo RTT: 2146 us
   UDP send: 1.8mbs  receive: 86mbs  (breaks packets into 255-byte packets?)
------------
-WINC1500   (SPI clock 12MHz)
-  ping rtt min/avg/max/mdev = 5.282/7.151/16.072/2.897 ms
-  TCP send: 3.3 mbs  receive: 3.9 mbs
-  UDP echo RTT: 2421 us
-  UDP send: 3.9 mbs  receive: 3.4 mbs (large recv buffers?)
