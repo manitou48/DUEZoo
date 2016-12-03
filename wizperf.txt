@@ -194,6 +194,6 @@ CC3200
 -----------
 WINC1500   (SPI clock 12MHz)
   ping rtt min/avg/max/mdev = 5.282/7.151/16.072/2.897 ms
-  TCP send: 3.3 mbs  receive: 2.8 mbs
+  TCP send: 3.3 mbs  receive: 3.9 mbs
   UDP echo RTT: 2421 us
   UDP send: 3.9 mbs  receive: 3.4 mbs (large recv buffers?)
