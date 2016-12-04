@@ -20,7 +20,7 @@ recursive fibonacci (fibo(26))
 	ESP8266 (80mhz)          76 ms  sparkfun dev 
 	CC3200 (80mhz)          110 ms  TI launchpad
 	STM32L476 (80mhz)        73 ms
-	beaglebone (720MHz) 8.2 ms
+	beaglebone (720MHz)     20.9
 	beaglebone black (1GHz) 20.5 ms
 	raspberry pi (700MHz) 10.682 ms  10.260  (PI3 1.2GHz 3.297 ms)
 	ubuntu/i3-2370M (2.4GHz) 1.2ms
@@ -156,7 +156,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     teensy LC     44991
     teenxy 3.2     6054 us mbedtls 1746
     teensy K64     4885 us mbedtls 1520
-    teensy K66z    2738    mbedtls 1175 us
+    teensy K66     2738    mbedtls 1175 us
     mbed K64F      1129 us    mbed tls
     mbed F466RE     988 us    mbed tls
     mbed LPC1768   1383 us    mbed tls
