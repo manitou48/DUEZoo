@@ -24,7 +24,7 @@ recursive fibonacci (fibo(26))
 	beaglebone black (1GHz) 20.5 ms
 	raspberry pi (700MHz) 10.682 ms  10.260  (PI3 1.2GHz 3.297 ms)
 	ubuntu/i3-2370M (2.4GHz) 1.2ms
-	edison (500mhz) 17.2 ms
+	edison (500mhz) 14.6 ms
 	pyboard 38 ms (168mhz in firmware C -Os)  (mbed 31 ms -O3 STM32F407VG)
 	pyboard 4272ms (python)
 
@@ -165,6 +165,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     CC3200        10877
     raspberry       549 us   openssl   PI3 255  (mbedtls 259 us)
     beaglebone      664 us   openssl  black 758 
+	edison          310 us   openssl  (mbedtls 578)
     ubuntu           65 us   openssl  (mbedtls 170us, libgmp 39us)
 
 coremarkish  (iterations/sec)
@@ -185,4 +186,5 @@ coremarkish  (iterations/sec)
 	CC3200           94.3
 	raspberry      1314.9   (PI3 3216.7)
 	beaglebone     1346.1    black 2131.1
+	edison         1237.2
 	ubuntu         6124.7
