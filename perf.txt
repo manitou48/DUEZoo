@@ -157,7 +157,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     UNO          156868  us
     ZERO          49210  us mbedtls 6203 us
     DUE           10930  us mbedtls 2637 us
-    maple         11543
+    maple         11543  us mbedtls 2527 us (Arduino IDE)
     STM32L476      6668 us mbedtls 1979 us
     teensy LC     44991 us mbedtls 5940
     teenxy 3.2     6054 us mbedtls 1746
