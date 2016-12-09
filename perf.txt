@@ -11,9 +11,9 @@ recursive fibonacci (fibo(26))
 	ZERO (48MHz) 26 121393 127 ms
 	maple (72MHz) 104 ms
 	teensy 3 (96MHz) 82 ms   3.1 26 121393 63
-	teensy LC beta (48mhz)  128ms
-	teensy K66 beta (180mhz) 28ms
-	teensy K64 beta (120mhz) 67ms
+	teensy LC (48mhz)       128ms
+	teensy K66 (180mhz)      28ms
+	teensy K64 (120mhz)      67ms
 	mbed LPC1768 (96mhz)     51ms
 	mbed F446RE (180mhz)     29ms
 	mbed K64F  (120mhz)      51 ms
@@ -32,21 +32,21 @@ recursive fibonacci (fibo(26))
 MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	spin 7 KBs catalina 84 KBs gcc 222 KBs (lmm)
 	arduino 48 KBs   -Os
-	DUE 23 ms 2226 KBs
-	ZERO 33 ms 1551 KBs
-	maple 1937 KBs   271ms 1889   -Os
+	DUE 23 ms 2226 KBs   mbedtls 3849
+	ZERO 33 ms 1551 KBs  mbedtls 1703
+	maple 1937 KBs   271ms 1889   -Os  mbedtls 3271 KBs
 	           1889 2124  2737  3605
 	teensy 3 (96 MHz)   25 ms 2048 KBs   
-	teensy 3.1 (96 MHz) 14 ms 3657 KBs  (5688 KBs @168Mhz IDE 19rc2)
-	teensy LC (48 MHz) 31 ms 1651 KBs  beta
-	teenys K66               8533 KBs  beta
-	teenys K64               4654 KBs  beta
-	mbed LPC1768 (96mhz) 20 ms  4994 KBs
-	mbed F466RE          12 ms  8324 KBs
-	mbed K64F            20ms   4994 KBs    hardware 10952 KBs
+	teensy 3.1 (96 MHz) 14 ms 3657 KBs  mbedtls 4162 (5688 KBs @168Mhz IDE 19rc2)
+	teensy LC (48 MHz) 31 ms 1651 KBs  mbedtls 1889
+	teenys K66               8533 KBs  mbedtls 10778 (hardware 16570)
+	teenys K64               4654 KBs  mbedtls 6168  (hardware 10964)
+	mbed LPC1768 (96mhz) 20 ms  4994 KBs mbedtls 6781
+	mbed F466RE          12 ms  8324 KBs mbedtls 10779
+	mbed K64F            20ms   4994 KBs mbedtls  6693   hardware 10952 KBs
 	ESP8266              17ms   3011 KBs
 	CC3200               17ms   3011 KBs   (hardware 19320 KBs)
-	STM32L476 (80mhz)    18ms   2844 KBs  
+	STM32L476 (80mhz)    18ms   2844 KBs mbedtls 3056
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
 	beaglebone black  -O 51354  -O3 98462
 	edison   37037   -O3 48309
@@ -58,27 +58,27 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 
 aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key 
 	UNO            28 KBs   (byte-oriented C implementation)
-	DUE           174
-	ZERO           83
-	maple         170
+	DUE           174  mbedtls 520
+	ZERO           83  mbedtls 267
+	maple         170  mbedtls 481
 	teensy 3.0    121
-	teensy 3.1    226
-	teensy LC      91  beta
-	teensy K64    269
-	teensy K66    484  beta
-	mbed LPC1768  287
-	mbed F466RE   520
-	mbed K64F     339    hardware 5818 KBs
+	teensy 3.1    226  mbedtls 688
+	teensy LC      91  mbedtls 279
+	teensy K64    269  mbedtls  771  (hardware  4000)
+	teensy K66    484  mbedtls 1280  (hardware 16000)
+	mbed LPC1768  287  mbedtls  889
+	mbed F466RE   520  mbedtls 1422
+	mbed K64F     339  mbedtls  864  hardware 5818 KBs
 	ESP8266       205
 	CC3200        350 KBs  (hardware 1939 KBs)
-	STM32L476     244 KBs 
+	STM32L476     244 KBs  mbedtls 566
 	pyboard       481 KBs (mbed -O3)
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
 	raspberry pi      15050   (PI3 46655)
 	edison             9852
 	ubuntu            50079
-	cygwin           144870
+	cygwin           144870 
 
 fft_bench demo   int32_t
 	propeller gcc 47ms
@@ -89,8 +89,8 @@ fft_bench demo   int32_t
 	maple 8 ms
 	teensy LC 15 ms
 	teensy 3 (96Mhz) 9 ms   3.1 4 ms
-	teensy K66    1ms   beta
-	teensy K64    2ms   beta
+	teensy K66    1ms   
+	teensy K64    2ms   
 	mbed LPC1768  2ms
 	mbed F466RE   1ms
 	mbed K64F     2ms
@@ -113,9 +113,9 @@ v[i]= sin(i)    i 0 to 399   double
 	maple     20959 us          72mhz
 	teensy 3  29504 us          96mhz
 	teensy3.1 18287 us          96mhz (12683us @ 168mhz)
-	teensy LC 73743 us          48mhz  beta
-	teensy K66 5425 us    float (hardware) 2665 beta
-	teensy K64 12559 us   float (hardware) 5014 beta
+	teensy LC 73743 us          48mhz  
+	teensy K66 5425 us    float (hardware) 2665 
+	teensy K64 12559 us   float (hardware) 5014 
 	mbed 1768 11045 us     96mhz
 	mbed F446RE 12420us float (hardware) 238us   180mhz
 	mbed K64F  11358us  float (hardware) 560us    120mhz
