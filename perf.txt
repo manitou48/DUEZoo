@@ -155,11 +155,11 @@ linpack double (megaflops)
 
 bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     UNO          156868  us
-    ZERO          49210
-    DUE           10930
+    ZERO          49210  us mbedtls 6203 us
+    DUE           10930  us mbedtls 2637 us
     maple         11543
     STM32L476      6668 us mbedtls 1979 us
-    teensy LC     44991
+    teensy LC     44991 us mbedtls 5940
     teenxy 3.2     6054 us mbedtls 1746
     teensy K64     4885 us mbedtls 1520
     teensy K66     2738    mbedtls 1175 us
