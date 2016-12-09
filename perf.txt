@@ -31,7 +31,7 @@ recursive fibonacci (fibo(26))
 
 MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	spin 7 KBs catalina 84 KBs gcc 222 KBs (lmm)
-	arduino 48 KBs   -Os
+	arduino 48 KBs  -Os  mbedtls  55KBs (1284p)
 	DUE 23 ms 2226 KBs   mbedtls 3849
 	ZERO 33 ms 1551 KBs  mbedtls 1703
 	maple 1937 KBs   271ms 1889   -Os  mbedtls 3271 KBs
@@ -57,7 +57,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	cygwin   355871.9  KBs
 
 aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key 
-	UNO            28 KBs   (byte-oriented C implementation)
+	UNO            28 KBs   (byte-oriented C implementation) mbedtls 42 1284p
 	DUE           174  mbedtls 520
 	ZERO           83  mbedtls 267
 	maple         170  mbedtls 481
@@ -154,7 +154,7 @@ linpack double (megaflops)
 	cygwin       3955     200x200
 
 bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
-    UNO          156868  us
+    UNO          156868  us mbedtls 34544 (1284p)
     ZERO          49210  us mbedtls 6203 us
     DUE           10930  us mbedtls 2637 us
     maple         11543  us mbedtls 2527 us (Arduino IDE)
