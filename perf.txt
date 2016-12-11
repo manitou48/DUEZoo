@@ -176,23 +176,23 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     cygwin           16 us   openssl  (mbedtls 44us)
 
 coremarkish  (iterations/sec)
-	MEGA2560          6.9 (-Os)  9.1 (-O3)    16mhz
-	ZERO             56.8
-	DUE              90.8
-	maple            78.6
-	teensy LC        58.4
-	teensy 3.2      168.7 (-O)  189.4 (-O2)  96mhz
-	teensy K64      210.5
-	teensy K66      339.0
-	STM32L476       143.6  (-O2 170.4, mbed -O3 208.4)
-	mbed LPC1768    185.7
-	mbed F466RE     414.9
-	mbed K64F       280.4
-	pyboard         386.1  (mbed -O3)
-	ESP8266         124.6
-	CC3200           94.3
-	raspberry      1314.9   (PI3 3216.7)
-	beaglebone     1346.1    black 2131.1
+	MEGA2560          6.9 -Os  9.1 (-O3)    16mhz
+	ZERO             56.8 -Os
+	DUE              90.8 -Os
+	maple            78.6 -Os
+	teensy LC        58.4 -Os
+	teensy 3.2      168.7 -O  189.4 (-O2)  96mhz
+	teensy K64      210.5 -O
+	teensy K66      339.0 -O
+	STM32L476       143.6 -Os  (-O2 170.4, mbed -O3 208.4)
+	mbed LPC1768    185.7 -O3
+	mbed F466RE     414.9 -O3
+	mbed K64F       280.4 -O3
+	pyboard         386.1 -O3   mbed
+	ESP8266         124.6 -Os
+	CC3200           94.3 -Os
+	raspberry      1314.9 -O2   PI3   3216.7
+	beaglebone     1346.1 -O2   black 2131.1
 	edison         1237.2 -O2 (IDE -Os 1061.2)
-	ubuntu         6124.7
-	cygwin        19565.6
+	ubuntu         6124.7 -O2
+	cygwin        19565.6 -O2
