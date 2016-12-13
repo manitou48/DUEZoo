@@ -182,8 +182,8 @@ coremarkish  (iterations/sec)
 	maple            78.6 -Os
 	teensy LC        58.4 -Os
 	teensy 3.2      168.7 -O  189.4 (-O2)  96mhz
-	teensy K64      210.5 -O
-	teensy K66      339.0 -O
+	teensy K64      210.5 -O  232.9 (-O2) 120mhz
+	teensy K66      339.0 -O  384.0 (-O2) 180mhz
 	STM32L476       143.6 -Os  (-O2 170.4, mbed -O3 208.4)
 	mbed LPC1768    185.7 -O3
 	mbed F466RE     414.9 -O3
