@@ -39,8 +39,8 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	teensy 3 (96 MHz)   25 ms 2048 KBs   
 	teensy 3.1 (96 MHz) 14 ms 3657 KBs  mbedtls 4162 (5688 KBs @168Mhz IDE 19rc2)
 	teensy LC (48 MHz) 31 ms 1651 KBs  mbedtls 1889
-	teenys K66               8533 KBs  mbedtls 10778 (hardware 16570)
-	teenys K64               4654 KBs  mbedtls 6168  (hardware 10964)
+	teenys K66          6 ms 8533 KBs  mbedtls 10778 (hardware 16570)
+	teenys K64         11 ms 4654 KBs  mbedtls 6168  (hardware 10964)
 	mbed LPC1768 (96mhz) 20 ms  4994 KBs mbedtls 6781
 	mbed F466RE          12 ms  8324 KBs mbedtls 10779
 	mbed K64F            20ms   4994 KBs mbedtls  6693   hardware 10952 KBs
