@@ -19,18 +19,18 @@ standard (std) attachInterrupt() to modified kernel ISR (opt)
 	 CC3200 pin set HWREG(GPIOA1_BASE +( 1<<5)) = 1<<3;
 
   (units are cycles from ARM CPU systick counter or UNO timer2)
-                      DUE      maple     teensy3  3.1    UNO teensy++2 LPC  MK64F ZERO pyboard CC3200
-tickres                 3          3          1     1     2      2       1     1    8      9      1
-set pin                 6          6         12     6     4      4      10     8    4      7      5
-digitalWrite          184         44         64    53    63      4      19    71   71            33
-in to fcn              15         11         19    13     2      1       1     1   12     21     10
-out of fcn             17         23         20    12     6      6       4     4   15     12      8
+                      DUE  maple  teensy3  3.1 3.6    UNO teensy++2 LPC  MK64F ZERO pyboard CC3200
+tickres                 3      3       1     1   1    2      2       1     1    8      9      1
+set pin                 6      6      12     6  13    4      4      10     8    4      7      5
+digitalWrite          184     44      64    53  51   63      4      19    71   71            33
+in to fcn              15     11      19    13  18    2      1       1     1   12     21     10
+out of fcn             17     23      20    12   8    6      6       4     4   15     12      8
 
-in to ISR  (std)      355        104        107    88     57    63     244   272  221     45    172
-out of ISR  (std)     128        121        126    87     50    54      63   670  177     98     35
+in to ISR  (std)      355    104     107    88  75    57    63     244   272  221     45    172
+out of ISR  (std)     128    121     126    87  36    50    54      63   670  177     98     35
 
-in to ISR  (opt)       53         45         64    46     18    17      46    55          34     31
-out of ISR  (opt)      28         58         30    25     29    30      19    29          27     49
+in to ISR  (opt)       53     45      64    46  55    18    17      46    55          34     31
+out of ISR  (opt)      28     58      30    25  30    29    30      19    29          27     49
 
 
 ------------------------------
