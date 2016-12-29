@@ -18,9 +18,9 @@ teensy 3.3v@96MHz     33.6/36.7          arm 3.3v@96MHz  14/16 teensy 3.1
 teensy 3.3v@96MHz     38.1/41.1          arm 3.3v@96MHz  teensy 3.1 USB power
 teensy 3.3v@96MHz     38.1/41.1          arm 3.3v@96MHz  teensy 3.2 USB power
 teensyLC 3.3v@48mhz   12.6/15.5          arm 3.3v@48mhz   3/6
-teensy66 3.3v@180mhz  73.1/76.1          arm 3.3v@180mhz  51/35  K66 beta
-teensy64 3.3v@120mhz  53.7/56.7          arm 3.3v@120mhz  37/42  K64 beta
-pyboard 3.3v@168mhz   26.1/28.6          arm 3.3v@168mhz 59/96 io enabled WFI
+teensy66 3.3v@180mhz  73.1/76.1          arm 3.3v@180mhz  51/35  K66 T3.6
+teensy64 3.3v@120mhz  53.7/56.7          arm 3.3v@120mhz  37/42  K64 T3.5
+pyboard 3.3v@168mhz   26.1/28.6   WFI    arm 3.3v@168mhz 59/96 io enabled 66.2
 DISCOVERY 3v@168mhz   63.1/72.7          arm 3v@168mhz 59/96 io enabled
 mbed 3.3v@96mhz       138.7/141.1        arm LPC1768  50/76 ma
 mbed 3.3v@120mhz      138.9/147.9        arm K64F  37/42 ma
@@ -28,7 +28,7 @@ mbed 3.3v@180mhz      85.0/87.3          arm F446RE  86/46 ma
 ZERO 3.3v@48mhz       108.0/112.2        arm SAMD21G  4/2 ma
 ESP8266 3.3v@80mhz      29/32            sparkfun dev breakout 
 CC3200 3.3v@80mhz      64.9/68.4         TI LaunchPad
-STM32L476 3.3v@80mhz    5.6/6.3          arm STM32L476 10/3  dragonfly  WFE
+STM32L476 3.3v@80mhz    5.6/6.3   WFE    arm STM32L476 10/3  dragonfly 15.0
 STM32L476 3.3v@80mhz   58.0/61.0         arm STM32L476VG 10/3  mbed 
 quickstart 3.3v@80MHz 13.4/15.1          propeller 3.3v@80MHz  8/80 8 cogs
 stampbs2 BoE 5v@20MHz 18.6/23.6          PIC 5@20MHz      7
