@@ -76,6 +76,7 @@ clock   latency send recv     TCP  send recv
 12MHz       4.88         11.52         11.55/8.67     11.55/11.22
 16MHz       5.45         15.17         14.65/8.67     15.23/14.65
 24MHz       6.15         21.61         14.63/8.68     21.67/16.55
+30MHz                                                 27.13/20.74
 
   teensy UDP
             SPI                  SdFat SPI           paulSPI
@@ -85,6 +86,7 @@ clock   latency send recv     TCP  send recv
  12MHz    548  4.3   4.3       449  8.8   8.2         307  9.2   11.4
  16MHz    513  4.8   2.9       410 11.1   9.8         281 11.8   13.0
  24MHz    475  5.4   3.2       392 14.2  13.2         248 12.9   20.9
+ 30MHz                                                207 15.5   23.9
 
   teensy TCP   (mbs)
          SdFatSPI TCP     paulSPI TCP
@@ -94,6 +96,7 @@ clock   latency send recv     TCP  send recv
  12MHz    8.1    7.8      8.8   10.7
  16MHz
  24MHz   11.8   11.6     12.9   19.5
+ 30MHz                   14.7   24.2
 
 -------------------------------------------------------------
   mbed LPC1768  @96mhz    (SPI @1mhz 0.9mbs, @24mhz 6.1mbs -- needs DMA)
