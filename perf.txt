@@ -26,7 +26,7 @@ recursive fibonacci (fibo(26))
 	beaglebone black (1GHz)  20.5 ms
 	raspberry pi (700MHz)    10.682 ms  10.260  (PI3 1.2GHz 64-bit 3.297 ms)
 	edison (500mhz)          14.6 ms
-	ubuntu/i3-2370M (2.4GHz) 1.2 ms   -O
+	ubuntu/pentinum4(2.8GHz) 1.2 ms   -O
 	cygwin/i5-4460 (3.2GHz)  0.7 ms windows-10 64-bit   -O
 
 MD5 (KBs == 1024 bytes/second)   x -O 2 3
@@ -176,25 +176,27 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     cygwin           16 us   openssl  (mbedtls 44us)
 
 coremarkish           MHz    /sec /MHz
-	MEGA2560           16     6.9  0.4   -Os  (-O3 9.1)
-	ZERO               48    56.8  1.2   -Os
-	DUE                84    90.8  1.1   -Os
-	maple              72    78.6  1.1   -Os
-	teensy LC          48    58.4  1.2   -Os
+	MEGA2560           16     6.9  0.4   -Os  (-O3 9.1)  avr-gcc 4.9.2
+	ZERO               48    56.8  1.2   -Os  gcc 4.8.3
+	DUE                84    90.8  1.1   -Os  gcc 4.8.3
+	maple              72    78.6  1.1   -Os  gcc 4.4.1
+	teensy LC          48    58.4  1.2   -Os  gcc 4.8.4
 	teensy 3.2         96   189.4  2.0   -O2
 	teensy 3.5        120   232.9  1.9   -O2
 	teensy 3.6        180   384.0  2.1   -O2
-	STM32L476          80   170.4  2.1   -O2 (mbed -O3 208.4)
-	mbed LPC1768       96   185.7  1.9   -O3  arm gcc
+	STM32L476          80   170.4  2.1   -O2  gcc 4.8.3 (mbed -O3 208.4)
+	mbed LPC1768       96   185.7  1.9   -O3  arm cc 5.06
 	mbed F466RE       180   414.9  2.3   -O3
 	mbed K64F         120   280.4  2.3   -O3
 	pyboard           168   386.1  2.3   -O3   mbed 
-	ESP8266            80   124.6  1.6   -Os
-	CC3200             80    94.3  1.2   -Os
-	raspberry         700  1314.9  1.9   -O2
-	raspberry PI3    1200  3216.7  2.7   -O2
-	beaglebone        720  1346.1  1.9   -O2
-	beaglebone black 1000  2131.1  2.1   -O2
-	edison            500  1237.2  2.5   -O2 (IDE -Os 1061.2)
-	ubuntu           2400  6124.7  2.6   -O2
-	cygwin           3200 19565.6  6.1   -O2 GCC5.3.0
+	ESP8266            80   124.6  1.6   -Os  xtensa gcc 4.8.2
+	CC3200             80    94.3  1.2   -Os  arm gcc 4.7.4
+	raspberry         700  1314.9  1.9   -O2  gcc 4.6.3
+	raspberry PI3    1200  3216.7  2.7   -O2  gcc 4.9.2
+	beaglebone        720  1346.1  1.9   -O2  gcc 4.6.3
+	beaglebone black 1000  2131.1  2.1   -O2  gcc 4.6.3
+	edison            500  1237.2  2.5   -O2  gcc 4.8.2 (IDE -Os 1061.2)
+	ubuntu/pentium4  2800  6124.7  2.2   -O2  gcc 4.8.4
+	ubuntu/N3700     1600  7494.2  4.7   -O2  gcc 5.4.0  64-bit
+	macos/i7-3520M   2900 17465.2  6.0   -O2  gcc 4.2.1  64-bit
+	cygwin/i5-4460   3200 19565.6  6.1   -O2  gcc 5.4.0  64-bit
