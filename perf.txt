@@ -6,11 +6,11 @@ recursive fibonacci (fibo(26))
 	 catalina 3.6 5342 ms
 	 gcc cog 486 ms
 	 gcc lmm 927 ms
-	arduino UNO (16MHz) 32-bit int's 927 ms
-	DUE (84MHz) 26 121393 98 ms
-	ZERO (48MHz) 26 121393 127 ms
-	maple (72MHz) 104 ms
-	teensy 3 (96MHz) 82 ms   3.1 26 121393 63
+	arduino UNO (16MHz)     927 ms   32-bit int's
+	DUE (84MHz)              98 ms
+	ZERO (48MHz)            127 ms
+	maple (72MHz)           104 ms
+	teensy 3 (96MHz)         82 ms   3.1 26 121393 63
 	teensy LC (48mhz)       128ms
 	teensy K66 (180mhz)      28ms
 	teensy K64 (120mhz)      67ms
@@ -21,11 +21,11 @@ recursive fibonacci (fibo(26))
 	CC3200 (80mhz)          110 ms  TI launchpad
 	STM32L476 (80mhz)        73 ms
 	pyboard 38 ms (168mhz in firmware C -Os)  (mbed 31 ms -O3 STM32F407VG)
-	pyboard 4272ms (python)
-	beaglebone (720MHz)     20.9   -O
-	beaglebone black (1GHz) 20.5 ms
-	raspberry pi (700MHz) 10.682 ms  10.260  (PI3 1.2GHz 64-bit 3.297 ms)
-	edison (500mhz) 14.6 ms
+	pyboard                4272ms (python)
+	beaglebone (720MHz)      20.9   -O
+	beaglebone black (1GHz)  20.5 ms
+	raspberry pi (700MHz)    10.682 ms  10.260  (PI3 1.2GHz 64-bit 3.297 ms)
+	edison (500mhz)          14.6 ms
 	ubuntu/i3-2370M (2.4GHz) 1.2 ms   -O
 	cygwin/i5-4460 (3.2GHz)  0.7 ms windows-10 64-bit   -O
 
@@ -175,24 +175,26 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     ubuntu           65 us   openssl  (mbedtls 170us, libgmp 39us)
     cygwin           16 us   openssl  (mbedtls 44us)
 
-coremarkish  (iterations/sec)
-	MEGA2560          6.9 -Os  9.1 (-O3)    16mhz
-	ZERO             56.8 -Os
-	DUE              90.8 -Os
-	maple            78.6 -Os
-	teensy LC        58.4 -Os
-	teensy 3.2      168.7 -O  189.4 (-O2)  96mhz
-	teensy K64      210.5 -O  232.9 (-O2) 120mhz
-	teensy K66      339.0 -O  384.0 (-O2) 180mhz
-	STM32L476       143.6 -Os  (-O2 170.4, mbed -O3 208.4)
-	mbed LPC1768    185.7 -O3
-	mbed F466RE     414.9 -O3
-	mbed K64F       280.4 -O3
-	pyboard         386.1 -O3   mbed
-	ESP8266         124.6 -Os
-	CC3200           94.3 -Os
-	raspberry      1314.9 -O2   PI3   3216.7
-	beaglebone     1346.1 -O2   black 2131.1
-	edison         1237.2 -O2 (IDE -Os 1061.2)
-	ubuntu         6124.7 -O2
-	cygwin        19565.6 -O2
+coremarkish           MHz    /sec /MHz
+	MEGA2560           16     6.9  0.4   -Os  (-O3 9.1)
+	ZERO               48    56.8  1.2   -Os
+	DUE                84    90.8  1.1   -Os
+	maple              72    78.6  1.1   -Os
+	teensy LC          48    58.4  1.2   -Os
+	teensy 3.2         96   189.4  2.0   -O2
+	teensy 3.5        120   232.9  1.9   -O2
+	teensy 3.6        180   384.0  2.1   -O2
+	STM32L476          80   170.4  2.1   -O2 (mbed -O3 208.4)
+	mbed LPC1768       96   185.7  1.9   -O3  arm gcc
+	mbed F466RE       180   414.9  2.3   -O3
+	mbed K64F         120   280.4  2.3   -O3
+	pyboard           168   386.1  2.3   -O3   mbed 
+	ESP8266            80   124.6  1.6   -Os
+	CC3200             80    94.3  1.2   -Os
+	raspberry         700  1314.9  1.9   -O2
+	raspberry PI3    1200  3216.7  2.7   -O2
+	beaglebone        720  1346.1  1.9   -O2
+	beaglebone black 1000  2131.1  2.1   -O2
+	edison            500  1237.2  2.5   -O2 (IDE -Os 1061.2)
+	ubuntu           2400  6124.7  2.6   -O2
+	cygwin           3200 19565.6  6.1   -O2 GCC5.3.0
