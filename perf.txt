@@ -198,5 +198,6 @@ coremarkish           MHz    /sec /MHz
 	edison            500  1237.2  2.5   -O2  gcc 4.8.2 (IDE -Os 1061.2)
 	ubuntu/pentium4  2800  6124.7  2.2   -O2  gcc 4.8.4
 	ubuntu/N3700     1600  7494.2  4.7   -O2  gcc 5.4.0  64-bit
+	RHlinux/AMD6274  2200  6972.2  3.2   -O2  gcc 4.4.7  64-bit
 	macos/i7-3520M   2900 17465.2  6.0   -O2  gcc 4.2.1  64-bit
 	cygwin/i5-4460   3200 19565.6  6.1   -O2  gcc 5.4.0  64-bit
