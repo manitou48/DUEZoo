@@ -26,6 +26,7 @@ DISCOVERY 3v@168mhz   63.1/72.7          arm 3v@168mhz 59/96 io enabled
 mbed 3.3v@96mhz       138.7/141.1        arm LPC1768  50/76 ma
 mbed 3.3v@120mhz      138.9/147.9        arm K64F  37/42 ma
 mbed 3.3v@180mhz      85.0/87.3          arm F446RE  86/46 ma
+mbed 3.3v@168mhz      126.9/129.7        arm F469NI  94/45 ma
 ZERO 3.3v@48mhz       108.0/112.2        arm SAMD21G  4/2 ma
 ESP8266 3.3v@80mhz      29/32            sparkfun dev breakout 
 CC3200 3.3v@80mhz      64.9/68.4         TI LaunchPad
