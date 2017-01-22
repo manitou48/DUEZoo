@@ -123,7 +123,7 @@ v[i]= sin(i)    i 0 to 399   double
 	mbed 1768 11045 us     96mhz
 	mbed F446RE 12420us float (hardware) 238us   180mhz
 	mbed K64F  11358us  float (hardware) 560us    120mhz
-	mbed F469NI         float (hardware) 254us
+	mbed F469NI 5744us  float (hardware) 254us
 	ESP8266    19427us     float 68106us    80mhz
 	CC3200     20435us     float 67613us    80mhz
 	STM32L476  15342us     float  7352us    80mhz
@@ -148,7 +148,7 @@ linpack double (megaflops)
 	mbed LPC1768    0.879                50x50
 	mbed F466RE     0.855 23.955 (float) 50x50
 	mbed K64F       0.951 12.909 (float) 50x50
-	mbed F469NI           23.971 (float) 50x50  27 100x100
+	mbed F469NI     2.11  23.971 (float) 50x50  27 100x100
 	ESP8266         0.593  30x30
 	CC3200          0.531  30x30
 	STM32L476       0.857  12.1 (float)  50x50  13.6 100x100
