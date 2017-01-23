@@ -20,9 +20,9 @@ recursive fibonacci (fibo(26))
 	mbed F469NI  (168mhz)    31 ms    (like Arduino otto)
 	ESP8266 (80mhz)          76 ms  sparkfun dev 
 	CC3200 (80mhz)          110 ms  TI launchpad
-	STM32L476 (80mhz)        73 ms
-	pyboard 38 ms (168mhz in firmware C -Os)  (mbed 31 ms -O3 STM32F407VG)
-	pyboard                4272ms (python)
+	STM32L476RE (80mhz)      73 ms  dragonfly
+	pyboard STM32F405RGT6  4272ms (python)
+	pyboard 38 ms (168mhz in firmware C -Os)  (mbed STM32F407VG 31 ms -O3)
 	beaglebone (720MHz)      20.9   -O
 	beaglebone black (1GHz)  20.5 ms
 	raspberry pi (700MHz)    10.682 ms  10.260  (PI3 1.2GHz 64-bit 3.297 ms)
@@ -191,12 +191,12 @@ coremarkish           MHz    /sec /MHz
     teensy 3.2         96   189.4  2.0   -O2
     teensy 3.5        120   232.9  1.9   -O2
     teensy 3.6        180   384.0  2.1   -O2
-    STM32L476          80   170.4  2.1   -O2  gcc 4.8.3 (mbed -O3 208.4)
+    STM32L476RE        80   170.4  2.1   -O2  gcc 4.8.3 (mbed -O3 208.4)
     mbed LPC1768       96   185.7  1.9   -O3  arm cc 5.06
     mbed F466RE       180   414.9  2.3   -O3
     mbed K64F         120   280.4  2.3   -O3
     mbed F469NI       168   387.3  2.3   -O3    otto
-    pyboard           168   386.1  2.3   -O3   mbed 
+    pyboard           168   386.1  2.3   -O3   mbed STM32F407VG
     ESP8266            80   124.6  1.6   -Os  xtensa gcc 4.8.2
     CC3200             80    94.3  1.2   -Os  arm gcc 4.7.4
     raspberry         700  1314.9  1.9   -O2  gcc 4.6.3
