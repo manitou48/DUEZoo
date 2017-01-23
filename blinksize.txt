@@ -1,11 +1,12 @@
 blink size  KB
          Flash   RAM
-mbed   (ARM gcc -O3)
+mbed   (ARM cc -O3)
    STM    16.1   0.4    STM32L4
    LPC    17.3   0.6    LPC1768
    LEO    15.6   0.8    STM32F446
    K64F   19.6   0.4
-   DISCO  19.9   1.1     STM32F4
+   otto   12.3   0.4    STM32F469NI
+   DISCO  19.9   1.1    STM32F4
    T3.1   16.7   0.4    teensy
 arduino  (GNU gcc -Os)
    UNO     1.1   0
