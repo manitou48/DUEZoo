@@ -195,7 +195,7 @@ coremarkish           MHz    /sec /MHz
     mbed LPC1768       96   185.7  1.9   -O3  arm cc 5.06
     mbed F466RE       180   414.9  2.3   -O3
     mbed K64F         120   280.4  2.3   -O3
-    mbed F469NI       168   387.3  2.3   -O3    otto
+    mbed F469NI       168   387.3  2.3   -O3    otto  (415.3 @180mhz)
     pyboard           168   386.1  2.3   -O3   mbed STM32F407VG
     ESP8266            80   124.6  1.6   -Os  xtensa gcc 4.8.2
     CC3200             80    94.3  1.2   -Os  arm gcc 4.7.4
