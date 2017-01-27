@@ -187,7 +187,7 @@ coremarkish           MHz    /sec /MHz
     ZERO               48    56.8  1.2   -Os  gcc 4.8.3
     DUE                84    90.8  1.1   -Os  gcc 4.8.3
     maple              72    78.6  1.1   -Os  gcc 4.4.1
-    teensy LC          48    58.4  1.2   -Os  gcc 4.8.4
+    teensy LC          48    65.1  1.4   -O   gcc 4.8.4
     teensy 3.2         96   189.4  2.0   -O2
     teensy 3.5        120   232.9  1.9   -O2
     teensy 3.6        180   384.0  2.1   -O2
