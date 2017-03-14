@@ -40,6 +40,9 @@ Arduino UNO interrupt overhead, see
 Teensy ++2 digitalWrite is inline if constant
   You may see jitter in your timings from timer or USB interrupts.
 
+Teensy 3* Cortex M4, ISR entry latency 12 cycles, exit latency 10 cycles,
+assuming lazy stacking for float, otherwise add 17 cycles.  Tail chaining
+helps for back-to-back interrupts.
 ---------------------------
 UNO/AVR timer0 and millis overhead
 
