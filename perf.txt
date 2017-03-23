@@ -19,7 +19,7 @@ recursive fibonacci (fibo(26))
 	mbed K64F  (120mhz)      51 ms
 	mbed F469NI  (168mhz)    31 ms    (like Arduino otto) (29 ms @180mhz)
 	ESP8266 (80mhz)          76 ms  sparkfun dev 
-	ESP8266 (240mhz)         23 ms  sparkfun dev 
+	ESP32   (240mhz)         23 ms  sparkfun dev 
 	CC3200 (80mhz)          110 ms  TI launchpad
 	STM32L476RE (80mhz)      73 ms  dragonfly
 	pyboard STM32F405RGT6  4272ms (python)
