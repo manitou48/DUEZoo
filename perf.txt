@@ -19,6 +19,7 @@ recursive fibonacci (fibo(26))
 	mbed K64F  (120mhz)      51 ms
 	mbed F469NI  (168mhz)    31 ms    (like Arduino otto) (29 ms @180mhz)
 	ESP8266 (80mhz)          76 ms  sparkfun dev 
+	ESP8266 (240mhz)         23 ms  sparkfun dev 
 	CC3200 (80mhz)          110 ms  TI launchpad
 	STM32L476RE (80mhz)      73 ms  dragonfly
 	pyboard STM32F405RGT6  4272ms (python)
@@ -47,6 +48,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	mbed K64F            20ms   4994 KBs mbedtls  6693   hardware 10952 KBs
 	mbed F469NI          13 ms  7769 KBs mbedtls 10039  (8327 10778 @180mhz)
 	ESP8266              17ms   3011 KBs
+	ESP32                 4ms  12800 KBs
 	CC3200               17ms   3011 KBs   (hardware 19320 KBs)
 	STM32L476 (80mhz)    18ms   2844 KBs mbedtls 3056
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
@@ -73,6 +75,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	mbed K64F     339  mbedtls  864  hardware 5818 KBs
 	mbed F469NI   478  mbedtls 1362  (512 1422 @180mhz)
 	ESP8266       205
+	ESP32         651
 	CC3200        350 KBs  (hardware 1939 KBs)
 	STM32L476     244 KBs  mbedtls 566
 	pyboard       481 KBs (mbed -O3)
@@ -99,6 +102,7 @@ fft_bench demo   int32_t
 	mbed K64F     2ms
 	mbed F469NI   1ms
 	ESP8266       5ms
+	ESP32         2ms
 	CC3200        6ms
 	STM32L476     5ms
 	pyboard       1ms  (mbed -O3)
@@ -125,6 +129,7 @@ v[i]= sin(i)    i 0 to 399   double
 	mbed K64F  11358us  float (hardware) 560us    120mhz
 	mbed F469NI 5744us  float (hardware) 254us    (237us @180mhz)
 	ESP8266    19427us     float 68106us    80mhz
+	ESP32       4218us     float  2811us   240mhz
 	CC3200     20435us     float 67613us    80mhz
 	STM32L476  15342us     float  7352us    80mhz
 	beaglebone 7626 us  black 1552us
@@ -150,6 +155,7 @@ linpack double (megaflops)
 	mbed K64F       0.951 12.909 (float) 50x50
 	mbed F469NI     2.11  23.971 (float) 50x50  27 100x100  (29@180mhz)
 	ESP8266         0.593  30x30
+	ESP32           2.8 100x100   (float) 44.5
 	CC3200          0.531  30x30
 	STM32L476       0.857  12.1 (float)  50x50  13.6 100x100
 	beaglebone     22    black 40  200x200
@@ -175,6 +181,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     mbed F469NI    1059 us    mbed tls  (738 @180mhz)
     pyboard        2129 us  python loop  (mbed C 864 us )
     ESP8266       16269
+    ESP32          4647
     CC3200        10877
     raspberry       549 us   openssl   PI3 255  (mbedtls 259 us)
     beaglebone      664 us   openssl  black 758 
@@ -198,6 +205,7 @@ coremarkish           MHz    /sec /MHz
     mbed F469NI       168   387.3  2.3   -O3    otto  (415.3 @180mhz)
     pyboard           168   386.1  2.3   -O3   mbed STM32F407VG
     ESP8266            80   124.6  1.6   -Os  xtensa gcc 4.8.2
+    ESP32             240   358.5  1.5   -Os  xtensa gcc 4.8.2
     CC3200             80    94.3  1.2   -Os  arm gcc 4.7.4
     raspberry         700  1314.9  1.9   -O2  gcc 4.6.3
     raspberry PI3    1200  3216.7  2.7   -O2  gcc 4.9.2

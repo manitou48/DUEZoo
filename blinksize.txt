@@ -20,7 +20,8 @@ arduino  (GNU gcc -Os)
    LC     11.4 2.2
    T2     2.0  0
    T2++   2.0  0
-esp8266 219.4  31.1 arduino IDE -Os
+ESP8266 219.4  31.1 arduino IDE -Os
+ESP32   133.3   9.4 arduino IDE -Os
 maple    13.4  2.9  arduino IDE -Os
 maple    13.9       maple IDE -Os
 cc3200    3.0       energia IDE -Os
