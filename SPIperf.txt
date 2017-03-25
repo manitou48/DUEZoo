@@ -92,16 +92,16 @@ SPI  clock    transfer   DMA (4-byte)
 10MHz         2.2 mbs    9.2
 20MHz         2.7 mbs   17.2
 
-   ESP8266  @ 80MHz 
-                SPI      
+   SPI unconnected
+          ESP8266@80MHz  ESP32@240mhz 
 SPI clock    writeBytes
-2MHz          1.95 mbs
-4MHz          3.85 mbs
-8MHz          7.43 mbs
-16MHz        13.9  mbs
-20MHz        16.8  mbs
-40MHz        28.9  mbs
-80MHz        46.0  mbs
+2MHz          1.95 mbs    1.98
+4MHz          3.85 mbs    3.94
+8MHz          7.43 mbs    7.8
+16MHz        13.9  mbs   15.3
+20MHz        16.8  mbs   18.96
+40MHz        28.9  mbs   36.04
+80MHz        46.0  mbs   65.04
 
 dragonfly (STM32L4 @80mhz), SPI clock at 20 mhz yields 19.9 mbs
 
