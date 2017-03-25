@@ -11,6 +11,7 @@ dragonfly         37.2 mbs STM32L476RE (TRNG) @80mhz  L476VG L476RG
 mbed K64F         7.7 mbs  (TRNG)  @120mhz
 mbed F469NI      37.2 mbs TRNG @168mhz
 Teensy K66/K64    7.7 mbs  (TRNG) @120mhz  T3.6/T3.5
+ESP32             6.4 mbs (TRNG) need wifi/ble running (not tested)
 Propeller         .16 mbs  RealRandom.spin CTR PLL jitter
 
 Teensy 3            136 bits/sec  6ms LPTMR0 and systick   entropy lib
