@@ -184,11 +184,16 @@ TCP recv (mbs)                    51         21                19
 
 wifi performance
   http://forum.arduino.cc/index.php?topic=364521.0
-ESP8266   sparkfun dev thing
+ESP8266   sparkfun dev thing  12/23/15
  ping rtt min/avg/max/mdev = 0.832/0.967/1.093  ms
  TCP send: 0.28 mbs  receive: 8.6 mbs  (sending or receiving 1000-byte records)
  UDP 8-byte echo RTT: 716us  (though more than 1 second  after a delay() ?)
  UDP send: 28 mbs  receive: 30.7 mbs   (1000-byte packets)
+ESP32   sparkfun thing  2017
+ ping rtt min/avg/max/mdev = 4.831/28.127/143.897/43.944 ms
+ TCP send: 0.125 mbs  receive: 0.36 mbs  (recv doesn't see close?)
+ UDP 8-byte echo RTT: 3812 us
+ UDP send: 0.19 mbs  receive: 0.05 mbs   (1000-byte packets)
 -----------
 CC3200
   ping rtt min/avg/max/mdev = 19.213/80.313/139.361/30.570 ms
