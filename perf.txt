@@ -186,7 +186,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     raspberry       549 us   openssl   PI3 255  (mbedtls 259 us)
     beaglebone      664 us   openssl  black 758 
     edison          310 us   openssl  (mbedtls 578)
-    ubuntu           65 us   openssl  (mbedtls 170us, libgmp 39us)
+    ubuntu           65 us   openssl  (mbedtls 170us, libgmp 39us, bignumber 189)
     cygwin           16 us   openssl  (mbedtls 44us)
 
 coremarkish           MHz    /sec /MHz
