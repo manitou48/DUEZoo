@@ -175,10 +175,10 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     teenxy 3.2     6054 us mbedtls 1746
     teensy K64     4885 us mbedtls 1520
     teensy K66     2738    mbedtls 1175 us
-    mbed K64F      1129 us    mbed tls
-    mbed F466RE     988 us    mbed tls
-    mbed LPC1768   1383 us    mbed tls
-    mbed F469NI    1059 us    mbed tls  (738 @180mhz)
+    mbed K64F      3846 us    mbed tls 1129
+    mbed F466RE    2477 us    mbed tls  988
+    mbed LPC1768   5222 us    mbed tls 1383
+    mbed F469NI    2649 us    mbed tls 1059  (738 @180mhz)
     pyboard        2129 us  python loop  (mbed C 864 us )
     ESP8266       16269
     ESP32          4647
