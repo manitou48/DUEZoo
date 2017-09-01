@@ -23,6 +23,7 @@ recursive fibonacci (fibo(26))
 	ESP32   (240mhz)         23 ms  sparkfun dev 
 	CC3200 (80mhz)          110 ms  TI launchpad
 	STM32L476RE (80mhz)      73 ms  dragonfly
+	WICED STM32F205 (@120mhz)88 ms
 	pyboard STM32F405RGT6  4272ms (python)
 	pyboard 38 ms (168mhz in firmware C -Os)  (mbed STM32F407VG 31 ms -O3)
 	beaglebone (720MHz)      20.9   -O
@@ -53,6 +54,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	ESP32                 4ms  12800 KBs
 	CC3200               17ms   3011 KBs   (hardware 19320 KBs)
 	STM32L476 (80mhz)    18ms   2844 KBs mbedtls 3056
+	WICED                12ms   4266 KBs mbedtls 7013
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
 	beaglebone black  -O 51354  -O3 98462
 	edison   37037   -O3 48309
@@ -81,6 +83,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	ESP32         651
 	CC3200        350 KBs  (hardware 1939 KBs)
 	STM32L476     244 KBs  mbedtls 566
+	WICED         180 KBs  mbedtls 610
 	pyboard       481 KBs (mbed -O3)
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
@@ -108,6 +111,7 @@ fft_bench demo   int32_t
 	ESP32         2ms
 	CC3200        6ms
 	STM32L476     5ms
+	WICED         3ms
 	pyboard       1ms  (mbed -O3)
 	beaglebone 0.375 ms (had to do it 1000 times to exceed a ms, then divide out 1000)
 	beaglebone black x1000 .503 ms
@@ -136,6 +140,7 @@ v[i]= sin(i)    i 0 to 399   double
 	ESP32       4218us     float  2811us   240mhz
 	CC3200     20435us     float 67613us    80mhz
 	STM32L476  15342us     float  7352us    80mhz
+	WICED      11009us   double
 	beaglebone 7626 us  black 1552us
 	raspberry  6989 us   (PI3 149 us)
 	edison      330 us
@@ -163,6 +168,7 @@ linpack double (megaflops)
 	ESP32           2.8 100x100   (float) 44.5
 	CC3200          0.531  30x30
 	STM32L476       0.857  12.1 (float)  50x50  13.6 100x100
+	WICED           0.99  double  30x30
 	beaglebone     22    black 40  200x200
 	raspberry      40       200x200   (PI3 174 mflops)
 	edison         93  mflops   (97 -O3)
@@ -189,6 +195,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     ESP8266       16269
     ESP32          4647
     CC3200        10877
+	WICED          6573 us   mbedtls 1760
     raspberry       549 us   openssl   PI3 255  (mbedtls 259 us)
     beaglebone      664 us   openssl  black 758 
     edison          310 us   openssl  (mbedtls 578)
@@ -214,6 +221,7 @@ coremarkish           MHz    /sec /MHz
     ESP8266            80   124.6  1.6   -Os  xtensa gcc 4.8.2
     ESP32             240   358.5  1.5   -Os  xtensa gcc 4.8.2
     CC3200             80    94.3  1.2   -Os  arm gcc 4.7.4
+	WICED             120   164.2  1.4   -O2  gcc
     raspberry         700  1314.9  1.9   -O2  gcc 4.6.3
     raspberry PI3    1200  3216.7  2.7   -O2  gcc 4.9.2
     beaglebone        720  1346.1  1.9   -O2  gcc 4.6.3

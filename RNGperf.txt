@@ -12,6 +12,7 @@ mbed K64F         7.7 mbs  (TRNG)  @120mhz
 mbed F469NI      37.2 mbs TRNG @168mhz
 Teensy K66/K64    7.7 mbs  (TRNG) @120mhz  T3.6/T3.5
 ESP32             6.4 mbs (TRNG) need wifi/ble running (not tested)
+WICED            37.2 mbs (TRNG) STM32F205 @120mhz
 nRF51822          0.01 mbs (TRNG)  microbit
 Propeller         .16 mbs  RealRandom.spin CTR PLL jitter
 
