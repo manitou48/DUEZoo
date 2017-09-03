@@ -194,6 +194,8 @@ TCP recv (mbs)                    51         21                19
   raspberry pi  700MHz UDP send/recv rate is 93mbs, latency 460us   TCP 11mbs
 
 wifi performance
+   test wired desktop to wifi device under test
+   could be affected by wireless router buffering
   http://forum.arduino.cc/index.php?topic=364521.0
 ESP8266   sparkfun dev thing  12/23/15
  ping rtt min/avg/max/mdev = 0.832/0.967/1.093  ms
@@ -218,3 +220,9 @@ WINC1500   (SPI clock 12MHz)
   UDP echo RTT: 2421 us
   UDP send: 3.9 mbs  receive: 3.4 mbs (large recv buffers?)
     SPI clock at 24mhz showed modest speedup
+--------
+WICED STM32F205 @120 mhz   Adafruit
+  ping rtt min/avg/max/mdev = 1.387/1.687/5.558/0.899 ms
+  TCP send:  13 mbs   receive:  13 mbs   window 7168
+  UDP echo RTT: 201004 us  ??
+  UDP send: 32 mbs  receive: 33 mbs 
