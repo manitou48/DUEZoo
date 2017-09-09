@@ -103,6 +103,14 @@ SPI clock    writeBytes
 40MHz        28.9  mbs   36.04
 80MHz        46.0  mbs   65.04
 
+    WICED STM32F205 @ 120MHz  (SPI1 max clock 30mhz)
+                SPI      
+SPI  clock    transfer   DMA 
+4MHz          2.2 mbs    3.0   3.75mhz
+8MHz          4.0 mbs    7.0   7.5 mhz
+15MHz         4.0 mbs   14.0
+30MHz         4.0 mbs   30.0
+
 dragonfly (STM32L4 @80mhz), SPI clock at 20 mhz yields 19.9 mbs
 
 pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz)  C/firmware
