@@ -209,9 +209,9 @@ coremarkish           MHz    /sec /MHz
     DUE                84    90.8  1.1   -Os  gcc 4.8.3
     maple              72    78.6  1.1   -Os  gcc 4.4.1
     teensy LC          48    65.1  1.4   -O   gcc 4.8.4
-    teensy 3.2         96   189.4  2.0   -O2
-    teensy 3.5        120   232.9  1.9   -O2
-    teensy 3.6        180   384.0  2.1   -O2
+    teensy 3.2         96   212.9  2.2   -O2  gcc 5.4.1
+    teensy 3.5        120   260.9  2.2   -O2
+    teensy 3.6        180   434.5  2.4   -O2
     STM32L476RE        80   170.4  2.1   -O2  gcc 4.8.3 (mbed -O3 208.4)
     mbed LPC1768       96   185.7  1.9   -O3  arm cc 5.06
     mbed F466RE       180   414.9  2.3   -O3
