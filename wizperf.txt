@@ -224,5 +224,11 @@ WINC1500   (SPI clock 12MHz)
 WICED STM32F205 @120 mhz   Adafruit
   ping rtt min/avg/max/mdev = 1.387/1.687/5.558/0.899 ms
   TCP send:  13 mbs   receive:  13 mbs   window 7168
-  UDP echo RTT: 201004 us  ??
+  UDP echo RTT: 1505 us
   UDP send: 32 mbs  receive: 33 mbs 
+--------
+photon STM32F205 @120 mhz   particle.io  lwIP
+  ping rtt min/avg/max/mdev = 1.448/1.825/3.303/0.648 ms
+  TCP send:  12 mbs   receive:  10 mbs   window 4608
+  UDP echo RTT: 1518 us
+  UDP send: 15 mbs  receive: 7.7 mbs    max 512 bytes
