@@ -147,6 +147,16 @@ native    288    52     4          26    21
    TCP recv rate  5.7 mbs
 
 ---------------------------------------------------------
+    ENC28J60 with UIPEthernet lib  max SPI 20mhz
+	Teensy 3.2@120mhz SPI clock 20 mhz  (default 7mhz)
+
+	ping TBD
+	UDP echo TBD
+	UDP send 10.5 mbs
+	UDP receive  TBD
+	TCP TBD
+
+---------------------------------------------------------
 
    parallax propeller quickstart    80MHz   propeller-w5200-driver
      w5200 buffer  rd/wrt 1000 bytes 
