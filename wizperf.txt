@@ -150,11 +150,11 @@ native    288    52     4          26    21
     ENC28J60 with UIPEthernet lib  max SPI 20mhz
 	Teensy 3.2@120mhz SPI clock 20 mhz  (default 7mhz)
 
-	ping TBD
-	UDP echo TBD
-	UDP send 10.5 mbs
-	UDP receive  TBD
-	TCP TBD
+	UDP echo 10323 us
+	UDP send 0.7 mbs
+	UDP receive  1.4 mbs
+	TCP send 0.1 mbs
+	TCP receive 3.8 mbs
 
 ---------------------------------------------------------
 
