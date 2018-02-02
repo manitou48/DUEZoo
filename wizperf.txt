@@ -147,14 +147,14 @@ native    288    52     4          26    21
    TCP recv rate  5.7 mbs
 
 ---------------------------------------------------------
-    ENC28J60 with UIPEthernet lib  max SPI 20mhz
-	Teensy 3.2@120mhz SPI clock 20 mhz  (default 7mhz)
-
-	UDP echo 10323 us
-	UDP send 0.7 mbs
-	UDP receive  1.4 mbs
-	TCP send 0.1 mbs
-	TCP receive 3.8 mbs
+   ENC28J60 with UIPEthernet lib and primitive ethercard lib  max SPI 20mhz
+     Teensy 3.2@120mhz SPI clock 20 mhz  (default 7mhz)  10base T
+                UIPEthernet   ethercard
+    UDP echo      10323          750   us
+    UDP send        0.7          3.7  mbs
+    UDP receive     1.4          8.0  mbs
+    TCP send        0.1          TBD  mbs
+    TCP receive     3.8          4.0  mbs
 
 ---------------------------------------------------------
 
