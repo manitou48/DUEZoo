@@ -8,6 +8,7 @@ Files | Description
 ---|---
 **blinksize.txt**  | Flash and SRAM used for blink sketch
 chiptemp.ino  | read DUE internal analog temperature sensor
+dacdmatmr | DAC DMA clocked by timer
 dmaspi.ino  |  unconnected SPI test at varous MHz and with DMA
 spislave.ino  |  simple SPI slave example
 mem2mem.ino  | memcpy vs DMA memory-to-memory
