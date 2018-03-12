@@ -31,6 +31,7 @@ IRtest/       |DUE IRremote proof of concept
 **isrperf.txt**   |interrupt latency results for DUE, maple, teensy
 isrperf.ino   |DUE sketch to measure interrupt latency
 **cc3000.txt**   |wifi performance of TI CC3000 chip
+**dac.txt**   |DAC settle time and source current
 
 <pre>
 ---------------------- details --------------------
