@@ -11,7 +11,7 @@ jazz  3.8v@11MHz      18.5/20.9          328p 3.3v@11mhz  1/4  (no regulator)
 mega2560 5v@16MHz     80/82.4            2560 5v@16MHz  5.5/20
 1284p  5v@16mhz       42.6/45.4          1284p  2/13.8 ma sleeping beauty BB
 mega32u4 5v@16mhz     37.1/40.2          atmega32u4  5/13 ma leonardo 
-mega32u4 5v@16mhz     19.7/21.3          atmega32u4  5/13 ma littlebits 
+mega32u4 5v@16mhz     25.7               atmega32u4  5/13 ma littlebits no LED
 mega32u4 3.3v@8mhz    11.8/12.5          feather  1.5/4 ma adafruit 
 mega32u4 3.3v@8mhz    18.0/19.4          playground  1.5/4 ma adafruit 
 teensy2  5v@16mhz     29.9/32.8          atmega32u4  5/13 ma teensy2
