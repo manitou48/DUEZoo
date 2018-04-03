@@ -2,7 +2,7 @@
       delay(5000)  some API's use sleep (WFI/WFE) in delay
 
   board               measured           chip specs  (idle/active ma)
-UNO 5v@16MHz          51.9/55.4 ma       328p 5v@16MHz  2.4/9 ma  idle/active
+UNO 5v@16MHz          45.1/48.4 ma       328p 5v@16MHz  2.4/9 ma  idle/active
 nano 5v@16MHz         23.6/27.5          "
 328p 5v@16MHz         10.6/13.1          328p on breadboard
 328p 3.3v@8MHz         3.8/7.4           328p pro mini    0.7/3.0
@@ -50,7 +50,7 @@ mega2560 5v@16MHz       60.0 ma     31.23ma   (17.24ma 3.3v)
 teensy++2 5v@16MHz      17.25ma     38.4 ua (microamps)
 UNO 5v@16MHz            39.4 ma     34.6 ma   (21.44ma 3.3v)
 nano 5v@16MHz           18.34ma     13.43ma   (4.66ma 3.3v)
-mega32u4                18.6ma       0,68ma
+mega32u4                18.6ma       0.68ma
 1284p 5v@16MHz          25.9 ma     19.2 ma   (10.97ma 3.3v)
 jazz  3.3v@11MHz        10.96ma      7.76ma
 
