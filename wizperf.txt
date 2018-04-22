@@ -104,7 +104,7 @@ clock   latency send recv     TCP  send recv
   UDP echo(us)       79      73     8-byte RTT
   UDP send(mbs)      17      19     1000-byte UDP pkts
   UDP recv           24      24
-  UDP pps         21220   23246     8-byte UDP pkts
+  UDP pps         21220   23246     blast 1000 8-byte UDP pkts
   TCP send           14      15
   TCP recv           24      24
   buffer write/read (mbs)  22.57/27.13  27.13/27.04
