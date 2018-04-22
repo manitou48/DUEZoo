@@ -103,7 +103,7 @@ clock   latency send recv     TCP  send recv
                   W5200   W5500
   UDP echo(us)       79      73     8-byte RTT
   UDP send(mbs)      17      19     1000-byte UDP pkts
-  UDP recv            3       3
+  UDP recv           24      24
   UDP pps         21220   23246     8-byte UDP pkts
   TCP send           14      15
   TCP recv           24      24
