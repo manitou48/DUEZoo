@@ -43,7 +43,8 @@ Teensy ++2 digitalWrite is inline if constant
 
 Teensy 3* Cortex M4, ISR entry latency 12 cycles, exit latency 10 cycles,
 assuming lazy stacking for float, otherwise add 17 cycles.  Tail chaining
-helps for back-to-back interrupts.
+helps for back-to-back interrupts. Measured 5 million interrupts/second
+on T3.2@120 mhz, 24 cycles.
 ---------------------------
 UNO/AVR timer0 and millis overhead
 
