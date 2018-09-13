@@ -12,6 +12,7 @@ arduino  (GNU gcc -Os)
    UNO     1.1   0
    ZERO   11.1
    DUE    22.1
+   cpx     9.8   cortex M0+ circuitplayground
    tiny85  0.8   0
    K64F   14.3     IDE hack
    dragon 32.8    STM32L4
