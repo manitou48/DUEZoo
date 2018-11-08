@@ -197,7 +197,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     mbed F466RE    2477 us    mbed tls  988
     mbed LPC1768   5222 us    mbed tls 1383
     mbed F469NI    2649 us    mbed tls 1059  (738 @180mhz)
-    mbed M7         656 us (gnu gcc -O2) 
+    mbed M7        1063 us   656 us (gnu gcc -O2) mbed tls 311
     pyboard        2129 us  python loop  (mbed C 864 us )
     ESP8266       16269
     ESP32          4647
