@@ -55,7 +55,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	ESP32                 4ms  12800 KBs
 	CC3200               17ms   3011 KBs   (hardware 19320 KBs)
 	STM32L476 (80mhz)    18ms   2844 KBs mbedtls 3056
-	mbed M7              38 us  26947 KBs   (tls 38 us 26947 KBs)
+	mbed M7              1.6us 61575 KBs   mbedtls  26947 KBs
 	WICED                12ms   4266 KBs mbedtls 7013
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
 	beaglebone black  -O 51354  -O3 98462
