@@ -87,7 +87,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	STM32L476     244 KBs  mbedtls 566
 	WICED         180 KBs  mbedtls 610
 	pyboard       481 KBs (mbed -O3)
-	mbed M7       2370 KBs  mbed tls 719
+	mbed M7       2370 KBs  mbed tls 719   hardware 2462 KBs
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
 	raspberry pi      15050   (PI3 46655)
