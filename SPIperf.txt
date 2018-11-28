@@ -79,11 +79,11 @@ SPI  clock    write
    mbed MXRT1050-EVKB @ 600MHz   11/27/18
                 SPI        DMA
 SPI clock     write 
-4MHz          2.7 mbs     2.6 mbs
-8MHz          4.5 mbs
-10MHz         5.5 mbs     4.2 mbs
-16MHz         6.8 mbs
-20MHz         9.4 mbs     6.4 mbs
+4MHz          2.7 mbs     3.1 mbs
+8MHz          4.5 mbs     6.1 mbs
+10MHz         5.5 mbs     7.5 mbs
+16MHz         6.8 mbs     9.4
+20MHz         9.4 mbs    13.1 mbs
 32MHz        12.6 mbs
 
    ZERO SAMD21G @ 48MHz  (SPI max clock 24mhz, but ZERO good to 12mhz)
