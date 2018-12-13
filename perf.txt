@@ -13,8 +13,8 @@ recursive fibonacci (fibo(26))
 	maple (72MHz)           104 ms
 	teensy 3 (96MHz)         82 ms   3.1 26 121393 63
 	teensy LC (48mhz)       128ms
-	teensy K66 (180mhz)      28ms
-	teensy K64 (120mhz)      67ms
+	teensy K66 (180mhz)      28ms   T3.6
+	teensy K64 (120mhz)      67ms   T3.5
 	mbed LPC1768 (96mhz)     51ms
 	mbed F446RE (180mhz)     29ms
 	mbed K64F  (120mhz)      51 ms
@@ -39,14 +39,14 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	arduino 48 KBs  -Os  mbedtls  55KBs (1284p)
 	nRF51822 207 ms 494 KBs mbed -O3  mbedtls 658 KBs
 	DUE 23 ms 2226 KBs   mbedtls 3849
-	ZERO 33 ms 1551 KBs  mbedtls 1703
+	ZERO 33 ms 1551 KBs  mbedtls 1703 wolfssl 1523
 	maple 1937 KBs   271ms 1889   -Os  mbedtls 3271 KBs
 	           1889 2124  2737  3605
 	teensy 3 (96 MHz)   25 ms 2048 KBs   
-	teensy 3.1 (96 MHz) 14 ms 3657 KBs  mbedtls 4162 (5688 KBs @168Mhz IDE 19rc2)
-	teensy LC (48 MHz) 31 ms 1651 KBs  mbedtls 1889
-	teenys K66          6 ms 8533 KBs  mbedtls 10778 (hardware 16570)
-	teenys K64         11 ms 4654 KBs  mbedtls 6168  (hardware 10964)
+	teensy 3.1 (96 MHz) 14 ms 3657 KBs  mbedtls 4162 (5688 KBs @168Mhz IDE 19rc2) wolfssl 4394 KBs
+	teensy LC (48 MHz) 31 ms 1651 KBs  mbedtls 1889 wolfssl 1563 KBs
+	teenys K66          6 ms 8533 KBs  mbedtls 10778 (hardware 16570) wolfssl 11906
+	teenys K64         11 ms 4654 KBs  mbedtls 6168  (hardware 10964) wolfssl 6243
 	mbed LPC1768 (96mhz) 20 ms  4994 KBs mbedtls 6781
 	mbed F466RE          12 ms  8324 KBs mbedtls 10779
 	mbed K64F            20ms   4994 KBs mbedtls  6693   hardware 10952 KBs
@@ -54,7 +54,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	ESP8266              17ms   3011 KBs
 	ESP32                 4ms  12800 KBs
 	CC3200               17ms   3011 KBs   (hardware 19320 KBs)
-	STM32L476 (80mhz)    18ms   2844 KBs mbedtls 3056
+	STM32L476 (80mhz)    18ms   2844 KBs mbedtls 3056 wolfssl 2868 KBs
 	mbed M7              1.6us 61575 KBs   mbedtls  26947 KBs
 	WICED                12ms   4266 KBs mbedtls 7013
 	beaglebone 10964.912281 35087.719298 61728.395062 68493.150685 
@@ -70,13 +70,13 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	UNO            28 KBs   (byte-oriented C implementation) mbedtls 42 1284p
 	nRF51822      258  mbedtls 580  -O3 mbed
 	DUE           174  mbedtls 520
-	ZERO           83  mbedtls 267
+	ZERO           83  mbedtls 267  wolfssl 289
 	maple         170  mbedtls 481
 	teensy 3.0    121
-	teensy 3.1    226  mbedtls 688
-	teensy LC      91  mbedtls 279
-	teensy K64    269  mbedtls  771  (hardware  4000)
-	teensy K66    484  mbedtls 1280  (hardware 16000)
+	teensy 3.1    226  mbedtls 688  wolfssl 101 us
+	teensy LC      91  mbedtls 279  wolfssl 247 us
+	teensy K64    269  mbedtls  771  (hardware  4000) wolfssl 77 us
+	teensy K66    484  mbedtls 1280  (hardware 16000) wolfssl 30 us
 	mbed LPC1768  287  mbedtls  889
 	mbed F466RE   520  mbedtls 1422
 	mbed K64F     339  mbedtls  864  hardware 5818 KBs
@@ -84,7 +84,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	ESP8266       205
 	ESP32         651
 	CC3200        350 KBs  (hardware 1939 KBs)
-	STM32L476     244 KBs  mbedtls 566
+	STM32L476     244 KBs  mbedtls 566 wolfssl 110 us
 	WICED         180 KBs  mbedtls 610
 	pyboard       481 KBs (mbed -O3)
 	mbed M7       2370 KBs  mbed tls 719   hardware 2462 KBs
@@ -185,14 +185,14 @@ linpack double (megaflops)
 bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls
     UNO          156868  us mbedtls 34544 (1284p)
     nRF51822      62897  us mbedtls 13336 us
-    ZERO          49210  us mbedtls 6203 us
+    ZERO          49210  us mbedtls 6203 us  wolfssl 5825
     DUE           10930  us mbedtls 2637 us
     maple         11543  us mbedtls 2527 us (Arduino IDE)
-    STM32L476      6668 us mbedtls 1979 us
-    teensy LC     44991 us mbedtls 5940
-    teensy 3.2     6054 us mbedtls 1746
-    teensy K64     4885 us mbedtls 1520
-    teensy K66     2738    mbedtls 1175 us
+    STM32L476      6668 us mbedtls 1979 us wolfssl 1888 us
+    teensy LC     44991 us mbedtls 5940  wolfssl 1583 us
+    teensy 3.2     6054 us mbedtls 1746  wolfssl 1397
+    teensy K64     4885 us mbedtls 1520  wolfssl 1145 us
+    teensy K66     2738    mbedtls 1175 us wolfssl 551 us
     mbed K64F      3846 us    mbed tls 1129
     mbed F466RE    2477 us    mbed tls  988
     mbed LPC1768   5222 us    mbed tls 1383
