@@ -14,6 +14,7 @@ arduino  (GNU gcc -Os)
    ZERO   11.1
    DUE    22.1
    cpx     9.8   cortex M0+ circuitplayground
+   m4      1.1   M4F SAMD51
    tiny85  0.8   0
    K64F   14.3     IDE hack
    dragon 32.8    STM32L4
