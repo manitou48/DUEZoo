@@ -52,7 +52,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	mbed F466RE          12 ms  8324 KBs mbedtls 10779 wolfssl 10666 KBs
 	mbed K64F            20ms   4994 KBs mbedtls  6693   hardware 10952 KBs
 	mbed F469NI          13 ms  7769 KBs mbedtls 10039  (8327 10778 @180mhz) wolfssl 10778
-	Adafruit M4           8 ms  6400 KBs mbedtls 7211 KBs
+	Adafruit M4           8 ms  6400 KBs mbedtls 7211 KBs  wolfssl 5657 KBs
 	ESP8266              17ms   3011 KBs
 	ESP32                 4ms  12800 KBs
 	CC3200               17ms   3011 KBs   (hardware 19320 KBs)
@@ -204,7 +204,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     mbed F469NI    2649 us    mbed tls 1059  (738 @180mhz) wolfssl 1327 us
     mbed M7        1063 us   656 us (gnu gcc -O2) -O3: mbedtls 220  wolfssl 258
     pyboard        2129 us  python loop  (mbed C 864 us )
-	adafruit M4    4290 us    mbedtls 1582 us 
+	adafruit M4    4290 us    mbedtls 1582 us  wolfssl 940 us
     ESP8266       16269
     ESP32          4647
     CC3200        10877
