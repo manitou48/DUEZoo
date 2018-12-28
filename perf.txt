@@ -9,7 +9,7 @@ recursive fibonacci (fibo(26))
 	arduino UNO (16MHz)     927 ms   32-bit int's
 	nRF51822 (16MHz)        436      mbed -O3  microbit
 	DUE (84MHz)              98 ms
-	ZERO (48MHz)            127 ms
+	ZERO (48MHz)            127 ms   SAMD21
 	maple (72MHz)           104 ms
 	teensy 3 (96MHz)         82 ms   3.1 26 121393 63
 	teensy LC (48mhz)       128ms
@@ -23,6 +23,7 @@ recursive fibonacci (fibo(26))
 	ESP32   (240mhz)         23 ms  sparkfun dev 
 	CC3200 (80mhz)          110 ms  TI launchpad
 	STM32L476RE (80mhz)      73 ms  dragonfly
+	Adafruit M4 (120mhz)     49 ms  Adafruit M4 Feather  SAMD51
 	WICED STM32F205 (@120mhz)88 ms
 	pyboard STM32F405RGT6  4272ms (python)
 	pyboard 38 ms (168mhz in firmware gcc -Os)  (mbed STM32F407VG 31 ms -O3)
@@ -51,6 +52,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	mbed F466RE          12 ms  8324 KBs mbedtls 10779 wolfssl 10666 KBs
 	mbed K64F            20ms   4994 KBs mbedtls  6693   hardware 10952 KBs
 	mbed F469NI          13 ms  7769 KBs mbedtls 10039  (8327 10778 @180mhz) wolfssl 10778
+	Adafruit M4           8 ms  6400 KBs mbedtls 7211 KBs
 	ESP8266              17ms   3011 KBs
 	ESP32                 4ms  12800 KBs
 	CC3200               17ms   3011 KBs   (hardware 19320 KBs)
@@ -110,6 +112,7 @@ fft_bench demo   int32_t
 	mbed F466RE   1ms
 	mbed K64F     2ms
 	mbed F469NI   1ms
+	Adafruit M4   3ms
 	ESP8266       5ms
 	ESP32         2ms
 	CC3200        6ms
@@ -140,6 +143,7 @@ v[i]= sin(i)    i 0 to 399   double
 	mbed F446RE 12420us float (hardware) 238us   180mhz
 	mbed K64F  11358us  float (hardware) 560us    120mhz
 	mbed F469NI 5744us  float (hardware) 254us    (237us @180mhz)
+	ada M4      8198us  float(hardware) 4008 us
 	ESP8266    19427us     float 68106us    80mhz
 	ESP32       4218us     float  2811us   240mhz
 	CC3200     20435us     float 67613us    80mhz
@@ -169,6 +173,7 @@ linpack double (megaflops)
 	mbed F466RE     0.855 23.955 (float) 50x50
 	mbed K64F       0.951 12.909 (float) 50x50
 	mbed F469NI     2.11  23.971 (float) 50x50  27 100x100  (29@180mhz)
+	adafruit M4     1.42  20.1   (float) 100x100
 	ESP8266         0.593  30x30
 	ESP32           2.8 100x100   (float) 44.5
 	CC3200          0.531  30x30
@@ -199,6 +204,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     mbed F469NI    2649 us    mbed tls 1059  (738 @180mhz) wolfssl 1327 us
     mbed M7        1063 us   656 us (gnu gcc -O2) -O3: mbedtls 220  wolfssl 258
     pyboard        2129 us  python loop  (mbed C 864 us )
+	adafruit M4    4290 us    mbedtls 1582 us 
     ESP8266       16269
     ESP32          4647
     CC3200        10877
@@ -226,6 +232,7 @@ coremarkish           MHz    /sec /MHz
     mbed F469NI       168   387.3  2.3   -O3    otto  (415.3 @180mhz)
     mbed M7           600  2437.8  4.1   -O3
     pyboard           168   386.1  2.3   -O3   mbed STM32F407VG arm cc or gcc
+	adafruit M4       120   272.4  2.3   -O3   gcc 4.8.3
     ESP8266            80   124.6  1.6   -Os  xtensa gcc 4.8.2
     ESP32             240   358.5  1.5   -Os  xtensa gcc 4.8.2
     CC3200             80    94.3  1.2   -Os  gcc 4.7.4
