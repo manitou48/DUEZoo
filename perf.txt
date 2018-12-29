@@ -83,6 +83,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	mbed F466RE   520  mbedtls 1422  wolfssl 888 KBs
 	mbed K64F     339  mbedtls  864  hardware 5818 KBs
 	mbed F469NI   478  mbedtls 1362  (512 1422 @180mhz) wolfssl 888 KBs
+	adafruit M4   370  mbedtls 1032  wolfssl 1163 KBs
 	ESP8266       205
 	ESP32         651
 	CC3200        350 KBs  (hardware 1939 KBs)
