@@ -34,6 +34,7 @@ mbed 3.3v@120mhz      138.9/147.9        arm K64F  37/42 ma
 mbed 3.3v@180mhz      85.0/87.3          arm F446RE  86/46 ma
 mbed 3.3v@168mhz      126.9/129.7        arm F469NI  94/45 ma
 mbed 3.3v@600mhz      157/128            MXRT1050-EVKB  66 ma
+mbed 3.3v@600mhz      218/228            MXRT1060-EVK   66 ma
 ZERO 3.3v@48mhz       108.0/112.2        arm SAMD21G M0+  4/2 ma 
 M0+  3.3v@48mhz       24.1/25.52         playground express  4/2 ma adafruit 
 M4F  3.3v@120mhz      25.7/26/4          adafruit M4 SAMD51  16.4/2.8
