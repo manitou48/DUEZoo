@@ -121,12 +121,13 @@ SPI  clock    transfer   DMA
 15MHz         4.0 mbs   14.0
 30MHz         4.0 mbs   30.0
 
-    SAMD51 @ 120MHz Adafruit M4 express  (SPI1 max clock 12mhz)?
+    SAMD51 @ 120MHz Adafruit M4 express  (SPI1 max clock 24mhz)
                 SPI      
 SPI  clock    transfer   DMA 
 4MHz          3.4 mbs    4.0 mbs
 8MHz          5.8 mbs    8.0 mbs
 12MHz         7.5 mbs   12.0 mbs
+24MHz        10.8 mbs   24.0 mbs
 
 dragonfly (STM32L4 @80mhz), SPI clock at 20 mhz yields 19.9 mbs
 
