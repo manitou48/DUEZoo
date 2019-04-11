@@ -7,7 +7,7 @@ LC             12        1          1
 dragonfly(2)   12        2          1
 mapleRET6 (2)  12        3         25
 DUE (2)        12        1          3    0.55-2.75v  25 clocks(42mhz)
-ZERO           10        2          1
+ZERO           10        2          1    samd21
 LPC1768        10        1          1
 F446RE         12        4          1
 32F405/7(2)    12        3          8?
@@ -16,4 +16,5 @@ pyboard(2)     12        7          8?
 photon(2)      12        3          1
 mcp4725        12        7         25
 pcf8591p        8       18         20
-
+samd51         12        7
+samd21         10        2          1  cpx
