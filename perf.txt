@@ -227,7 +227,7 @@ coremarkish           MHz    /sec /MHz
     teensy 3.2         96   212.9  2.2   -O2  gcc 5.4.1
     teensy 3.5        120   260.9  2.2   -O2
     teensy 3.6        180   434.5  2.4   -O2
-	teensy 4 beta2    600  2427.4  4.0   -O3  NXP 1062
+    teensy 4 beta2    600  2427.4  4.0   -O3  NXP 1062
     STM32L476RE        80   170.4  2.1   -O2  gcc 4.8.3 (mbed -O3 208.4)
     mbed LPC1768       96   185.7  1.9   -O3  arm cc 5.06
     mbed F466RE       180   414.9  2.3   -O3
