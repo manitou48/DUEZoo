@@ -15,6 +15,7 @@ recursive fibonacci (fibo(26))
 	teensy LC (48mhz)       128ms
 	teensy K66 (180mhz)      28ms   T3.6
 	teensy K64 (120mhz)      67ms   T3.5
+	teensy 4 beta (600mhz)    5 ms  NXP 1062
 	mbed LPC1768 (96mhz)     51ms
 	mbed F446RE (180mhz)     29ms
 	mbed K64F  (120mhz)      51 ms
@@ -42,13 +43,14 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	nRF51822 207 ms 494 KBs mbed -O3  mbedtls 658 KBs
 	DUE 23 ms 2226 KBs   mbedtls 3849 wolfssl 4338 KBs
 	ZERO 33 ms 1551 KBs  mbedtls 1703 wolfssl 1523
-	maple 1937 KBs   271ms 1889   -Os  mbedtls 3271 KBs
-	           1889 2124  2737  3605
+	maple 1937 KBs   271ms 1889   -Os  mbedtls 3271 KBs  wolfsse 3160 KBs
+	           -Os -O -O2 -O3  1889 2124  2737  3605
 	teensy 3 (96 MHz)   25 ms 2048 KBs   
 	teensy 3.1 (96 MHz) 14 ms 3657 KBs  mbedtls 4162 (5688 KBs @168Mhz IDE 19rc2) wolfssl 4394 KBs
 	teensy LC (48 MHz) 31 ms 1651 KBs  mbedtls 1889 wolfssl 1563 KBs
 	teenys K66          6 ms 8533 KBs  mbedtls 10778 (hardware 16570) wolfssl 11906
-	teenys K64         11 ms 4654 KBs  mbedtls 6168  (hardware 10964) wolfssl 6243
+	teensy K64         11 ms 4654 KBs  mbedtls 6168  (hardware 10964) wolfssl 6243
+	teensy 4 beta     0.8 ms 62668 KBs  mbedtl 102400 wolfssl 51200
 	mbed LPC1768 (96mhz) 20 ms  4994 KBs mbedtls 6781  wolfssl 6360 KBs
 	mbed F466RE          12 ms  8324 KBs mbedtls 10779 wolfssl 10666 KBs
 	mbed K64F            20ms   4994 KBs mbedtls  6693   hardware 10952 KBs
@@ -74,12 +76,13 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	nRF51822      258  mbedtls 580  -O3 mbed
 	DUE           174  mbedtls 520  wolfssl 556 KBs
 	ZERO           83  mbedtls 267  wolfssl 289
-	maple         170  mbedtls 481
+	maple         170  mbedtls 481  wolfssl 488 KBs
 	teensy 3.0    121
 	teensy 3.1    226  mbedtls 688  wolfssl 634 KBs
 	teensy LC      91  mbedtls 279  wolfssl 259 KBs
 	teensy K64    269  mbedtls  771  (hardware  4000) wolfssl 831 KBs
 	teensy K66    484  mbedtls 1280  (hardware 16000) wolfssl 2.1 MBs
+	teensy 4 beta 3.2MBs  mbedtls 12.8MBs   wolfssl 17.1 MBs (hardware 68.3 MBs)
 	mbed LPC1768  287  mbedtls  889  wolfssl 561 KBs
 	mbed F466RE   520  mbedtls 1422  wolfssl 888 KBs
 	mbed K64F     339  mbedtls  864  hardware 5818 KBs
@@ -110,6 +113,7 @@ fft_bench demo   int32_t
 	teensy 3 (96Mhz) 9 ms   3.1 4 ms
 	teensy K66    1ms   
 	teensy K64    2ms   
+	teensy 4 beta   0.25 ms   
 	mbed LPC1768  2ms
 	mbed F466RE   1ms
 	mbed K64F     2ms
@@ -141,6 +145,7 @@ v[i]= sin(i)    i 0 to 399   double
 	teensy LC 73743 us          48mhz  
 	teensy K66 5425 us    float (hardware) 2665 
 	teensy K64 12559 us   float (hardware) 5014 
+	teensy 4 beta 152 us   float (hardware) 599 
 	mbed 1768 11045 us     96mhz
 	mbed F446RE 12420us float (hardware) 238us   180mhz
 	mbed K64F  11358us  float (hardware) 560us    120mhz
@@ -171,6 +176,7 @@ linpack double (megaflops)
 	teensy LC       0.142  0.305 (float) 20x20
 	teensy K66      2.15   27 (float) 50x50    30 100x100
 	teensy K64      0.82   17 (float) 50x50    19 100x100
+	teensy 4 beta  65.4   140 (float) 50x50   166 100x100
 	mbed LPC1768    0.879                50x50
 	mbed F466RE     0.855 23.955 (float) 50x50
 	mbed K64F       0.951 12.909 (float) 50x50
@@ -194,12 +200,13 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     nRF51822      62897  us mbedtls 13336 us
     ZERO          49210  us mbedtls 6203 us  wolfssl 5825
     DUE           10930  us mbedtls 2637 us wolfssl 2121 us
-    maple         11543  us mbedtls 2527 us (Arduino IDE)
+    maple         11543  us mbedtls 2527 us (Arduino IDE) wolfssl 2058 us
     STM32L476      6668 us mbedtls 1979 us wolfssl 1888 us
     teensy LC     44991 us mbedtls 5940  wolfssl 1583 us
     teensy 3.2     6054 us mbedtls 1746  wolfssl 1397
     teensy K64     4885 us mbedtls 1520  wolfssl 1145 us
     teensy K66     2738    mbedtls 1175 us wolfssl 551 us
+    teensy 4 beta   624    mbedtls  160 us wolfssl 110 us
     mbed K64F      3846 us    mbed tls 1129  wolfssl 2058 us
     mbed F466RE    2477 us    mbed tls  988  wolfssl 1313 us
     mbed LPC1768   5222 us    mbed tls 1383 us wolfssl 2491 us
@@ -223,6 +230,7 @@ coremarkish           MHz    /sec /MHz
     ZERO               48    56.8  1.2   -Os  gcc 4.8.3
     DUE                84    90.8  1.1   -Os  gcc 4.8.3
     maple              72    78.6  1.1   -Os  gcc 4.4.1
+    maple              72   117.5  1.6   -O3  gcc 4.8.3
     teensy LC          48    65.1  1.4   -O   gcc 4.8.4
     teensy 3.2         96   212.9  2.2   -O2  gcc 5.4.1
     teensy 3.5        120   260.9  2.2   -O2
