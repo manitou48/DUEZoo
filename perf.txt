@@ -246,6 +246,7 @@ coremarkish           MHz    /sec /MHz
     adafruit M4       120   272.4  2.3   -O3   gcc 4.8.3   SAMD51
     ESP8266            80   124.6  1.6   -Os  xtensa gcc 4.8.2
     ESP32             240   358.5  1.5   -Os  xtensa gcc 4.8.2
+    ESP32             240   474.0  2.0   -O2  xtensa gcc 5.2.0
     CC3200             80    94.3  1.2   -Os  gcc 4.7.4
     WICED/photon      120   164.2  1.4   -O2  gcc 4.8.3
     raspberry         700  1314.9  1.9   -O2  gcc 4.6.3
