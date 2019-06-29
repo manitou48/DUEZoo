@@ -86,6 +86,15 @@ SPI clock     write
 20MHz         9.4 mbs    13.1 mbs
 32MHz        12.6 mbs
 
+   Teensy 4 MXRT1062 @ 600MHz   6/29/19
+                SPI     CCR (MHz)
+SPI clock     write 
+4MHz          3.9 mbs     4 MHz
+8MHz          7.3 mbs     7.5 MHz
+16MHz        14.0 mbs    15.1
+32MHz        22.3 mbs    25.1
+40MHz        30.9        37.7
+
    ZERO SAMD21G @ 48MHz  (SPI max clock 24mhz, but ZERO good to 12mhz)
                 SPI      
 SPI  clock    transfer  write  DMA
