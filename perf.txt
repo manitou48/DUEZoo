@@ -241,7 +241,8 @@ coremarkish           MHz    /sec /MHz
     mbed F466RE       180   414.9  2.3   -O3
     mbed K64F         120   280.4  2.3   -O3
     mbed F469NI       168   387.3  2.3   -O3    otto  (415.3 @180mhz)
-    mbed M7           600  2437.8  4.1   -O3  NXP 1050
+    mbed M7           600  2437.8  4.1   -O3  NXP 1052
+    SDK M7            600  2439.2  4.1   -O3  NXP 1062  gcc 7.2.1
     pyboard           168   386.1  2.3   -O3   mbed STM32F407VG arm cc or gcc
     adafruit M4       120   272.4  2.3   -O3   gcc 4.8.3   SAMD51
     ESP8266            80   124.6  1.6   -Os  xtensa gcc 4.8.2
