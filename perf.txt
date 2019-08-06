@@ -71,6 +71,31 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	ubuntu    67019.951169  260400.391642 316436.669947 320493.303292 KBs
 	cygwin   355871.9  KBs
 
+SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
+    MEGA2560  5 KBs
+	ZERO  257 KBs
+	DUE 677 KBs
+	maple 627 KBs
+	teensy LC 285 KBs
+	teensy 3.2  1145 KBs   1413 @120mhz  ssl 1321 KBs
+	T3.5 1548 KBs  tls 2098  hardware 3074  ssl 1825
+	T3.6  2173 KBs tls 3131 hardware 4625   ssl 2934
+	T4  14406 KBs  mbedtls 19 MBs  ssl 20.5 MBs  hardware 129 MBs
+	NXP M7/1062 14.9 MBS  DCP: tls 59.1 MBs  ssl 81.2 MBs
+	mbed M7  15374 KBS  tls 12488   dcp 55652 KBs ssl 13473
+	mbed k64f 1548 KBs  tls 2098  CAU tls 2546 ssl 2561 KBs
+	mbed LPC 1235 KBS   tls  1928 KBs
+	mbed nucleo 2204 KBs
+	dragonfly 950 KBs  -O3  1004 KBs
+	ESP32 2353 KBs  mbedtls 1667 KBs wolfssl 1514 KBs
+	M4   1486 KBs mbedtls 2183  ssl 2089 KBs hardware 81 MBs
+	pyboard 1379 KBs python
+	raspberry 9309 KBs
+	beagle 5120
+	ubuntu 64000 KBs
+	macpro 97682 KBs
+	cygwin 128643 KBs  mbedtls 171799
+
 aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key 
 	UNO            28 KBs   (byte-oriented C implementation) mbedtls 42 1284p
 	nRF51822      258  mbedtls 580  -O3 mbed
