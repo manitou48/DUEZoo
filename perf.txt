@@ -72,7 +72,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	cygwin   355871.9  KBs
 
 SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
-    MEGA2560  5 KBs
+	MEGA2560  5 KBs
 	ZERO  257 KBs
 	DUE 677 KBs
 	maple 627 KBs
@@ -80,7 +80,7 @@ SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	teensy 3.2  1145 KBs   1413 @120mhz  ssl 1321 KBs
 	T3.5 1548 KBs  tls 2098  hardware 3074  ssl 1825
 	T3.6  2173 KBs tls 3131 hardware 4625   ssl 2934
-	T4  14406 KBs  mbedtls 19 MBs  ssl 20.5 MBs  hardware 129 MBs
+	T4 beta  14406 KBs  mbedtls 19 MBs  ssl 20.5 MBs  hardware 129 MBs
 	NXP M7/1062 14.9 MBS  DCP: tls 59.1 MBs  ssl 81.2 MBs
 	mbed M7  15374 KBS  tls 12488   dcp 55652 KBs ssl 13473
 	mbed k64f 1548 KBs  tls 2098  CAU tls 2546 ssl 2561 KBs
@@ -90,7 +90,7 @@ SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	ESP32 2353 KBs  mbedtls 1667 KBs wolfssl 1514 KBs
 	M4   1486 KBs mbedtls 2183  ssl 2089 KBs hardware 81 MBs
 	pyboard 1379 KBs python
-	raspberry 9309 KBs
+	raspberry3p 34087 KBs  openssl 66606  mbedtls 40823
 	beagle 5120
 	ubuntu 64000 KBs
 	macpro 97682 KBs
@@ -226,19 +226,19 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     ZERO          49210  us mbedtls 6203 us  wolfssl 5825
     DUE           10930  us mbedtls 2637 us wolfssl 2121 us
     maple         11543  us mbedtls 2527 us (Arduino IDE) wolfssl 2058 us
-    STM32L476      6668 us mbedtls 1979 us wolfssl 1888 us
+    STM32L476      6668 us mbedtls 1979 us wolfssl 371 us
     teensy LC     44991 us mbedtls 5940  wolfssl 1583 us
-    teensy 3.2     6054 us mbedtls 1746  wolfssl 1397
-    teensy K64     4885 us mbedtls 1520  wolfssl 1145 us
-    teensy K66     2738    mbedtls 1175 us wolfssl 551 us
-    teensy 4 beta   624    mbedtls  160 us wolfssl 110 us
+    teensy 3.2     6054 us mbedtls 1746  wolfssl 210
+    teensy K64     4885 us mbedtls 1520  wolfssl 204 us
+    teensy K66     2738    mbedtls 1175 us wolfssl 135 us
+    teensy 4 beta   624    mbedtls  160 us wolfssl  22 us
     mbed K64F      3846 us    mbed tls 1129  wolfssl 2058 us
     mbed F466RE    2477 us    mbed tls  988  wolfssl 1313 us
     mbed LPC1768   5222 us    mbed tls 1383 us wolfssl 2491 us
     mbed F469NI    2649 us    mbed tls 1059  (738 @180mhz) wolfssl 1327 us
     mbed M7        1063 us   656 us (gnu gcc -O2) -O3: mbedtls 220  wolfssl 258
     pyboard        2129 us  python loop  (mbed C 864 us )
-    adafruit M4    4290 us    mbedtls 1582 us  wolfssl 940 us
+    adafruit M4    4290 us    mbedtls 1582 us  wolfssl 243 us
     ESP8266       16269 us
     ESP32          4647 us mbedtls 1476 us  wolfssl 1801 us
     CC3200        10877
