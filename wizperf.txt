@@ -109,6 +109,17 @@ clock   latency send recv     TCP  send recv
   TCP recv           24      24
   buffer write/read (mbs)  22.57/27.13  27.13/27.04
 
+-----------------------------------------------------------
+  Teensy 4@600mhz SPI clk 37.5mhz  W5500  9/29/19
+  UDP echo(us)       82     8-byte RTT
+  UDP send(mbs)      10     1000-byte UDP pkts
+  UDP recv            9
+  UDP pps         21514     blast 1000 8-byte UDP pkts
+  TCP send            8
+  TCP recv           11
+  buffer write/read (mbs)  31.27/30.57
+
+
 -------------------------------------------------------------
   mbed LPC1768  @96mhz    (SPI @1mhz 0.9mbs, @24mhz 6.1mbs -- needs DMA)
   SPI         UDP                    TCP
