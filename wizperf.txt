@@ -120,17 +120,18 @@ clock   latency send recv     TCP  send recv
   buffer write/read (mbs)  31.27/30.57
 
 ------------------------------------------
-   T4/T3.6 with USB ethernet  1.8.10 1.48  100T ethernet
-                         T4       T3.6
-  UDP latency(us)       TBD        TBD
-  UDP send (mbs)         71         64
-  UDP recv (mbs)         27         67
+  T4/T3.6 with USB ethernet  1.8.10 1.48  100T ethernet
+                       T4       T3.6
+UDP latency(us)       TBD        TBD
+UDP send (mbs)         71         64    20 1000-byte packets
+UDP recv (mbs)         27         67
+UDP pps              7205                blast 1000 8-byte packets
 
-  TCP buffers (KB)       32          8
-  TCP send (mbs)         39          5
-  TCP recv (mbs)         40          5
+TCP buffers (KB)       32         32
+TCP send (mbs)         39         19     100 1000-byte 
+TCP recv (mbs)         40         17
 
-  ping (avrg ms)          2          2 
+ping (avrg ms)          2          2
 --------------------------------------
 
 
