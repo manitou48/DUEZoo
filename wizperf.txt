@@ -122,7 +122,7 @@ clock   latency send recv     TCP  send recv
 ------------------------------------------
   T4/T3.6 with USB ethernet  1.8.10 1.48  100T ethernet
                        T4       T3.6
-UDP latency(us)       TBD        TBD
+UDP latency(us)      5965      10854    ? thread effect? 
 UDP send (mbs)         71         64    20 1000-byte packets
 UDP recv (mbs)         27         67
 UDP pps              7205       3325     blast 1000 8-byte packets
