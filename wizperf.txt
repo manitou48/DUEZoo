@@ -220,16 +220,18 @@ older W5100 based on SPI speeds: 4MHz .72mbs   (8MHz 1.1mbs),
 
     native ether controller
                    teensy beta
-                   K66@120mhz    K66   mbed K64@120mhz   mbed LPC1768@96mhz
-                    raw ether   lwIP     lwIP+RTOS         lwIP+RTOS
-UDP latency(us)       142        183        288               292
-UDP send (mbs)         96         85         52                40
-UDP recv (mbs)         98         67          4                 2
+                   K66@120mhz    K66   K64 mbed K64@120mhz   mbed LPC1768@96mhz
+                    raw ether   lwIP  lwIP   lwIP+RTOS         lwIP+RTOS
+UDP latency(us)       142        183   174    288               292
+UDP send (mbs)         96         85    97     52                40
+UDP recv (mbs)         98         67    95      4                 2
 
-TCP send (mbs)         58*        59         26                25
-TCP recv (mbs)                    51         21                19
+TCP send (mbs)         58*        59    61     26                25
+TCP recv (mbs)                    52    93     21                19
+
 
   beaglebone    720MHz UDP send/recv rate is 80mbs, latency 220us   TCP 17mbs
+
   raspberry pi  700MHz UDP send/recv rate is 93mbs, latency 460us   TCP 11mbs
 
 wifi performance
