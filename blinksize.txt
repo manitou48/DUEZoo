@@ -8,6 +8,7 @@ mbed   (ARM cc -O3)
    otto   12.3   0.4    STM32F469NI
    DISCO  19.9   1.1    STM32F4
    T3.1   16.7   0.4    teensy
+   T4B2   15.4  19.1    imxrt1060
    M7     13.4   8.4    SDK imxrt1050
    M7     26.8   8.5    SDK imxrt1060
 arduino  (GNU gcc -Os)
@@ -24,6 +25,7 @@ arduino  (GNU gcc -Os)
    LC     11.4 2.2
    T2     2.0  0
    T2++   2.0  0
+   STM32F405 8.9 .3
 ESP8266 219.4  31.1 arduino IDE -Os
 ESP32   133.3   9.4 arduino IDE -Os
 maple    13.4  2.9  arduino IDE -Os
