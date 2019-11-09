@@ -30,6 +30,7 @@ teensy64 3.3v@120mhz  53.7/56.7          arm 3.3v@120mhz  37/42  K64 T3.5
 teensy 4 3.3v@600mhz  97.3/102           arm 1062   66 ma
 pyboard 3.3v@168mhz   26.1/28.6   WFI    arm 3.3v@168mhz 59/96 io enabled 66.2
 DISCOVERY 3v@168mhz   63.1/72.7          arm 3v@168mhz 59/96 io enabled
+stm32f405 3.3@168     54.1/54.6          arm 3.3v@168mhz 59/96
 mbed 3.3v@96mhz       138.7/141.1        arm LPC1768  50/76 ma
 mbed 3.3v@120mhz      138.9/147.9        arm K64F  37/42 ma
 mbed 3.3v@180mhz      85.0/87.3          arm F446RE  86/46 ma
