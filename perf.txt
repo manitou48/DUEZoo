@@ -257,6 +257,23 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     ubuntu           65 us   openssl  (mbedtls 170us, libgmp 39us, bignumber 189)
     cygwin           16 us   openssl  (mbedtls 44us)
 
+DSP FFT benchmark  1024  radix4 REVERSEBITS 0  (microseconds)
+                q15     q31      f32       opt         arm_math.h
+  T4@600mhz     77.4    147.0     87.0    gcc -O2      v1.5.1
+  M7@600mhz     77.4    147.8     88.0    gcc -O3      v1.5.1 SDK
+  M7@600mhz     74.5    126.9     95.6    ARM GCC -O3  v1.5.1
+T3.6@256mhz    291.7    720.4    424.7    Faster       v1.5.3
+T3.6@240mhz    311.2    768.8    453.0    Faster       v1.5.3
+T3.6@180mhz    463.1   1215.2    703.7    Faster       v1.1.0
+T3.6@180mhz    414.7   1010.7    598.2    Faster       v1.5.3
+T3.5@120mhz    784.7   1947.9   1079.8    Faster       v1.1.0
+T3.5@120mhz    658.5   1577.9    919.5    Faster       v1.5.3
+K64F@120mhz    635.7   1273.8    827.2    ARM GCC -O3  v1.4.5
+T3.2@120mhz    869.8   2498.5  18182.5    Faster       v1.1.0
+adaM4F@120mhz  701.3   1756.1    781.0    Faster       v1.1.0   SAMD51
+STM32L4@80mhz  917.3   1953.8   1150.4    Faster       v1.4.5
+STM32F405@168  466.5   1135.1    556.1    gcc -O2      v1.6.0
+
 coremarkish           MHz    /sec /MHz
     MEGA2560           16     6.9  0.4   -Os  (-O3 9.1)  avr-gcc 4.9.2
     nRF51822           16    27.5  1.7   -O3  mbed arm cc  microbit
