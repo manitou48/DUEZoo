@@ -295,7 +295,7 @@ coremarkish           MHz    /sec /MHz
     SDK M7            600  2439.2  4.1   -O3  NXP 1062  gcc 7.2.1
     pyboard           168   386.1  2.3   -O3   mbed STM32F407VG arm cc or gcc
 	stm32f405         168   361.0  2.2   -O3  gcc 8.2.1
-    adafruit M4       120   272.4  2.3   -O3   gcc 4.8.3   SAMD51
+    adafruit M4       120   310.5  2.6   -Ox  fastest gcc 7.2.1  SAMD51 @200 516
     ESP8266            80   124.6  1.6   -Os  xtensa gcc 4.8.2
     ESP32             240   358.5  1.5   -Os  xtensa gcc 4.8.2
     ESP32             240   474.0  2.0   -O2  xtensa gcc 5.2.0
