@@ -277,7 +277,7 @@ STM32F405@168  466.5   1135.1    556.1    gcc -O2      v1.6.0
 coremarkish           MHz    /sec /MHz
     MEGA2560           16     6.9  0.4   -Os  (-O3 9.1)  avr-gcc 4.9.2
     nRF51822           16    27.5  1.7   -O3  mbed arm cc  microbit
-    ZERO               48    56.8  1.2   -Os  gcc 4.8.3
+    ZERO               48    85.3  1.8   -O2  gcc 7.2.1  samd21 adafruit
     DUE                84    90.8  1.1   -Os  gcc 4.8.3
     maple              72    78.6  1.1   -Os  gcc 4.4.1
     maple              72   117.5  1.6   -O3  gcc 4.8.3
@@ -295,7 +295,7 @@ coremarkish           MHz    /sec /MHz
     SDK M7            600  2439.2  4.1   -O3  NXP 1062  gcc 7.2.1
     pyboard           168   386.1  2.3   -O3   mbed STM32F407VG arm cc or gcc
 	stm32f405         168   361.0  2.2   -O3  gcc 8.2.1
-    adafruit M4       120   310.5  2.6   -Ox  fastest gcc 7.2.1  SAMD51 @200 516
+    adafruit M4       120   306.3  2.6   -O3  gcc 7.2.1  SAMD51 @200 516
     ESP8266            80   124.6  1.6   -Os  xtensa gcc 4.8.2
     ESP32             240   358.5  1.5   -Os  xtensa gcc 4.8.2
     ESP32             240   474.0  2.0   -O2  xtensa gcc 5.2.0
