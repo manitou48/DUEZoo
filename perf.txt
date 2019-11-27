@@ -231,10 +231,10 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     UNO          156868  us mbedtls 34544 (1284p)  gmp-mini 15100
     nRF51822      62897  us mbedtls 13336 us
     ZERO          49210  us mbedtls 6203 us  wolfssl 5825
-    DUE           10930  us mbedtls 2637 us wolfssl 2121 us gmp-mini 506 us
-    maple         11543  us mbedtls 2527 us (Arduino IDE) wolfssl 2058 us gmp-mini 540
-    STM32L476      6668 us mbedtls 1979 us wolfssl 371 us gmp-mini 358
-    teensy LC     44991 us mbedtls 5940  wolfssl 1583 us
+    DUE           10930  us mbedtls 2637 us wolfssl 2121 us mini-gmp 506 us
+    maple         11543  us mbedtls 2527 us (Arduino IDE) wolfssl 2058 us mini-gmp 540
+    STM32L476      6668 us mbedtls 1979 us wolfssl 371 us mini-gmp 358
+    teensy LC     44991 us mbedtls 5940  wolfssl 1583 us  mini-gmp 1037
     teensy 3.2     6054 us mbedtls 1746  wolfssl 210 mini-gmp 269
     teensy K64     4885 us mbedtls 1520  wolfssl 204 us mini-gmp 263
     teensy K66     2738    mbedtls 1175 us wolfssl 135 us mini-gmp 153 us
