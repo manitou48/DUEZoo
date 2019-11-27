@@ -28,7 +28,7 @@ recursive fibonacci (fibo(26))
 	WICED STM32F205 (@120mhz)88 ms
 	pyboard STM32F405RGT6  4272ms (python)
 	pyboard 38 ms (168mhz in firmware gcc -Os)  (mbed STM32F407VG 31 ms -O3)
-	adafruit stm32f405(168mhz) 32 ms   -O2
+    adafruit stm32f405(168mhz) 32 ms   -O2
 	mbed M7 (600 mhz)         6 ms   MXRT1050-EVKB  ARM gcc -O3
 	beaglebone (720MHz)      20.9   -O
 	beaglebone black (1GHz)  20.5 ms
@@ -67,7 +67,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	beaglebone black  -O 51354  -O3 98462
 	edison   37037   -O3 48309
 	pyboard  7529 KBs (firmware C)
-	stm32f405 8533 KBs    tls 10343 KBs  ssl 7366 KBs
+    stm32f405 8533 KBs    tls 10343 KBs  ssl 7366 KBs
 	raspberry 8103.727715 30959.752322 52910.052910 55555.555556
 	          57142.857143   (PI3 88495 KBs) (PI3B+ 102244 KBs)
 	ubuntu    67019.951169  260400.391642 316436.669947 320493.303292 KBs
@@ -92,7 +92,7 @@ SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	ESP32 2353 KBs  mbedtls 1667 KBs wolfssl 1514 KBs
 	M4   1486 KBs mbedtls 2183  ssl 2089 KBs hardware 81 MBs
 	pyboard 1379 KBs python
-	stm32f405  2056KBs   tls 2285 KBs  tls  2579 KBs
+    stm32f405  2056KBs   tls 2285 KBs  tls  2579 KBs
 	raspberry3p 34087 KBs  openssl 66606  mbedtls 40823
 	beagle 5120
 	ubuntu 64000 KBs
@@ -122,7 +122,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	STM32L476     244 KBs  mbedtls 566 wolfssl 110 us
 	WICED         180 KBs  mbedtls 610
 	pyboard       481 KBs (mbed -O3)
-	stm32f405     259 KBs  tls 800 KBs  ssl 1122 KBs
+    stm32f405     259 KBs  tls 800 KBs  ssl 1122 KBs
 	mbed M7       2370 KBs  mbed tls 719   hardware 2462 KBs
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
@@ -154,7 +154,7 @@ fft_bench demo   int32_t
 	STM32L476     5ms
 	WICED         3ms
 	pyboard       1ms  (mbed -O3)
-	stm32f405     1ms
+    stm32f405     1ms
 	mbed M7       211 us
 	beaglebone 0.375 ms (had to do it 1000 times to exceed a ms, then divide out 1000)
 	beaglebone black x1000 .503 ms
@@ -192,7 +192,7 @@ v[i]= sin(i)    i 0 to 399   double
 	edison      330 us
 	pyboard    4187 us   float 4-byte @168mhz in firmware C
 	pyboard   13601 us   python
-	stm32f405  3422 us   float -O2
+    stm32f405  3422 us   float -O2
 	ubuntu       69 us  
 	cygwin       18 us
 
@@ -223,7 +223,7 @@ linpack double (megaflops)
 	raspberry      40       200x200   (PI3 174 mflops) (3B+ 209 mflops)
 	edison         93  mflops   (97 -O3)
 	pyboard        28  mflops (float 100x100 in firmware C)
-	stm32f405      33  mflops (float 100x100 -O2)  double 1.8
+    stm32f405      33  mflops (float 100x100 -O2)  double 1.8
 	ubuntu        790     200x200
 	cygwin       3955     200x200
 
@@ -245,7 +245,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     mbed F469NI    2649 us    mbed tls 1059  (738 @180mhz) wolfssl 1327 us
     mbed M7        1063 us   656 us (gnu gcc -O2) -O3: mbedtls 220  wolfssl 258
     pyboard        2129 us  python loop  (mbed C 864 us )
-	stm32f405      3370 us  tls 1272 us  ssl 171 us  mini-gmp 190 us
+    stm32f405      3370 us  tls 1272 us  ssl 171 us  mini-gmp 190 us
     adafruit M4    4290 us    mbedtls 1582 us  wolfssl 243 us mini-gmp 263
     ESP8266       16269 us
     ESP32          4647 us mbedtls 1476 us  wolfssl 1801 us
@@ -294,7 +294,7 @@ coremarkish           MHz    /sec /MHz
     mbed M7           600  2437.8  4.1   -O3  NXP 1052
     SDK M7            600  2439.2  4.1   -O3  NXP 1062  gcc 7.2.1
     pyboard           168   386.1  2.3   -O3   mbed STM32F407VG arm cc or gcc
-	stm32f405         168   361.0  2.2   -O3  gcc 8.2.1
+    stm32f405         168   361.0  2.2   -O3  gcc 8.2.1
     adafruit M4       120   306.3  2.6   -O3  gcc 7.2.1  SAMD51 @200 516
     ESP8266            80   124.6  1.6   -Os  xtensa gcc 4.8.2
     ESP32             240   358.5  1.5   -Os  xtensa gcc 4.8.2
