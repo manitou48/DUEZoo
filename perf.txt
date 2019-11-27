@@ -228,25 +228,25 @@ linpack double (megaflops)
 	cygwin       3955     200x200
 
 bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
-    UNO          156868  us mbedtls 34544 (1284p)
+    UNO          156868  us mbedtls 34544 (1284p)  gmp-mini 15100
     nRF51822      62897  us mbedtls 13336 us
     ZERO          49210  us mbedtls 6203 us  wolfssl 5825
-    DUE           10930  us mbedtls 2637 us wolfssl 2121 us
-    maple         11543  us mbedtls 2527 us (Arduino IDE) wolfssl 2058 us
-    STM32L476      6668 us mbedtls 1979 us wolfssl 371 us
+    DUE           10930  us mbedtls 2637 us wolfssl 2121 us gmp-mini 506 us
+    maple         11543  us mbedtls 2527 us (Arduino IDE) wolfssl 2058 us gmp-mini 540
+    STM32L476      6668 us mbedtls 1979 us wolfssl 371 us gmp-mini 358
     teensy LC     44991 us mbedtls 5940  wolfssl 1583 us
-    teensy 3.2     6054 us mbedtls 1746  wolfssl 210
-    teensy K64     4885 us mbedtls 1520  wolfssl 204 us
-    teensy K66     2738    mbedtls 1175 us wolfssl 135 us
-    teensy 4 beta   624    mbedtls  160 us wolfssl  22 us
+    teensy 3.2     6054 us mbedtls 1746  wolfssl 210 mini-gmp 269
+    teensy K64     4885 us mbedtls 1520  wolfssl 204 us mini-gmp 263
+    teensy K66     2738    mbedtls 1175 us wolfssl 135 us mini-gmp 153 us
+    teensy 4        624    mbedtls  160 us wolfssl  22 us mini-gmp 30 us
     mbed K64F      3846 us    mbed tls 1129  wolfssl 2058 us
     mbed F466RE    2477 us    mbed tls  988  wolfssl 1313 us
     mbed LPC1768   5222 us    mbed tls 1383 us wolfssl 2491 us
     mbed F469NI    2649 us    mbed tls 1059  (738 @180mhz) wolfssl 1327 us
     mbed M7        1063 us   656 us (gnu gcc -O2) -O3: mbedtls 220  wolfssl 258
     pyboard        2129 us  python loop  (mbed C 864 us )
-	stm32f405      3370 us  tls 1272 us  ssl 171 us
-    adafruit M4    4290 us    mbedtls 1582 us  wolfssl 243 us
+	stm32f405      3370 us  tls 1272 us  ssl 171 us  mini-gmp 190 us
+    adafruit M4    4290 us    mbedtls 1582 us  wolfssl 243 us mini-gmp 263
     ESP8266       16269 us
     ESP32          4647 us mbedtls 1476 us  wolfssl 1801 us
     CC3200        10877
