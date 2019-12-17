@@ -94,6 +94,7 @@ SPI clock     write
 16MHz        14.0 mbs    15.1
 32MHz        22.3 mbs    25.1
 40MHz        30.9        37.7
+ 1.48 max SPI 528/7/2 = 37.7mhz,  1.49 720/3/2 = 120mhz (54 mbs)
 
    ZERO SAMD21G @ 48MHz  (SPI max clock 24mhz, but ZERO good to 12mhz)
                 SPI      
