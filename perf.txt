@@ -273,6 +273,8 @@ T3.2@120mhz    869.8   2498.5  18182.5    Faster       v1.1.0
 adaM4F@120mhz  701.3   1756.1    781.0    Faster       v1.1.0   SAMD51
 STM32L4@80mhz  917.3   1953.8   1150.4    Faster       v1.4.5
 STM32F405@168  466.5   1135.1    556.1    gcc -O2      v1.6.0
+F469NI@180mhz  416.8    843.4    496.5    gcc -O3      v1.5.1  otto mbed
+F446RE@180mhz  416.8    843.4    484.7    gcc -O3      v1.5.1  mbed
 
 coremarkish           MHz    /sec /MHz
     MEGA2560           16     6.9  0.4   -Os  (-O3 9.1)  avr-gcc 4.9.2
