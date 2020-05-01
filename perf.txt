@@ -34,6 +34,7 @@ recursive fibonacci (fibo(26))
 	beaglebone black (1GHz)  20.5 ms
 	raspberry pi (700MHz)    10.682 ms  10.260  (PI3 1.2GHz 64-bit 3.297 ms)
 	raspberry pi3b+ (1.4GHz)  6.6   ms 
+	raspberry pi4   (1.5GHz)  5.6   ms  gcc 8.30.0
 	edison (500mhz)          14.6 ms
 	ubuntu/pentinum4(2.8GHz) 1.2 ms   -O
 	cygwin/i5-4460 (3.2GHz)  0.7 ms windows-10 64-bit   -O
@@ -69,7 +70,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	pyboard  7529 KBs (firmware C)
 	stm32f405 8533 KBs    tls 10343 KBs  ssl 7366 KBs
 	raspberry 8103.727715 30959.752322 52910.052910 55555.555556
-	          57142.857143   (PI3 88495 KBs) (PI3B+ 102244 KBs)
+	          57142.857143   (PI3 88495 KBs) (PI3B+ 102244 KBs) (PI4 165624 KBs)
 	ubuntu    67019.951169  260400.391642 316436.669947 320493.303292 KBs
 	cygwin   355871.9  KBs
 
@@ -94,6 +95,7 @@ SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	pyboard 1379 KBs python
 	stm32f405  2056KBs   tls 2285 KBs  tls  2579 KBs
 	raspberry3p 34087 KBs  openssl 66606  mbedtls 40823
+	raspberry4  21964 KBs  openssl 151519  mbedtls 64103
 	beagle 5120
 	ubuntu 64000 KBs
 	macpro 97682 KBs
@@ -126,7 +128,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	mbed M7       2370 KBs  mbed tls 719   hardware 2462 KBs
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
-	raspberry pi      15050   (PI3 46655) (PI3B+ 53753)
+	raspberry pi      15050   (PI3 46655) (PI3B+ 53753) (PI4 80774)
 	edison             9852
 	ubuntu            50079
 	cygwin           144870 
@@ -158,7 +160,7 @@ fft_bench demo   int32_t
 	mbed M7       211 us
 	beaglebone 0.375 ms (had to do it 1000 times to exceed a ms, then divide out 1000)
 	beaglebone black x1000 .503 ms
-	raspberry x1000  0.527  0.504   (PI3 0.257) (PI3B+ 0.207)
+	raspberry x1000  0.527  0.504   (PI3 0.257) (PI3B+ 0.207) (PI4 0.121)
 	edison 0.363ms (needed 1000 iterations) 
 	ubuntu 0.053ms (needed 1000 iterations) 
 	cygwin 0.026ms (needed 1000 iterations) 
@@ -188,7 +190,7 @@ v[i]= sin(i)    i 0 to 399   double
 	mbed M7      197us     float    66us  600mhz
 	WICED      11009us   double
 	beaglebone 7626 us  black 1552us
-	raspberry  6989 us   (PI3 149 us)  (PI3B+ 206 us)
+	raspberry  6989 us   (PI3 149 us)  (PI3B+ 206 us) (PI4 143 us)
 	edison      330 us
 	pyboard    4187 us   float 4-byte @168mhz in firmware C
 	pyboard   13601 us   python
@@ -220,7 +222,7 @@ linpack double (megaflops)
 	mbed M7        66.97   125.3 (float) 100x100
 	WICED           0.99  double  30x30
 	beaglebone     22    black 40  200x200
-	raspberry      40       200x200   (PI3 174 mflops) (3B+ 209 mflops)
+	raspberry      40       200x200   (PI3 174 mflops) (3B+ 209 mflops) (PI4 813 mflops)
 	edison         93  mflops   (97 -O3)
 	pyboard        28  mflops (float 100x100 in firmware C)
 	stm32f405      33  mflops (float 100x100 -O2)  double 1.8
@@ -251,7 +253,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     ESP32          4647 us mbedtls 1476 us  wolfssl 1801 us
     CC3200        10877
     WICED          6573 us   mbedtls 1760
-    raspberry       549 us   openssl   PI3 255  (mbedtls 259 us) 3B+ 312 us
+    raspberry       549 us   openssl   PI3 255  (mbedtls 259 us) 3B+ 312 us PI4 233 us
     beaglebone      664 us   openssl  black 758 
     edison          310 us   openssl  (mbedtls 578)
     ubuntu           65 us   openssl  (mbedtls 170us, libgmp 39us, bignumber 189)
@@ -306,6 +308,7 @@ coremarkish           MHz    /sec /MHz
     raspberry         700  1314.9  1.9   -O2  gcc 4.6.3
     raspberry PI3    1200  3216.7  2.7   -O2  gcc 4.9.2
     raspberry PI3B+  1400  4475.6  3.2   -O2  gcc 6.3.0
+    raspberry PI4    1500  8272.5  5.8   -O2  gcc 8.3.0
     beaglebone        720  1346.1  1.9   -O2  gcc 4.6.3
     beaglebone black 1000  2131.1  2.1   -O2  gcc 4.6.3
     edison            500  1237.2  2.5   -O2  gcc 4.8.2 (IDE -Os 1061.2)
