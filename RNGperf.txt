@@ -6,7 +6,7 @@ DUE             31.9 mbs  (TRNG) @84mhz
 Raspberry PI      .89 mbs  /dev/hwrng
 edison RDRAND      33  mbs (TRNG)   @500mhz
 pyboard           36.5 mbs  (2 mbs python) STM32F405RG (TRNG) @168mhz
-DISCOVERY         37.2 mbs STM32F407VET6 (TRNG) @80mhz
+DISCOVERY         37.2 mbs STM32F407VET6 (TRNG) @168mhz
 dragonfly         37.2 mbs STM32L476RE (TRNG) @80mhz  L476VG L476RG
 mbed K64F         7.5 mbs  (TRNG)  @120mhz
 mbed F469NI      37.2 mbs TRNG @168mhz
