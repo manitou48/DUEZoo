@@ -139,6 +139,16 @@ SPI  clock    transfer   DMA
 12MHz         7.5 mbs   12.0 mbs
 24MHz        10.8 mbs   24.0 mbs
 
+    artemis @ 96MHz sparkfun micromod
+                SPI      
+SPI  clock    transfer 
+4MHz          4.0 mbs 
+8MHz          7.8 mbs
+12MHz        11.8 mbs
+16MHz        15.6 mbs
+24MHz        23.2 mbs
+48MHz        44.4 mbs
+
 dragonfly (STM32L4 @80mhz), SPI clock at 20 mhz yields 19.9 mbs
 
 pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz)  C/firmware
