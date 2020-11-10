@@ -220,7 +220,7 @@ linpack double (megaflops)
 	mbed F466RE     0.855 23.955 (float) 50x50
 	mbed K64F       0.951 12.909 (float) 50x50
 	mbed F469NI     2.11  23.971 (float) 50x50  27 100x100  (29@180mhz)
-	artemis         1.03  12.3 (float) 50x50
+	artemis         1.03  13.8 (float) 50x50
 	adafruit M4     1.42  20.1   (float) 100x100
 	ESP8266         0.593  30x30
 	ESP32           2.8 100x100   (float) 44.5
@@ -255,10 +255,10 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     mbed M7        1063 us   656 us (gnu gcc -O2) -O3: mbedtls 220  wolfssl 258
     pyboard        2129 us  python loop  (mbed C 864 us )
     stm32f405      3370 us  tls 1272 us  ssl 171 us  mini-gmp 190 us
-	artemis        7185 us  tls 2170  ssl  391 us
+    artemis        7185 us  tls 2170  ssl  391 us  gmp 367
     adafruit M4    4290 us    mbedtls 1582 us  wolfssl 243 us mini-gmp 263
     ESP8266       16269 us
-    ESP32          4647 us mbedtls 1476 us  wolfssl 1801 us
+    ESP32          4647 us mbedtls 1476 us  wolfssl 1801 us  gmp 269
     CC3200        10877
     WICED          6573 us   mbedtls 1760
     raspberry       549 us   openssl   PI3 255  (mbedtls 259 us) 3B+ 312 us PI4 233 us
@@ -308,7 +308,7 @@ coremarkish           MHz    /sec /MHz
     SDK M7            600  2439.2  4.1   -O3  NXP 1062  gcc 7.2.1
     pyboard           168   386.1  2.3   -O3   mbed STM32F407VG arm cc or gcc
     stm32f405         168   361.0  2.2   -O3  gcc 8.2.1
-	artemis            96   203.5  2.1   -O3  gcc 8.2.1
+    artemis            96   203.5  2.1   -O3  gcc 8.2.1
     adafruit M4       120   306.3  2.6   -O3  gcc 7.2.1  SAMD51 @200 516
     ESP8266            80   124.6  1.6   -Os  xtensa gcc 4.8.2
     ESP32             240   358.5  1.5   -Os  xtensa gcc 4.8.2
