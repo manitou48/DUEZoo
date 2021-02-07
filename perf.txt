@@ -315,6 +315,7 @@ coremarkish           MHz    /sec /MHz
     ESP32             240   480.9  2.0   -O2  xtensa gcc 5.2.0
     CC3200             80    94.3  1.2   -Os  gcc 4.7.4
     WICED/photon      120   164.2  1.4   -O2  gcc 4.8.3
+	raspberry pico    125   247.3  2.0   -O3  GCC6.3.1
     raspberry         700  1314.9  1.9   -O2  gcc 4.6.3
     raspberry PI3    1200  3216.7  2.7   -O2  gcc 4.9.2
     raspberry PI3B+  1400  4475.6  3.2   -O2  gcc 6.3.0
