@@ -25,6 +25,7 @@ recursive fibonacci (fibo(26))
 	CC3200 (80mhz)          110 ms  TI launchpad
 	STM32L476RE (80mhz)      73 ms  dragonfly
 	artemis (96mhz)          62 ms  sparkfun micromod
+	rpi pico (125mhz)        52 ms  sparkfun micomod  -O3 
 	Adafruit M4 (120mhz)     49 ms  Adafruit M4 Feather  SAMD51
 	WICED STM32F205 (@120mhz)88 ms
 	pyboard STM32F405RGT6  4272ms (python)
@@ -59,6 +60,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	mbed K64F            20ms   4994 KBs mbedtls  6693   hardware 10952 KBs
 	mbed F469NI          13 ms  7769 KBs mbedtls 10039  (8327 10778 @180mhz) wolfssl 10778
 	artemis              10 ms  5120 KBs mbedtls 6243 wolfssl 4320
+	rpi pico             10 ms  5120 KBs mbedtls 2003 wolfssl 1488
 	Adafruit M4           8 ms  6400 KBs mbedtls 7211 KBs  wolfssl 5657 KBs
 	ESP8266              17ms   3011 KBs
 	ESP32                 4ms  12800 KBs mbedtls 3683 KBS wolfssl 3346 KBs
@@ -94,6 +96,7 @@ SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	dragonfly 950 KBs  -O3  1004 KBs
 	ESP32 2353 KBs  mbedtls 1667 KBs wolfssl 1514 KBs
 	artemis 1135 KBs mbedtls 1317 wolfssl 1458 KBs
+	pico     875 KBs mbedtls  605 wolfssl  815 KBs
 	M4   1486 KBs mbedtls 2183  ssl 2089 KBs hardware 81 MBs
 	pyboard 1379 KBs python
 	stm32f405  2056KBs   tls 2285 KBs  tls  2579 KBs
@@ -154,6 +157,7 @@ fft_bench demo   int32_t
 	mbed K64F     2ms
 	mbed F469NI   1ms
 	artemis       4ms
+	pico          3ms
 	Adafruit M4   3ms
 	ESP8266       5ms
 	ESP32         2ms
@@ -188,6 +192,7 @@ v[i]= sin(i)    i 0 to 399   double
 	mbed K64F  11358us  float (hardware) 560us    120mhz
 	mbed F469NI 5744us  float (hardware) 254us    (237us @180mhz)
 	artemis      5185 us (float hardware)
+	pico         5489 us double
 	ada M4      8198us  float(hardware) 4008 us
 	ESP8266    19427us     float 68106us    80mhz
 	ESP32       4218us     float  2811us   240mhz
@@ -221,6 +226,7 @@ linpack double (megaflops)
 	mbed K64F       0.951 12.909 (float) 50x50
 	mbed F469NI     2.11  23.971 (float) 50x50  27 100x100  (29@180mhz)
 	artemis         1.03  13.8 (float) 50x50
+	pico            0.8   1.5 (float) 50x50
 	adafruit M4     1.42  20.1   (float) 100x100
 	ESP8266         0.593  30x30
 	ESP32           2.8 100x100   (float) 44.5
@@ -256,6 +262,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     pyboard        2129 us  python loop  (mbed C 864 us )
     stm32f405      3370 us  tls 1272 us  ssl 171 us  mini-gmp 190 us
     artemis        7185 us  tls 2170  ssl  391 us  gmp 367
+	pico           7799 us  tls 1001  ssl  606 us  gmp 416 us
     adafruit M4    4290 us    mbedtls 1582 us  wolfssl 243 us mini-gmp 263
     ESP8266       16269 us
     ESP32          4647 us mbedtls 1476 us  wolfssl 1801 us  gmp 269
