@@ -149,6 +149,16 @@ SPI  clock    transfer
 24MHz        23.2 mbs
 48MHz        44.4 mbs
 
+      rpi pico @125MHz (SPI clock 125Mhz/2 /4 /8 ...) bout same with DMA
+    SPI  clock    transfer 
+    1.953125 mhz   1.644399 mbs
+    3.906250 mhz   3.285421 mbs
+    7.812500 mhz   6.573541 mbs
+    15.625000 mhz 13.008130 mbs
+    31.250000 mhz 25.396825 mbs
+    62.500000 mhz 51.612903 mbs
+
+
 dragonfly (STM32L4 @80mhz), SPI clock at 20 mhz yields 19.9 mbs
 
 pyboard @168mhz, SPI clock at 42mhz yields  37.6mbs (19.8mbs @21mhz)  C/firmware
