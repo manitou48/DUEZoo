@@ -33,5 +33,5 @@ cc3200    3.0       energia IDE -Os
 WICED    29.6  5.7  STM32F205 arduino IDE -O1
 photon    7.4  1.4  STM32F205 web IDE -Os
 pyboard 265.7  28.5     STM32F4
-pico     15.6  0.7
+pico     15.6  0.7   -O3
 blink.c   0.2    avr-gcc  328P
