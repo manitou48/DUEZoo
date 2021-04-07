@@ -10,11 +10,14 @@ DUE (2)        12        1          3    0.55-2.75v  25 clocks(42mhz)
 ZERO           10        2          1    samd21
 LPC1768        10        1          1
 F446RE         12        4          1
-32F405/7(2)    12        3          8?   output buffer
 F469NI         12        4          1
-pyboard(2)     12        7          8?
+32F405/7(2)    12        3          8?   output buffer
+pyboard(2)     12        7          8?   32F405
 photon(2)      12        3          1
-mcp4725        12        7         25
-pcf8591p        8       18         20
-samd51         12        7             m4
+samd51         12        7          1  m4
 samd21         10        2          1  cpx
+MCP4725        12        7         25     I2C
+pcf8591p        8       18         20     I2C
+SGTL5000                16
+UDA1334A       12       16          2      I2S
+PCM5102A       32       18          4      I2S
