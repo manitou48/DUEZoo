@@ -127,7 +127,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	pico          137 KBs  mbedtls 127  woffssl  477 KBs
 	adafruit M4   370  mbedtls 1032  wolfssl 1163 KBs  hardware 11.2 MBs
 	ESP8266       205
-	ESP32         651  mbedtls 1255 KBs wolfssl 800 KBs  hardware 7.3 MBs
+	ESP32         761  mbedtls 1255 KBs wolfssl 800 KBs  hardware 7.3 MBs
 	CC3200        350 KBs  (hardware 1939 KBs)
 	STM32L476     244 KBs  mbedtls 566 wolfssl 110 us
 	WICED         180 KBs  mbedtls 610
@@ -263,7 +263,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     pyboard        2129 us  python loop  (mbed C 864 us )
     stm32f405      3370 us  tls 1272 us  ssl 171 us  mini-gmp 190 us
     artemis        7185 us  tls 2170  ssl  391 us  gmp 367
-	pico           7799 us  tls 1662  ssl  606 us  gmp 416 us
+    pico           7799 us  tls 1662  ssl  606 us  gmp 416 us
     adafruit M4    4290 us    mbedtls 1582 us  wolfssl 243 us mini-gmp 263
     ESP8266       16269 us
     ESP32          4647 us mbedtls 1476 us  wolfssl 1801 us  gmp 269
