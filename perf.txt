@@ -315,8 +315,8 @@ coremarkish           MHz    /sec /MHz
     mbed F469NI       168   387.3  2.3   -O3    otto  (415.3 @180mhz)
     mbed M7           600  2437.8  4.1   -O3  NXP 1052
     SDK M7            600  2439.2  4.1   -O3  NXP 1062  gcc 7.2.1
-	SDK 1170          996  4059.2  4.1   -O3  NXP cm7   gcc 9.3.1
-	SDK 1170          393   727.8  1.9   -O3  NXP cm4   gcc 9.3.1
+	SDK 1170          996  4062.9  4.1   -O3  NXP cm7   gcc 9.3.1
+	SDK 1170          393   728.5  1.9   -O3  NXP cm4   gcc 9.3.1
     pyboard           168   386.1  2.3   -O3   mbed STM32F407VG arm cc or gcc
     stm32f405         168   361.0  2.2   -O3  gcc 8.2.1
     artemis            96   203.5  2.1   -O3  gcc 8.2.1
