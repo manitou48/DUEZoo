@@ -32,7 +32,7 @@ recursive fibonacci (fibo(26))
 	pyboard 38 ms (168mhz in firmware gcc -Os)  (mbed STM32F407VG 31 ms -O3)
 	adafruit stm32f405(168mhz) 32 ms   -O2
 	mbed M7 (600 mhz)         6 ms   MXRT1050-EVKB  ARM gcc -O3
-    NXP 1170 (1GHz)           3.7ms   cm7 -O3    cm4@400mhz 21 ms
+	NXP 1170 (1GHz)           3.7ms   cm7 -O3    cm4@400mhz 21 ms
 	beaglebone (720MHz)      20.9   -O
 	beaglebone black (1GHz)  20.5 ms
 	raspberry pi (700MHz)    10.682 ms  10.260  (PI3 1.2GHz 64-bit 3.297 ms)
