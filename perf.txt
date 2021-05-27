@@ -278,6 +278,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
 
 DSP FFT benchmark  1024  radix4 REVERSEBITS 0  (microseconds)
                 q15     q31      f32       opt         arm_math.h
+NXP 1170 1GHz   44.3     89.4     66.9    gcc -O3      v1.6.0
   T4@600mhz     77.4    147.0     87.0    gcc -O2      v1.5.1
   M7@600mhz     77.4    147.8     88.0    gcc -O3      v1.5.1 SDK
   M7@600mhz     74.5    126.9     95.6    ARM GCC -O3  v1.5.1
