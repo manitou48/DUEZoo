@@ -32,7 +32,7 @@ recursive fibonacci (fibo(26))
 	pyboard 38 ms (168mhz in firmware gcc -Os)  (mbed STM32F407VG 31 ms -O3)
 	adafruit stm32f405(168mhz) 32 ms   -O2
 	mbed M7 (600 mhz)         6 ms   MXRT1050-EVKB  ARM gcc -O3
-	NXP 1170 (1GHz)           3.7ms   cm7 -O3    cm4@400mhz 21 ms
+    NXP 1170 (1GHz)           3.7ms   cm7 -O3    cm4@400mhz 21 ms
 	beaglebone (720MHz)      20.9   -O
 	beaglebone black (1GHz)  20.5 ms
 	raspberry pi (700MHz)    10.682 ms  10.260  (PI3 1.2GHz 64-bit 3.297 ms)
@@ -315,8 +315,8 @@ coremarkish           MHz    /sec /MHz
     mbed F469NI       168   387.3  2.3   -O3    otto  (415.3 @180mhz)
     mbed M7           600  2437.8  4.1   -O3  NXP 1052
     SDK M7            600  2439.2  4.1   -O3  NXP 1062  gcc 7.2.1
-	SDK 1170          996  4062.9  4.1   -O3  NXP cm7   gcc 9.3.1
-	SDK 1170          393   728.5  1.9   -O3  NXP cm4   gcc 9.3.1
+    SDK 1170          996  4062.9  4.1   -O3  NXP cm7   gcc 9.3.1
+    SDK 1170          393   728.5  1.9   -O3  NXP cm4   gcc 9.3.1
     pyboard           168   386.1  2.3   -O3   mbed STM32F407VG arm cc or gcc
     stm32f405         168   361.0  2.2   -O3  gcc 8.2.1
     artemis            96   203.5  2.1   -O3  gcc 8.2.1
