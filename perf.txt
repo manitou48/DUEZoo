@@ -223,6 +223,7 @@ linpack double (megaflops)
 	teensy K66      2.15   27 (float) 50x50    30 100x100
 	teensy K64      0.82   17 (float) 50x50    19 100x100
 	teensy 4 beta  65.4   140 (float) 50x50   166 100x100
+	NXP 1170      121.3   290 (float) 100x100  @1Ghz
 	mbed LPC1768    0.879                50x50
 	mbed F466RE     0.855 23.955 (float) 50x50
 	mbed K64F       0.951 12.909 (float) 50x50
