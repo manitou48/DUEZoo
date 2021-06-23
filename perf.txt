@@ -90,6 +90,7 @@ SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	T3.6  2173 KBs tls 3131 hardware 4625   ssl 2934
 	T4 beta  14406 KBs  mbedtls 19 MBs  ssl 20.5 MBs  hardware 129 MBs
 	NXP M7/1062 14.9 MBS  DCP: tls 59.1 MBs  ssl 81.2 MBs
+	NXP 1170  29.8 MBS  mbedtls 22.7 MBs  -O3
 	mbed M7  15374 KBS  tls 12488   dcp 55652 KBs ssl 13473
 	mbed k64f 1548 KBs  tls 2098  CAU tls 2546 ssl 2561 KBs
 	mbed LPC 1235 KBS   tls  1928 KBs
@@ -223,7 +224,7 @@ linpack double (megaflops)
 	teensy K66      2.15   27 (float) 50x50    30 100x100
 	teensy K64      0.82   17 (float) 50x50    19 100x100
 	teensy 4 beta  65.4   140 (float) 50x50   166 100x100
-	NXP 1170      121.3   290 (float) 100x100  @1Ghz
+	NXP 1170      121.3   290 (float) 100x100  @1Ghz -O3
 	mbed LPC1768    0.879                50x50
 	mbed F466RE     0.855 23.955 (float) 50x50
 	mbed K64F       0.951 12.909 (float) 50x50
