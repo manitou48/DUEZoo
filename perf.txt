@@ -55,7 +55,8 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	teensy LC (48 MHz) 31 ms 1651 KBs  mbedtls 1889 wolfssl 1563 KBs
 	teenys K66          6 ms 8533 KBs  mbedtls 10778 (hardware 16570) wolfssl 11906
 	teensy K64         11 ms 4654 KBs  mbedtls 6168  (hardware 10964) wolfssl 6243
-	teensy 4 beta     0.8 ms 62668 KBs  mbedtl 102400 wolfssl 51200
+	teensy 4 beta     0.8 ms 62668 KBs  mbedtls 102400 wolfssl 51200
+	NXP 1170           125 MBs -O3  mbedtls 5.8 MBs  -O2 102 MBs
 	mbed LPC1768 (96mhz) 20 ms  4994 KBs mbedtls 6781  wolfssl 6360 KBs
 	mbed F466RE          12 ms  8324 KBs mbedtls 10779 wolfssl 10666 KBs
 	mbed K64F            20ms   4994 KBs mbedtls  6693   hardware 10952 KBs
