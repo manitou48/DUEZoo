@@ -49,6 +49,7 @@ STM32L433 3.3v@80mhz    2.6/4.1   WFE    arm STM32L433 8.6   butterfly  9.6
 WICED 3.3v@120mhz      64.5/65.1         arm STM32F205  49/50
 artemis 3.3v@96mhz      4.2/4.7          cortex MF4 sparkfun
 pico 3.3v@125mhz       19.7/21.6         rpi pico  RP2040
+pico 3.3v@125mhz       21.4/25.6         arduino nano pico  RP2040
 NXP 1170 1GHz          244/258           NXP EVK  SDK
 quickstart 3.3v@80MHz 13.4/15.1          propeller 3.3v@80MHz  8/80 8 cogs
 stampbs2 BoE 5v@20MHz 18.6/23.6          PIC 5@20MHz      7
