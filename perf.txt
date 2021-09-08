@@ -191,6 +191,7 @@ v[i]= sin(i)    i 0 to 399   double
 	teensy K66 5425 us    float (hardware) 2665 
 	teensy K64 12559 us   float (hardware) 5014 
 	teensy 4 beta 152 us   float (hardware) 599 
+	NXP 1170     117 us   float  52
 	mbed 1768 11045 us     96mhz
 	mbed F446RE 12420us float (hardware) 238us   180mhz
 	mbed K64F  11358us  float (hardware) 560us    120mhz
