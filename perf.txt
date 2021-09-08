@@ -137,6 +137,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	pyboard       481 KBs (mbed -O3)
 	stm32f405     259 KBs  tls 800 KBs  ssl 1122 KBs
 	mbed M7       2370 KBs  mbed tls 719   hardware 2462 KBs
+	NXP 1170      842 KBs mbedtls 34836 KBs
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
 	raspberry pi      15050   (PI3 46655) (PI3B+ 53753) (PI4 80774)
@@ -171,6 +172,7 @@ fft_bench demo   int32_t
 	pyboard       1ms  (mbed -O3)
 	stm32f405     1ms
 	mbed M7       211 us
+	NXP 1170      266 us   SDK -O3 
 	beaglebone 0.375 ms (had to do it 1000 times to exceed a ms, then divide out 1000)
 	beaglebone black x1000 .503 ms
 	raspberry x1000  0.527  0.504   (PI3 0.257) (PI3B+ 0.207) (PI4 0.121)
