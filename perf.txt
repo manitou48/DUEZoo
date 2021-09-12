@@ -56,7 +56,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	teenys K66          6 ms 8533 KBs  mbedtls 10778 (hardware 16570) wolfssl 11906
 	teensy K64         11 ms 4654 KBs  mbedtls 6168  (hardware 10964) wolfssl 6243
 	teensy 4 beta     0.8 ms 62668 KBs  mbedtls 102400 wolfssl 51200
-	NXP 1170           125 MBs -O3  mbedtls 5.8 MBs  -O2 102 MBs
+	NXP 1170           125 MBs -O3  mbedtls 5.8 MBs ssl 9.2 MBs  -O2 102 MBs
 	mbed LPC1768 (96mhz) 20 ms  4994 KBs mbedtls 6781  wolfssl 6360 KBs
 	mbed F466RE          12 ms  8324 KBs mbedtls 10779 wolfssl 10666 KBs
 	mbed K64F            20ms   4994 KBs mbedtls  6693   hardware 10952 KBs
@@ -91,7 +91,7 @@ SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	T3.6  2173 KBs tls 3131 hardware 4625   ssl 2934
 	T4 beta  14406 KBs  mbedtls 19 MBs  ssl 20.5 MBs  hardware 129 MBs
 	NXP M7/1062 14.9 MBS  DCP: tls 59.1 MBs  ssl 81.2 MBs
-	NXP 1170  29.8 MBS  mbedtls 22.7 MBs  -O3
+	NXP 1170  29.8 MBS  mbedtls 22.7 MBs  ssl 9.3 MBs  -O3
 	mbed M7  15374 KBS  tls 12488   dcp 55652 KBs ssl 13473
 	mbed k64f 1548 KBs  tls 2098  CAU tls 2546 ssl 2561 KBs
 	mbed LPC 1235 KBS   tls  1928 KBs
@@ -110,7 +110,7 @@ SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	macpro 97682 KBs
 	cygwin 128643 KBs  mbedtls 171799
 
-aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key 
+aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key  AES
 	UNO            28 KBs   (byte-oriented C implementation) mbedtls 42 1284p
 	nRF51822      258  mbedtls 580  -O3 mbed
 	DUE           174  mbedtls 520  wolfssl 556 KBs
@@ -137,7 +137,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key
 	pyboard       481 KBs (mbed -O3)
 	stm32f405     259 KBs  tls 800 KBs  ssl 1122 KBs
 	mbed M7       2370 KBs  mbed tls 719   hardware 2462 KBs
-	NXP 1170      842 KBs mbedtls 34836 KBs
+	NXP 1170      842 KBs mbedtls 34836 KBs  ssl 21333 KBs
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
 	raspberry pi      15050   (PI3 46655) (PI3B+ 53753) (PI4 80774)
@@ -262,7 +262,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     teensy K64     4885 us mbedtls 1520  wolfssl 204 us mini-gmp 263
     teensy K66     2738    mbedtls 1175 us wolfssl 135 us mini-gmp 153 us
     teensy 4        624    mbedtls  160 us wolfssl  22 us mini-gmp 30 us
-	NXP 1170        356 us mbedtls 88 us
+	NXP 1170        356 us mbedtls 88 us  ssl 85 us
     mbed K64F      3846 us    mbed tls 1129  wolfssl 2058 us
     mbed F466RE    2477 us    mbed tls  988  wolfssl 1313 us
     mbed LPC1768   5222 us    mbed tls 1383 us wolfssl 2491 us
