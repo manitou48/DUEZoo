@@ -320,7 +320,7 @@ coremarkish           MHz    /sec /MHz
     mbed LPC1768       96   185.7  1.9   -O3  arm cc 5.06
     mbed F466RE       180   414.9  2.3   -O3  arm cc 4.7
     mbed K64F         120   280.4  2.3   -O3  arm cc 4.7
-    NXP K64F          120   259.7  2.2   -O3  gcc 7.2.1  SDK
+    NXP K64F          120   283.6  2.4   -O3  gcc 9.3.1  SDK
     mbed F469NI       180   415.3  2.3   -O3  otto  (387.3 @168mhz) arm cc 4.7
     mbed M7           600  2437.8  4.1   -O3  NXP 1052  arm cc 4.7
     NXP M7            600  2439.2  4.1   -O3  NXP 1062  gcc 7.2.1 SDK
