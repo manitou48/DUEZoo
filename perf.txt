@@ -32,7 +32,7 @@ recursive fibonacci (fibo(26))
 	pyboard 38 ms (168mhz in firmware gcc -Os)  (mbed STM32F407VG 31 ms -O3)
 	adafruit stm32f405(168mhz) 32 ms   -O2
 	mbed M7 (600 mhz)         6 ms   MXRT1050-EVKB  ARM gcc -O3
-	NXP 1170 (1GHz)           3.7ms   cm7 -O3    cm4@400mhz 21 ms SDK
+	NXP 1170 (cm7@1GHz)       3.7ms   cm7 -O3    cm4@400mhz 21 ms SDK
 	beaglebone (720MHz)      20.9   -O
 	beaglebone black (1GHz)  20.5 ms
 	raspberry pi (700MHz)    10.682 ms  10.260  (PI3 1.2GHz 64-bit 3.297 ms)
@@ -56,7 +56,8 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	teenys K66          6 ms 8533 KBs  mbedtls 10778 (hardware 16570) wolfssl 11906
 	teensy K64         11 ms 4654 KBs  mbedtls 6168  (hardware 10964) wolfssl 6243
 	teensy 4 beta     0.8 ms 62668 KBs  mbedtls 102400 wolfssl 51200
-	NXP 1170           125 MBs -O3  mbedtls 5.8 MBs ssl 9.2 MBs  -O2 102 MBs
+	NXP 1170 cm7       125 MBs -O3  mbedtls 5.8 MBs ssl 9.2 MBs  -O2 102 MBs
+	NXP 1170 cm4        19 MBs -O3  mbedtls 
 	mbed LPC1768 (96mhz) 20 ms  4994 KBs mbedtls 6781  wolfssl 6360 KBs
 	mbed F466RE          12 ms  8324 KBs mbedtls 10779 wolfssl 10666 KBs
 	mbed K64F            20ms   4994 KBs mbedtls  6693   hardware 10952 KBs
@@ -137,7 +138,8 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key  AES
 	pyboard       481 KBs (mbed -O3)
 	stm32f405     259 KBs  tls 800 KBs  ssl 1122 KBs
 	mbed M7       2370 KBs  mbed tls 719   hardware 2462 KBs
-	NXP 1170      8000 KBs mbedtls(+accel) 34836 KBs  ssl 21333 KBs
+	NXP 1170 cm7  8000 KBs mbedtls(+accel) 34836 KBs  ssl 21333 KBs
+	NXP 1170 cm4  1164 KBs mbedtls(+accel) 26760 KBs 
 	beaglebone         9038 KBs  (openssl)
 	beaglebone black  40369   
 	raspberry pi      15050   (PI3 46655) (PI3B+ 53753) (PI4 80774)
@@ -228,7 +230,8 @@ linpack double (megaflops)
 	teensy K66      2.15   27 (float) 50x50    30 100x100
 	teensy K64      0.82   17 (float) 50x50    19 100x100
 	teensy 4 beta  65.4   140 (float) 50x50   166 100x100
-	NXP 1170      121.3   290 (float) 100x100  @1Ghz -O3
+	NXP 1170      121.3   290 (float) 100x100  cm7@1Ghz -O3
+	NXP 1170        2.7    46 (float) 90x90 cm4@400mhz -O3
 	mbed LPC1768    0.879                50x50
 	mbed F466RE     0.855 23.955 (float) 50x50
 	mbed K64F       0.951 12.909 (float) 50x50
