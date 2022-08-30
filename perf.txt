@@ -92,7 +92,8 @@ SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	T3.6  2173 KBs tls 3131 hardware 4625   ssl 2934
 	T4 beta  14406 KBs  mbedtls 19 MBs  ssl 20.5 MBs  hardware 129 MBs
 	NXP M7/1062 14.9 MBS  DCP: tls 59.1 MBs  ssl 81.2 MBs
-	NXP 1170  29.8 MBS  mbedtls 22.7 MBs  ssl 9.3 MBs  -O3
+	NXP 1170  29.8 MBS  mbedtls 22.7 MBs  ssl 9.3 MBs  -O3  cm7@996MHz
+	 1170 cm4  3.9 MBS  mbedtls 5.6 MBs  -O3  cm4@400MHz
 	mbed M7  15374 KBS  tls 12488   dcp 55652 KBs ssl 13473
 	mbed k64f 1548 KBs  tls 2098  CAU tls 2546 ssl 2561 KBs
 	mbed LPC 1235 KBS   tls  1928 KBs
