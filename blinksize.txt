@@ -9,6 +9,7 @@ mbed   (ARM cc -O3)
    DISCO  19.9   1.1    STM32F4
    M7     13.4   8.4    SDK imxrt1050
    M7     26.8   8.5    SDK imxrt1060
+   1170   34     8.4    NXP SDK cm7
 arduino  (GNU gcc -Os)
    UNO     1.1   0
    ZERO   11.1
