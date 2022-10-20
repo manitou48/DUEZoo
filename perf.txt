@@ -20,6 +20,7 @@ recursive fibonacci (fibo(26))
 	mbed F446RE (180mhz)     29ms
 	mbed K64F  (120mhz)      51 ms
 	mbed F469NI  (168mhz)    31 ms    (like Arduino otto) (29 ms @180mhz)
+	mbed F767ZI (216mhz)     19 ms  mbed ARM CC -O3
 	ESP8266 (80mhz)          76 ms  sparkfun dev 
 	ESP32   (240mhz)         23 ms  sparkfun dev 
 	CC3200 (80mhz)          110 ms  TI launchpad
@@ -62,6 +63,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	mbed F466RE          12 ms  8324 KBs mbedtls 10779 wolfssl 10666 KBs
 	mbed K64F            20ms   4994 KBs mbedtls  6693   hardware 10952 KBs
 	mbed F469NI          13 ms  7769 KBs mbedtls 10039  (8327 10778 @180mhz) wolfssl 10778
+	mbed F767ZI           5 ms 22500 KBS  ssl 22260 KBs  tls 21333 KBs
 	artemis              10 ms  5120 KBs mbedtls 6243 wolfssl 4320
 	rpi pico             10 ms  5120 KBs mbedtls 2003 wolfssl 1488
 	Adafruit M4           8 ms  6400 KBs mbedtls 7211 KBs  wolfssl 5657 KBs
@@ -98,6 +100,7 @@ SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	mbed k64f 1548 KBs  tls 2098  CAU tls 2546 ssl 2561 KBs
 	mbed LPC 1235 KBS   tls  1928 KBs
 	mbed nucleo 2204 KBs
+	mbed F767ZI 5306  ssl 1187 KBs  tls 6440 KBs
 	dragonfly 950 KBs  -O3  1004 KBs
 	ESP32 2353 KBs  mbedtls 1667 KBs wolfssl 1514 KBs
 	artemis 1135 KBs mbedtls 1317 wolfssl 1458 KBs
@@ -128,6 +131,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key  AES
 	mbed F466RE   520  mbedtls 1422  wolfssl 888 KBs
 	mbed K64F     339  mbedtls  864  hardware 5818 KBs
 	mbed F469NI   478  mbedtls 1362  (512 1422 @180mhz) wolfssl 888 KBs
+	mbed F767ZI   640  KBs   ssl 3723 KBs  tls 2370 KBs
 	artemis      1164 KBs  mbedtls 598  wolfssl  941KBs
 	pico          137 KBs  mbedtls 127  woffssl  477 KBs
 	adafruit M4   370  mbedtls 1032  wolfssl 1163 KBs  hardware 11.2 MBs
@@ -164,6 +168,7 @@ fft_bench demo   int32_t
 	mbed F466RE   1ms
 	mbed K64F     2ms
 	mbed F469NI   1ms
+	mbed F767ZI   1ms
 	artemis       4ms
 	pico          3ms
 	Adafruit M4   3ms
@@ -201,6 +206,7 @@ v[i]= sin(i)    i 0 to 399   double
 	mbed F446RE 12420us float (hardware) 238us   180mhz
 	mbed K64F  11358us  float (hardware) 560us    120mhz
 	mbed F469NI 5744us  float (hardware) 254us    (237us @180mhz)
+	mbed F767ZI  560us  float  174us   hardware float and double
 	artemis      5185 us (float hardware)
 	pico         5489 us double
 	ada M4      8198us  float(hardware) 4008 us
@@ -237,6 +243,7 @@ linpack double (megaflops)
 	mbed F466RE     0.855 23.955 (float) 50x50
 	mbed K64F       0.951 12.909 (float) 50x50
 	mbed F469NI     2.11  23.971 (float) 50x50  27 100x100  (29@180mhz)
+	mbed F767ZI     100x100 double 24  float   48
 	artemis         1.03  13.8 (float) 50x50
 	pico            0.8   1.5 (float) 50x50
 	adafruit M4     1.42  20.1   (float) 100x100
@@ -271,6 +278,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     mbed F466RE    2477 us    mbed tls  988  wolfssl 1313 us
     mbed LPC1768   5222 us    mbed tls 1383 us wolfssl 2491 us
     mbed F469NI    2649 us    mbed tls 1059  (738 @180mhz) wolfssl 1327 us
+    mbed F767ZI    1611 us    mbed tls  393 us  ssl  102 us
     mbed M7        1063 us   656 us (gnu gcc -O2) -O3: mbedtls 220  wolfssl 258
     pyboard        2129 us  python loop  (mbed C 864 us )
     stm32f405      3370 us  tls 1272 us  ssl 171 us  mini-gmp 190 us
@@ -307,6 +315,7 @@ STM32L4@80mhz  917.3   1953.8   1150.4    Faster       v1.4.5
 STM32F405@168  466.5   1135.1    556.1    gcc -O2      v1.6.0
 F469NI@180mhz  416.8    843.4    496.5    gcc -O3      v1.5.1  otto mbed
 F446RE@180mhz  416.8    843.4    484.7    gcc -O3      v1.5.1  mbed
+F767ZI@126mhz  206.9    352.7    262.7    gcc -O3      v1.5.1  mbed
 
 coremarkish           MHz    /sec /MHz
     MEGA2560           16     6.9  0.4   -Os  (-O3 9.1)  avr-gcc 4.9.2
@@ -326,6 +335,7 @@ coremarkish           MHz    /sec /MHz
     mbed K64F         120   280.4  2.3   -O3  arm cc 4.7
     NXP K64F          120   283.6  2.4   -O3  gcc 9.3.1  SDK
     mbed F469NI       180   415.3  2.3   -O3  otto  (387.3 @168mhz) arm cc 4.7
+    mbed F767ZI       216   880.0  4.1   -O3   arm cc 4.7
     mbed M7           600  2437.8  4.1   -O3  NXP 1052  arm cc 4.7
     NXP M7            600  2439.2  4.1   -O3  NXP 1062  gcc 7.2.1 SDK
     NXP 1170          996  4073.0  4.1   -O3  NXP cm7   gcc 9.3.1 SDK  275 ma
