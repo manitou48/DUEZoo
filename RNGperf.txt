@@ -10,6 +10,7 @@ DISCOVERY         37.2 mbs STM32F407VET6 (TRNG) @168mhz
 dragonfly         37.2 mbs STM32L476RE (TRNG) @80mhz  L476VG L476RG
 mbed K64F         7.5 mbs  (TRNG)  @120mhz
 mbed F469NI      37.2 mbs TRNG @168mhz
+mbed F767ZI      36.4 mbs TRNG @216mhz
 Teensy K66/K64    7.5 mbs  (TRNG) @120mhz  T3.6/T3.5
 Teensy 4          0.04 mbs (TRNG) @600mhz  T4 1062
 NXP 1170          0.06 mbs (TRNG) @996mhz  NXP 1170 SDK CAAM  10/1/21
