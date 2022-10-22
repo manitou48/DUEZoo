@@ -76,6 +76,17 @@ SPI  clock    write
 23MHz         9.7 mbs    22.3
 45MHz        11.6 mbs    44.3
 
+  mbed F767ZI @216 mhz  peripheral clocak 54 mhz
+          spi 1 mhz 9806 us 0.84 mbs  374
+          spi 2 mhz 5255 us 1.56 mbs  36c
+          spi 4 mhz 2950 us 2.78 mbs  364
+          spi 8 mhz 1803 us 4.54 mbs  35c
+          spi 15 mhz 1235 us 6.63 mbs  354
+          spi 30 mhz 951 us 8.61 mbs  34c
+          spi 45 mhz 950 us 8.62 mbs  34c
+          DMAspi  156 us 52.51 mbs  344
+
+
    mbed MXRT1050-EVKB @ 600MHz   11/27/18
                 SPI        DMA
 SPI clock     write 
