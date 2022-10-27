@@ -310,7 +310,7 @@ T3.5@120mhz    658.5   1577.9    919.5    Faster       v1.5.3
 K64F@120mhz    635.7   1273.8    827.2    ARM GCC -O3  v1.4.5
 T3.2@120mhz    869.8   2498.5  18182.5    Faster       v1.1.0
 artemis@96mhz  819.5   2050.1   1000.2    -O2          v1.6.0
-adaM4F@120mhz  701.3   1756.1    781.0    Faster       v1.1.0   SAMD51
+adaM4F@120mhz  615.4   1361.6    757.0    -O2          v1.5.3   SAMD51
 STM32L4@80mhz  917.3   1953.8   1150.4    Faster       v1.4.5
 STM32F405@168  466.5   1135.1    556.1    gcc -O2      v1.6.0
 F469NI@180mhz  416.8    843.4    496.5    gcc -O3      v1.5.1  otto mbed
@@ -335,7 +335,7 @@ coremarkish           MHz    /sec /MHz
     mbed K64F         120   280.4  2.3   -O3  arm cc 4.7
     NXP K64F          120   283.6  2.4   -O3  gcc 9.3.1  SDK
     mbed F469NI       180   415.3  2.3   -O3  otto  (387.3 @168mhz) arm cc 4.7
-    mbed F767ZI       216   877.9  4.1   -O3   arm cc 4.7
+    mbed F767ZI       216   877.9  4.1   -O3  arm cc 4.7
     mbed M7           600  2437.8  4.1   -O3  NXP 1052  arm cc 4.7
     NXP M7            600  2439.2  4.1   -O3  NXP 1062  gcc 7.2.1 SDK
     NXP 1170          996  4073.0  4.1   -O3  NXP cm7   gcc 9.3.1 SDK  275 ma
