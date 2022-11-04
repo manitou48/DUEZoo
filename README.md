@@ -42,6 +42,7 @@ requires restarting the IDE.  TWI speed for teensy 3.0 in Wire.ccp,
 must restart IDE.
 </pre>
 
+![coremark](corebar.png)
 
 Results and sketches of testing various crystals, resonators, RC oscillators,
 and TCXOs  with various MCUs 
