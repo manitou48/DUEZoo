@@ -43,6 +43,7 @@ must restart IDE.
 </pre>
 
 ![coremark](corebar.png)
+more  plots at http://manitou48.github.io/
 
 Results and sketches of testing various crystals, resonators, RC oscillators,
 and TCXOs  with various MCUs 
