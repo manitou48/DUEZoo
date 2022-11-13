@@ -365,3 +365,5 @@ coremarkish           MHz    /sec /MHz
     macos/i7-3520M   2900 17465.2  6.0   -O2  gcc 4.2.1  64-bit
     cygwin/i5-4460   3200 24086.7  7.5   -O2  gcc 10.2.0 64-bit  windows 10
     ubuntu/i5-4460   3200 24342.7  7.6   -O2  gcc 7.5.0  64-bit  windows 10
+
+	CoreMark speed/power plots:  http://manitou48.github.io/
