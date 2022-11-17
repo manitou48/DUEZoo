@@ -332,7 +332,7 @@ coremarkish           MHz    /sec /MHz
     STM32L476RE        80   170.4  2.1   -O2  gcc 4.8.3 (mbed -O3 208.4)
     mbed LPC1768       96   185.7  1.9   -O3  arm cc 5.06
     mbed F466RE       180   417.5  2.3   -O3  arm cc 5.06.075
-    mbed K64F         120   280.4  2.3   -O3  arm cc 4.7
+    mbed K64F         120   284.3  2.3   -O3  arm cc 5.06.075
     NXP K64F          120   283.6  2.4   -O3  gcc 9.3.1  SDK
     mbed F469NI       180   417.5  2.3   -O3  otto  (387.3 @168mhz) arm cc 5.06
     mbed F767ZI       216   877.9  4.1   -O3  arm cc  5.06.075
