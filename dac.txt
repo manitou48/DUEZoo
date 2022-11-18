@@ -3,6 +3,7 @@ MCU           res   settle(us)  power(ma)
 T3.2           12        1          1
 T3.5 (2)       12        1          1
 T3.6(2)        12        1          1
+T4 no DAC
 LC             12        1          1
 dragonfly(2)   12        2          1
 mapleRET6 (2)  12        3         25
@@ -11,11 +12,13 @@ ZERO           10        2          1    samd21
 LPC1768        10        1          1
 F446RE         12        4          1
 F469NI         12        4          1
+F767ZI         12        2          1
 32F405/7(2)    12        3          8?   output buffer
 pyboard(2)     12        7          8?   32F405
 photon(2)      12        3          1
 samd51         12        7          1  m4
 samd21         10        2          1  cpx
+ESP32(2)        8        3         12
 MCP4725        12        7         25     I2C
 pcf8591p        8       18         20     I2C
 SGTL5000                16
