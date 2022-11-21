@@ -240,10 +240,10 @@ linpack double (megaflops)
 	NXP 1170      121.3   290 (float) 100x100  cm7@1Ghz -O3
 	NXP 1170        2.7    46 (float) 90x90 cm4@400mhz -O3
 	mbed LPC1768    0.879                50x50
-	mbed F466RE     0.855 23.955 (float) 50x50
+	mbed F466RE     2.3   23.955 (float) 50x50  float 100x100 28.8
 	mbed K64F       0.951 12.909 (float) 50x50
 	mbed F469NI     2.11  23.971 (float) 50x50  27 100x100  (29@180mhz)
-	mbed F767ZI     100x100 double 24  float   48
+	mbed F767ZI    24     48   100x100 @216mhz
 	artemis         1.03  13.8 (float) 50x50
 	pico            0.8   1.5 (float) 50x50
 	adafruit M4     1.42  20.1   (float) 100x100
