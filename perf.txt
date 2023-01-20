@@ -300,7 +300,7 @@ mersenne   PRNG 1000 32-bit  (microseconds)
    T4@600MHz        67 
    T3.6@180MHz     462
    T3.5@120MHz     694
-   T3.2@120MHz      69
+   T3.2@120MHz     697
    LC@48MHz       2341
    T2++@16MHz    38680
    ESP32@240MHz    349
