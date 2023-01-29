@@ -314,6 +314,7 @@ mersenne   PRNG 1000 32-bit  (microseconds)
    DUE@84MHz      1519    SAMD21
    maple@72MHz    1443   
    cpx@48MHz      2390
+   ZERO@48MHz     2522
 
 
 DSP FFT benchmark  1024  radix4 REVERSEBITS 0  (microseconds)
