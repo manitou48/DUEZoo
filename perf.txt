@@ -295,26 +295,28 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     ubuntu           65 us   openssl  (mbedtls 170us, libgmp 39us, bignumber 189)
     cygwin           16 us   openssl  (mbedtls 44us)
 
+
 mersenne   PRNG 1000 32-bit  (microseconds)
-   NXP 1170@996MHz  41 us
-   T4@600MHz        67 
-   T3.6@180MHz     462
-   T3.5@120MHz     694
-   T3.2@120MHz     697
-   LC@48MHz       2341
-   T2++@16MHz    38680
-   ESP32@240MHz    349
-   F767ZI@216MHz   210 
-   F446RE@180MHz   417 
-   32F405@168MHz   388
-   32L476RE@80MHz  982    dragonfly
-   pico@125MHz     797
-   M4@120MHz       519    SAMD51
-   artemis@96MHz   748 
-   DUE@84MHz      1519    SAMD21
-   maple@72MHz    1443   
-   cpx@48MHz      2390
-   ZERO@48MHz     2522
+                               TinyMT
+   NXP 1170@996MHz  41 us        18  us
+   T4@600MHz        67           61  
+   T3.6@180MHz     462          349
+   T3.5@120MHz     694          526
+   T3.2@120MHz     697          527
+   LC@48MHz       2341         1864
+   T2++@16MHz    38680        20636
+   ESP32@240MHz    349          288
+   F767ZI@216MHz   210           83
+   F446RE@180MHz   417          130
+   32F405@168MHz   388          411
+   32L476RE@80MHz  982         1269    dragonfly
+   pico@125MHz     797          344
+   M4@120MHz       519          502    SAMD51
+   artemis@96MHz   748          851
+   DUE@84MHz      1519         1204    SAMD21
+   maple@72MHz    1443         1114
+   ZERO@48MHz     2522         2084      
+   cpx@48MHz      2390         2017
 
 
 DSP FFT benchmark  1024  radix4 REVERSEBITS 0  (microseconds)
