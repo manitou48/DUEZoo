@@ -309,7 +309,7 @@ mersenne   PRNG 1000 32-bit  (microseconds)
    F767ZI@216MHz   210           83
    F446RE@180MHz   417          130
    32F405@168MHz   388          411
-   32L476RE@80MHz  982         1269    dragonfly
+   32L476RE@80MHz  982          812    dragonfly
    pico@125MHz     797          344
    M4@120MHz       519          502    SAMD51
    artemis@96MHz   748          851
