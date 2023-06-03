@@ -34,6 +34,7 @@ recursive fibonacci (fibo(26))
 	adafruit stm32f405(168mhz) 32 ms   -O2
 	mbed M7 (600 mhz)         6 ms   MXRT1050-EVKB  ARM cc -O3
 	NXP 1170 (cm7@1GHz)       3.7ms   cm7 -O3    cm4@400mhz 21 ms SDK
+	NXP 1010 (cm7@500mhz)     7.9ms   cm7 SDK -O3 
 	beaglebone (720MHz)      20.9   -O
 	beaglebone black (1GHz)  20.5 ms
 	raspberry pi (700MHz)    10.682 ms  10.260  (PI3 1.2GHz 64-bit 3.297 ms)
@@ -237,6 +238,7 @@ linpack double (megaflops)
 	teensy K66      2.15   27 (float) 50x50    30 100x100
 	teensy K64      0.82   17 (float) 50x50    19 100x100
 	teensy 4 beta  65.4   140 (float) 50x50   166 100x100
+	NXP 1010              127 (float) 50x50
 	NXP 1170      121.3   290 (float) 100x100  cm7@1Ghz -O3
 	NXP 1170        2.7    46 (float) 90x90 cm4@400mhz -O3
 	mbed LPC1768    0.879                50x50
@@ -325,6 +327,7 @@ NXP 1170 1GHz   44.3     89.4     66.9    gcc -O3      v1.6.0
   T4@600mhz     77.4    147.0     87.0    gcc -O2      v1.5.1
   M7@600mhz     77.4    147.8     88.0    gcc -O3      v1.5.1 SDK
   M7@600mhz     74.5    126.9     95.6    ARM GCC -O3  v1.5.1
+  1010@500mhz  870.6   1014.3    820.1    SDK -O3      arm_math.h V1.9.0
 T3.6@256mhz    291.7    720.4    424.7    Faster       v1.5.3
 T3.6@240mhz    311.2    768.8    453.0    Faster       v1.5.3
 T3.6@180mhz    463.1   1215.2    703.7    Faster       v1.1.0
