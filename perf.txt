@@ -302,6 +302,7 @@ mersenne   PRNG 1000 32-bit  (microseconds)
                                TinyMT
    NXP 1170@996MHz  41 us        18  us
    T4@600MHz        67           61  
+   NXP1010@500mhz   81          731
    T3.6@180MHz     462          349
    T3.5@120MHz     694          526
    T3.2@120MHz     697          527
