@@ -39,6 +39,7 @@ mbed 3.3v@216mhz      212/               arm F767ZI
 mbed 3.3v@600mhz      157/128            MXRT1050-EVKB  66 ma
 mbed 3.3v@600mhz      218/228            MXRT1060-EVK   66 ma
 ZERO 3.3v@48mhz       108.0/112.2        arm SAMD21G M0+  4/2 ma 
+R4 5v@48mhz           31/37.5
 M0+  3.3v@48mhz       24.1/25.52         playground express  4/2 ma adafruit 
 M4F  3.3v@120mhz      25.7/26/4          adafruit M4 SAMD51  16.4/2.8
 ESP8266 3.3v@80mhz      29/32            sparkfun dev thing breakout 
