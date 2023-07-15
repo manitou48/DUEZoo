@@ -199,6 +199,7 @@ v[i]= sin(i)    i 0 to 399   double
 	nRF51822 133514 us  8-byte
 	DUE       18723 us  8-byte  84mhz
 	ZERO      82815 us          48mhz
+	R4        10766 us  float   48mhz
 	maple     20959 us          72mhz
 	teensy 3  29504 us          96mhz
 	teensy3.1 18287 us          96mhz (12683us @ 168mhz)
