@@ -51,7 +51,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	nRF51822 207 ms 494 KBs mbed -O3  mbedtls 658 KBs
 	DUE 23 ms 2226 KBs   mbedtls 3849 wolfssl 4338 KBs
 	ZERO 33 ms 1551 KBs  mbedtls 1703 wolfssl 1523
-	R4   18 ms 2844 KBs
+	R4   18 ms 2844 KBs  mbedtls 3180 wolfss  3230 KBs -O3
 	maple 1937 KBs   271ms 1889   -Os  mbedtls 3271 KBs  wolfsse 3160 KBs
 	           -Os -O -O2 -O3  1889 2124  2737  3605
 	teensy 3 (96 MHz)   25 ms 2048 KBs   
@@ -89,7 +89,7 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	MEGA2560  5 KBs
 	ZERO  257 KBs
-	R4    696 KBs
+	R4    696 KBs  tls 757  ssl 840 KBs
 	DUE 677 KBs
 	maple 627 KBs
 	teensy LC 285 KBs
@@ -124,6 +124,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key  AES
 	nRF51822      258  mbedtls 580  -O3 mbed
 	DUE           174  mbedtls 520  wolfssl 556 KBs
 	ZERO           83  mbedtls 267  wolfssl 289
+	R3            188  mbedtls 146  wolfssl 336 KBs
 	maple         170  mbedtls 481  wolfssl 488 KBs
 	teensy 3.0    121
 	teensy 3.1    226  mbedtls 688  wolfssl 634 KBs
@@ -273,7 +274,7 @@ bignumber 100! (microseconds) Arduino BigNumber or openSSL or mbedtls factorial
     UNO          156868  us mbedtls 34544 (1284p)  gmp-mini 15100
     nRF51822      62897  us mbedtls 13336 us
     ZERO          49210  us mbedtls 6203 us  wolfssl 5825 mini-gmp 1168
-	R4            11824
+	R4            11824  us mbedtls 3785 us  wolfssl  559us  
     DUE           10930  us mbedtls 2637 us wolfssl 2121 us mini-gmp 506 us
     maple         11543  us mbedtls 2527 us (Arduino IDE) wolfssl 2058 us mini-gmp 540
     STM32L476      6668 us mbedtls 1979 us wolfssl 371 us mini-gmp 358
