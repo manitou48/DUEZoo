@@ -124,7 +124,7 @@ aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key  AES
 	nRF51822      258  mbedtls 580  -O3 mbed
 	DUE           174  mbedtls 520  wolfssl 556 KBs
 	ZERO           83  mbedtls 267  wolfssl 289
-	R3            188  mbedtls 146  wolfssl 336 KBs
+	R4            188  mbedtls 146  wolfssl 336 KBs
 	maple         170  mbedtls 481  wolfssl 488 KBs
 	teensy 3.0    121
 	teensy 3.1    226  mbedtls 688  wolfssl 634 KBs
