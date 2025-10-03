@@ -85,6 +85,9 @@ MD5 (KBs == 1024 bytes/second)   x -O 2 3
 	          57142.857143   (PI3 88495 KBs) (PI3B+ 102244 KBs) (PI4 165624 KBs)
 	ubuntu    67019.951169  260400.391642 316436.669947 320493.303292 KBs
 	cygwin   355871.9  KBs
+	macpro 351079.217515 KBs
+	macair M4 573019.929633 KBs
+
 
 SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	MEGA2560  5 KBs
@@ -117,6 +120,7 @@ SHA256 (KBs == 1024 bytes/second) UNO sha256tst or crypto lib
 	beagle 5120
 	ubuntu 64000 KBs
 	macpro 97682 KBs
+	macair M4  81192.5 KBs
 	cygwin 128643 KBs  mbedtls 171799
 
 aes  (KBs 1000 bytes/sec) cbc encrypt 64 bytes, 128-bit key  AES
