@@ -406,8 +406,10 @@ coremarkish           MHz    /sec /MHz
     ubuntu/i7-107    4700 29915.5  6.4   -O2  gcc 7.4.0  64-bit
     RHlinux/AMD6274  2200  6972.2  3.2   -O2  gcc 4.4.7  64-bit
     macpro/i7-3520M  2900 17465.2  6.0   -O2  gcc 4.2.1  64-bit
-	macair M4        4400 51850.1 11.8   -O2  gcc 4.2.1  64-bit
+    macair M4        4400 51850.1 11.8   -O2  gcc 4.2.1  64-bit
     cygwin/i5-4460   3200 24086.7  7.5   -O2  gcc 10.2.0 64-bit  windows 10
     ubuntu/i5-4460   3200 24342.7  7.6   -O2  gcc 7.5.0  64-bit  windows 10
+    cygwin/i5-225    3300 51967.7 15.7   -O2  gcc 13.4.0 64-bit  windows 11
+    ubuntu/i5-225    3300 43506.6 13.2   -O2  gcc 13.3   64-bit  windows 11
 
 	CoreMark speed/power plots:  http://manitou48.github.io/
